@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 remote_theme            : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -24,6 +24,7 @@ description             : >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 url                     : "https://erios.io"
+logo                    : "assets/logo.png"
 search                  : true
 
 
