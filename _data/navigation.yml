@@ -1,4 +1,10 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
+  - title: "News"
+    url: /news/
+  - title: "Features & Roadmap"
+    url: /features/
+  - title: "FAQ"
+    url: /faq/
+  - title: "Lore"
+    url: /lore/

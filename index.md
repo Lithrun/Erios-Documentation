@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/logo.png
   actions:
     - label: "<i class='fas fa-newspaper'></i> Latest news"
-      url: "/docs/quick-start-guide/"
+      url: "/news/"
 excerpt: >
   A new adventure in Erios awaits! Venture in the lands of Weldanar and uncover the truth. Stay up to date as development has started on a demo!<br />
 feature_row:
@@ -29,7 +29,7 @@ feature_row:
     alt: "lore"
     title: "Lore"
     excerpt: "Discover the lore and history of Erios."
-    url: "/docs/layouts/"
+    url: "/lore/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 ---
