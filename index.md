@@ -4,30 +4,30 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/logo.png
+  overlay_image: /assets/background2.png
+  text_color: grey
   actions:
+    - label: "<i class='fas fa-info'></i> About"
+      url: "/about/"
     - label: "<i class='fas fa-newspaper'></i> Latest news"
       url: "/news/"
 excerpt: >
-  A new adventure in Erios awaits! Venture in the lands of Weldanar and uncover the truth. Stay up to date as development has started on a demo!<br />
+  Erios is an upcoming action adventure RPG. Venture into the lands of Weldanar and uncover your own story. Stay up to date as development has started on a demo!<br />
 feature_row:
-  - image_path: /assets/logo.png
+  - image_path: /assets/features_banner.png
     alt: "features"
-    title: "Features"
     excerpt: "Discover all of the scheduled features"
     url: "/features/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/logo.png
+  - image_path: /assets/faq_banner.png
     alt: "frequently asked questions"
-    title: "Questions & Answers"
     excerpt: "Check out our Frequently Asked Questions!"
     url: "/faq/"
     btn_class: "btn--primary"
     btn_label: "Learn more"    
-  - image_path: /assets/logo.png
+  - image_path: /assets/lore_banner.png
     alt: "lore"
-    title: "Lore"
     excerpt: "Discover the lore and history of Erios."
     url: "/lore/"
     btn_class: "btn--primary"
