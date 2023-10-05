@@ -112,6 +112,8 @@ defaults:
       comments: true
       share: true
       related: true
+      # classes: wide
+      comments: true
   # _pages
   - scope:
       path: "_pages"
@@ -120,12 +122,19 @@ defaults:
       layout: single
       author_profile: false
 
+teaser: /assets/logo.png
+
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "erios"
 
 # fixes "No GitHub API authentication" error
 github: [metadata]
