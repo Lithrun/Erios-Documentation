@@ -108,6 +108,7 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
+      show_date: true
       comments: true
       share: true
       related: true
@@ -125,3 +126,12 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-8P69W975SM" # this doesn't work anymore?
+    anonymize_ip: false # default
+
+# fixes "No GitHub API authentication" error
+github: [metadata]
