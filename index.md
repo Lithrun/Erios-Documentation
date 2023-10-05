@@ -10,7 +10,7 @@ header:
     - label: "<i class='fas fa-info'></i> About"
       url: "/about/"
     - label: "<i class='fas fa-newspaper'></i> Latest news"
-      url: "/news/"
+      url: "/latest/"
 excerpt: >
   Erios is an upcoming action adventure RPG. Venture into the lands of Weldanar and uncover your own story. Stay up to date as development has started on a demo!<br />
 feature_row:
@@ -35,3 +35,13 @@ feature_row:
 ---
 
 {% include feature_row %}
+
+<!-- Simple script to change /latest/ to the actual first blog post -->
+{% assign latest = site.posts.first %}
+<script>
+  var els = document.querySelectorAll("a[href='/latest/']");
+  for (var i = 0, l = els.length; i < l; i++) {
+    var el = els[i];
+    el.href = {{ latest.url }};
+  }
+</script>
