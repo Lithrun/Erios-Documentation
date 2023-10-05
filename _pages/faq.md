@@ -9,15 +9,37 @@ On this page you can find answers to frequently asked questions. If your questio
 
 # General
 
-## 
-- This is the answer of question 1
+## When will the game release?
+- There's no known release date. I work on the project in my free time, thus the amount of progress I make varies a lot per month. Currently I am working towards a demo for the game. Once the demo has been completed, the next phase of the project will begin. See [Roadmap]({% link _pages/features.md %}#roadmap)
 
+## On what platforms will Erios be released?
+- Erios is supported on Steam for Windows (Linux & Mac support is experimental, but should theoretically work). Perhaps I can also publish the game at other platforms, but will see when the time comes.
 
+## What are the system requirements?
+- It's too early to tell now. After the demo is complete I can do benchmarking and make an estimate on what the average system requirements are. The graphics are simplistic thanks to the low poly style and there's also various graphical settings to play around with, so low-end devices should be able to run the game smoothly.
+
+## Will there be regular content updates after release?
+- Yes, for as long as its financially possible to do so. Creating new content costs time, and since I want updates for the game to be free, it will mean that I do not earn anything from it. Time is money in todays society, so how much time I have available to work on these type of updates will depend on how well the game does financially. If it still generates sufficient money, then I might still be able to work fulltime towards updates on the game. Additionally, there's also mod support for the game, so even if I cannot provide updates myself, the community is able to always create new content to keep expending upon the game its core features.
+
+## Will there be NFTs, Subscriptions, Microtransactions, Lootboxes or Season Passes?
+- No. I am not a fan of all of these systems, as their primary focus is on generating revenue for a business, not on providing value to the game. I do not believe that it is worth it to sacrifice the integrity of the game for the sake of generating additional revenue. Erios is a passion project at first, money generated from it comes second.
+
+## Will there be a mobile version?
+- Technically it could be possible, as the art style of the game is low poly, which means mobile devices should be able to render the game at a decent framerate. Hopefully one day, but this will mainly depend on my time and if there's an actual audience for a mobile version. Main focus is still on the desktop version.
 
 # Multiplayer
 
-## Q: Question 2
-- This is the answer of question 2
+## How can I host a multiplayer server?
+- By simply pressing the "host" button in-game. Erios will then automatically try to resolve port-forwarding via UPNP. Unfortunatly this might not work on every router, so manual port forwarding might be required.
+
+## How is multiplayer moderated?
+- Simply said, it isn't. Multiplayer is self-hosted, and thus whoever hosts the server is in control over what is and what isn't allowed. Servers which are deemed as problematic by the community however can be banned from the lobby server. Which means that it cannot be discovered by players and the players have to manually insert the IP + port similar to private servers.
+
+## Is there anti-cheat protection?
+- There's anti-cheat protection to a certain degree, yet this may also be disabled by the host due to the usage of mods.
+
+## What data does Erios process?
+- 
 
 # Mods
 
