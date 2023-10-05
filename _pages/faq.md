@@ -5,7 +5,7 @@ excerpt: "Frequently Asked QUestions."
 toc: true
 ---
 
-On this page you can find answers to frequently asked questions. If your question isn't answered here, feel free to join the discord and ask away!
+On this page you can find answers to frequently asked questions. If your question isn't listed here, then [join the community]({% link _pages/join.md %}) and ask away! If your question isn't answered here, feel free to join the discord and ask away!
 
 # General
 

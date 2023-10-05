@@ -7,8 +7,8 @@ header:
   overlay_image: /assets/background2.png
   text_color: grey
   actions:
-    - label: "<i class='fas fa-info'></i> About"
-      url: "/about/"
+    - label: "<i class='fas fa-users'></i> Join now"
+      url: "/join/"
     - label: "<i class='fas fa-newspaper'></i> Latest news"
       url: "/latest/"
 excerpt: >
@@ -16,22 +16,28 @@ excerpt: >
 feature_row:
   - image_path: /assets/features_banner.png
     alt: "features"
-    excerpt: "Discover all of the scheduled features"
+    excerpt: "Exploration, Quests, Interact with the world, Skills and Multiplayer. Discover all of the scheduled features for Erios!"
     url: "/features/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "See more"
   - image_path: /assets/faq_banner.png
     alt: "frequently asked questions"
-    excerpt: "Check out our Frequently Asked Questions!"
+    excerpt: "You have a question? Hopefully it will be answered here! If it is not, just ask within our [community](join) channels!"
     url: "/faq/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"    
+    btn_label: "See more"    
   - image_path: /assets/lore_banner.png
     alt: "lore"
-    excerpt: "Discover the lore and history of Erios."
+    excerpt: "The lore behind Erios has been written about since 2015. Discover the rich and detailed world of Erios."
     url: "/lore/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "See more"
+  # - image_path: /assets/mods_banner.png
+  #   alt: "mods"
+  #   excerpt: "Join our discord"
+  #   url: "/lore/"
+  #   btn_class: "btn--primary"
+  #   btn_label: "Learn more"
 ---
 
 {% include feature_row %}

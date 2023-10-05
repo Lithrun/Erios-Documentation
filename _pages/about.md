@@ -1,9 +1,10 @@
 ---
 permalink: /about/
-title: "About"
+title: "About Erios"
 excerpt: "About"
 toc: true
 ---
+
 
 
 ## Projects
