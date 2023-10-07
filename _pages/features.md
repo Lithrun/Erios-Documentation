@@ -20,38 +20,55 @@ Erios is a low-poly 3D game developed in the Godot 4.X (latest) game engine. A s
 ## Region: Weldanar
 
 ![Weldanar](/assets/background.png)
-> *Weldanar, one of the major regions of the Kingdom of the Silver Forge, was isolated from the kingdom after the Great War. Protected from the horrors of the east thanks to the massive Grey Wall its lands have remained peaceful. Yet seperation from the kingdom has led the region to fall into decay. The Lord of Weldanar is no longer in control over the lands of Weldanar, and lesser lords are seeking their oppertunity. The Silver Forge has been trying to create a secure passage to Weldanar through Hagsponar for years, yet they failed with great casualties. Tensions are only rising further now that supply ships from the Azure Company have started to vanish. The peaceful era is coming to an end.*
+> *Weldanar, one of the major regions of the Kingdom of the Silver Forge, was isolated from the kingdom after the Great War. Protected from the horrors of the east thanks to the massive Grey Wall its lands have remained peaceful. Yet separation from the kingdom has led the region to fall into decay. The Lord of Weldanar is no longer in control over the lands of Weldanar, and lesser lords are seeking their opportunity. The Silver Forge has been trying to create a secure passage to Weldanar through Hagsponar for years, yet they failed with great casualties. Tensions are only rising further now that supply ships from the Azure Company have started to vanish. The peaceful era is coming to an end.*
 
-Erios takes place in Weldanar, an isolated region of the Kingdom of the Silver Forge. Explore the region that has fallen into decay, and help the desparate people of Weldanar, or take advantage over them for your own gain.
+Erios takes place in Weldanar, an isolated region of the Kingdom of the Silver Forge. Explore the region that has fallen into decay, and help the desperate people of Weldanar, or take advantage over them for your own gain.
 
 *Note: The demo will take place within Hergen, a settlement within a province of Weldanar known as 'Helmanar'*
 
-- Adventure
-- NPC
-- Events
-- Interactables
+## Discover
 
-## Noticable factions
+Adventure is a major part of Erios. Wander into a new town and meet new NPCs which each have their own schedules and tasks based on a daily routine. Do note however that their activities can depend based on randomized world events, quests or the actions of the player. Additionally Erios features an "Interactables system" which allows players to interact with various items of the world. See something, then you should be able to interact with it.
 
-In Weldanar there are several factions present, here's a few noticable ones:
+Quests can be obtained from NPCs, yet be warned, there are no quest markers or map indications. Take notes within your quest log and use your knowledge of the world to find where to go next. Fear not however, as you can talk with NPCs for further assistance.
 
-- Knights of Helm
-- Grey Garrison
+## Progress
 
-## Progression
+![Blacksmithing](/assets/features/professions.png)
+Unlike traditional RPGs, Erios there's not a level for the player. Instead you become stronger by improving your skills, equipment or tools. There are 3 main skills, which each have various sub categories.
 
-- Skills
-- Tools
+### Weapons & Tools
+Each weapon & tool can be leveled by upgrading it with resources or simply by using it. That wooden starter sword you usually get? Upgrade it all the way for it to become a powerful weapon.
 
-## Quests
+### Professions
+There are various professions where you can create new weapons, items, tools or harvest resources. These are implemented in a way so that each profession will feel unique and engaging. Think about mining, farming, forestry, blacksmithing and so forth. Professions have a so called "active" and "passive" way to use them. For instance, if you want to convert ores into ingots, you can either actively play a minigame which will decrease the time it takes, or you can simply passively wait.
 
-- No HUD assistance
+### Explorer
+A special skill which awards players for exploring the world. Whether it's by exploring new areas, finding treasure, solving puzzles, there are multiple ways to improve it. The rewards from this skill will be able to aid players further into their exploration efforts (more detailed maps, explorer related tools)
+
+## Immerse
+
+![Two players holding torches](/assets/features/tools.png)
+Within Erios there are tools and items. Tools are items which can actively be used by the player, whereas items are unusable. What a tool does, depends. Whether it's a torch to explore dark caverns, or a grappling hook to safely scale down a cliff; they come in a variety.
 
 ## Multiplayer
 
-- Co-op
-- Dungeons
-- Gamemodes
+An epic action adventure RPG that you can play, what's more one could want? Well, being able to play it with your friends! 
+
+### Co-op
+Within co-op, you can play the campaign together with multiple players. So you will simply load your save file, host a server and then multiple players can join and together you can adventure into Erios. Whether it are quests, finding new treasures or fighting enemies, co-op mode should support everything that's also possible in the singleplayer campaign.
+
+Players which are joining a co-op session will join with their own save files, so they can use all of their items and tools that they have acquired already.
+
+### Dungeons
+Within Erios there are dangerous locations which would be foolish to clear alone. With the Dungeons feature players will group up together and delve into a dungeon together for rewards. These dungeons can be found during the campaign, and at their respective location the player can either host or join an existing dungeon session. Players who are joining will use their save file, so similar to co-op they can use all of their fancy equipment. Dungeons don't always take place in the present, as with some dungeons players can witness events from the past. (As why read about an event if you can witness it yourself)
+
+Upon completing a dungeon, players will obtain a treasure map. They can then obtain their rewards in the overworld of Erios after finding the treasure.
+
+### Gamemodes
+With gamemodes, players will engage in various different activities. Unlike the Co-op or Dungeons multiplayer modes, the player their save file is not used re-used here, so it's more standalone and independent. What they will exactly do really depends on the gamemode. One example of a gamemode is the "Arena" gamemode, which is Player versus Player oriented. In this gamemode, 8 random players will be placed in an arena, they will select their loadout and will have to fight to the death! Last man standing wins.
+
+Gamemodes are also configurable, so the host can change some of the rules. For instance, a setting within the Arena gamemode is that "Team Mode" can be enabled. So instead of a free-for-all, it will be a 4 vs 4. The host can also determine which Loadouts are allowed to be selected, so there could be a round of Arena where the only weapon you are allowed to use would be a bow.
 
 ## Mods
 
@@ -98,7 +115,7 @@ At this point, the demo has been completed. I plan to start a kickstarter which 
 
 ## Road towards release
 
-Here it's difficult to say how things will exactly go, as it will depend a lot on how well the kickstarter went. If the kickstarter would succeed, then it means that I can work full-time on the project and have the required funds to realize the release of the game. A dream coming true. If the kickstarter would fail, then development on Erios will still continue, but the time I can dedeicate towards the project will be limited due to the fact that I'd still need a full-time job in order to afford the bills.
+Here it's difficult to say how things will exactly go, as it will depend a lot on how well the kickstarter went. If the kickstarter would succeed, then it means that I can work full-time on the project and have the required funds to realize the release of the game. A dream coming true. If the kickstarter would fail, then development on Erios will still continue, but the time I can dedicate towards the project will be limited due to the fact that I'd still need a full-time job in order to afford the bills.
 
 ## Release & future updates
 
