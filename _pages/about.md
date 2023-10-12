@@ -45,7 +45,8 @@ Wow... Now I wrote a lot. I'm not good at introductions or first impressions, bu
 If you dare...
 
 - Discord: lithrun
-- Reddit: EriosGameDev
+- Twitter: [WorldOfErios](https://twitter.com/WorldOfErios)
+- Reddit: [EriosDev](https://www.reddit.com/user/EriosDev)
 
 ## Project History
 

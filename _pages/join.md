@@ -8,6 +8,9 @@ header:
     actions:
       - label: "Discord"
         url: "https://discord.gg/CAupuH2Kcm"
-      - label: "Reddit"
-        url: "https://www.reddit.com/r/EriosTheGame/"
+      - label: "Twitter"
+        url: "https://twitter.com/WorldOfErios"
+    # Disabled until Reddit is setup
+    #   - label: "Reddit"
+    #     url: "https://www.reddit.com/r/EriosTheGame/"
 ---

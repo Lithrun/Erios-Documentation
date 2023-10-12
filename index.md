@@ -32,6 +32,7 @@ feature_row:
     url: "/lore/"
     btn_class: "btn--primary"
     btn_label: "See more"
+  # TODO: MOD / API documentation pages
   # - image_path: /assets/mods_banner.png
   #   alt: "mods"
   #   excerpt: "Join our discord"
