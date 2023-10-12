@@ -41,6 +41,6 @@ Making a decision like this is not an easy one, as Erios is a long term commitme
 Whereas for me the adventure of Erios started all the way back in 2015, now is the time for you to join it! 
 [Become part of the community and let's share this adventure together!]({% link _pages/join.md %})
 
-Thank you for reading and see you next time
+Thank you for reading and see you next time~
 
 \- Lithrun
