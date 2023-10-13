@@ -89,7 +89,7 @@ end)
 
 function onBrickCollided(collider)
     local ragdollController = collider.get_gameObject().GetComponentInChildren(typeof('RagdollController'))
-    if ragdollController != nill then
+    if ragdollController != nil then
         ragdollController.Enable()
     end
 end
