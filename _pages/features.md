@@ -111,7 +111,7 @@ The goal of the demo is to be able to give players a good impression about what 
 
 ## Funding
 
-At this point, the demo has been completed. I plan to start a kickstarter which will reserve as a way to acquire funds, which allows me to be able to work full-time on Erios. Because of the demo, I can now also do a realistic estimate on when a potential release date can be, and also on how much money I require to realize the release. As a solo indie developer I will not have to pay any employees, yet I would still like to hire some artists to create music and art for the game. The demo will also be included within the kickstarter, so before people will invest their money into the game, they will have a chance to try it out and see if this is what they actually want to invest their money in.
+At this point, the demo has been completed. I plan to start a kickstarter which will serve as a way to acquire funds, which allows me to be able to work full-time on Erios. Because of the demo, I can now also do a realistic estimate on when a potential release date can be, and also on how much money I require to realize the release. As a solo indie developer I will not have to pay any employees, yet I would still like to hire some artists to create music and art for the game. The demo will also be included within the kickstarter, so before people will invest their money into the game, they will have a chance to try it out and see if this is what they actually want to invest their money in.
 
 ## Road towards release
 
