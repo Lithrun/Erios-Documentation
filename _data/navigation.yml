@@ -10,3 +10,30 @@ main:
     url: /faq/
   - title: "Lore"
     url: /lore/
+  # - title: "API"
+  #   url: /api/
+
+api:
+  - title: Type Examples
+    children:
+      - title: "Enum"
+        url: /api/enum/
+      - title: "Vector3"
+        url: /api/class/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+
+  - title: Generated
+    children:
+      - title: "EnumLuaTest"
+        url: /api/enumluatest/
+      - title: "StaticLuaTest"
+        url: /api/staticluatest/
+      - title: "UI Text"
+        url: /docs/ui-text/
+      - title: "Authors"
+        url: /docs/authors/
+      - title: "Layouts"
+        url: /docs/layouts/

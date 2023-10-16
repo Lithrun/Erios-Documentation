@@ -28,6 +28,8 @@ url                     : "https://erios.io"
 logo                    : "assets/logo.png"
 search                  : true
 
+lunr:
+  search_within_pages: true
 
 email:
 description: 
@@ -53,6 +55,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - _pages
   - _posts
+  - _api
 encoding                : "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 words_per_minute: 150
@@ -108,8 +111,22 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _api
+  - scope:
+      path: "_api"
+      type: pages
+    values:
+      layout: single
+      read_time: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "api"
 
 teaser: /assets/logo.png
+
+sidebars:
+- api_sidebar
 
 category_archive:
   type: liquid
