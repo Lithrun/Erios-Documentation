@@ -35,6 +35,7 @@ Quests can be obtained from NPCs, yet be warned, there are no quest markers or m
 ## Progress
 
 ![Blacksmithing](/assets/features/professions.png)
+
 Unlike traditional RPGs, Erios there's not a level for the player. Instead you become stronger by improving your skills, equipment or tools. There are 3 main skills, which each have various sub categories.
 
 ### Weapons & Tools
@@ -49,6 +50,7 @@ A special skill which awards players for exploring the world. Whether it's by ex
 ## Immerse
 
 ![Two players holding torches](/assets/features/tools.png)
+
 Within Erios there are tools and items. Tools are items which can actively be used by the player, whereas items are unusable. What a tool does, depends. Whether it's a torch to explore dark caverns, or a grappling hook to safely scale down a cliff; they come in a variety.
 
 ## Multiplayer
