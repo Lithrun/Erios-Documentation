@@ -10,8 +10,9 @@ main:
     url: /faq/
   - title: "Lore"
     url: /lore/
-  - title: "Documentation"
-    url: /docs/
+  # Hide this from production as it's unfinished and confusing
+  # - title: "Documentation"
+  #   url: /docs/
 
 api:
   - title: Type Examples
