@@ -1,6 +1,6 @@
 ---
 title: "Style"
-permalink: /api/style
+permalink: /api/style/
 categories: docs
 toc: true
 ---

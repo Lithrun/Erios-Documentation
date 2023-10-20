@@ -1,6 +1,6 @@
 ---
 title: "Enum Type"
-permalink: /api/enum
+permalink: /api/enum/
 categories: docs
 toc: true
 ---

@@ -1,6 +1,6 @@
 ﻿---
 title: StaticLuaTest
-permalink: /api/staticluatest
+permalink: /api/staticluatest/
 search: true
 categories: [api, class]
 toc: true
