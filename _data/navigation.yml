@@ -1,40 +1,24 @@
-# main links
 main:
-  - title: "News"
-    url: /news/
-  - title: "About"
-    url: /about/
-  - title: "Features & Roadmap"
-    url: /features/
-  - title: "FAQ"
-    url: /faq/
-  - title: "Lore"
-    url: /lore/
-  # Hide this from production as it's unfinished and confusing
-  # - title: "Documentation"
-  #   url: /docs/
-
+- title: News
+  url: /news/
+- title: About
+  url: /about/
+- title: Features & Roadmap
+  url: /features/
+- title: FAQ
+  url: /faq/
+- title: Lore
+  url: /lore/
 api:
-  - title: Type Examples
-    children:
-      - title: "Enum"
-        url: /api/enum/
-      - title: "Vector3"
-        url: /api/class/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-
-  - title: Generated
-    children:
-      - title: "EnumLuaTest"
-        url: /api/enumluatest/
-      - title: "StaticLuaTest"
-        url: /api/staticluatest/
-      - title: "ClassLuaTest"
-        url: /api/classluatest/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
+- title: Enums
+  children:
+  - title: EnumLuaTest
+    url: /api/enumluatest/
+- title: Classes
+  children:
+  - title: ClassLuaTest
+    url: /api/classluatest/
+- title: Static Classes
+  children:
+  - title: StaticLuaTest
+    url: /api/staticluatest/
