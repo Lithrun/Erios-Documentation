@@ -10,8 +10,8 @@ main:
     url: /faq/
   - title: "Lore"
     url: /lore/
-  # - title: "API"
-  #   url: /api/
+  - title: "Documentation"
+    url: /docs/
 
 api:
   - title: Type Examples
@@ -31,8 +31,8 @@ api:
         url: /api/enumluatest/
       - title: "StaticLuaTest"
         url: /api/staticluatest/
-      - title: "UI Text"
-        url: /docs/ui-text/
+      - title: "ClassLuaTest"
+        url: /api/classluatest/
       - title: "Authors"
         url: /docs/authors/
       - title: "Layouts"

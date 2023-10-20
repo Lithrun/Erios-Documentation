@@ -1,13 +1,12 @@
 ﻿---
-title: 
-            StaticLuaTest
+title: StaticLuaTest
 permalink: /api/staticluatest
 search: true
-categories: [api, enum]
+categories: [api, class]
 toc: true
 ---
             
-**STATIC CLASS: **A single instance is shared throughout the game
+**STATIC CLASS**: A single instance is shared throughout the game
 {: .notice--warning}
 
 
@@ -25,25 +24,25 @@ toc: true
 
 ## Fields
 
-| Type | Name | Default | Description |
-| --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>Field</span> {:/} | {::nomarkdown} <span class='m'>0</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>FieldWithDefault</span> {:/} | {::nomarkdown} <span class='m'>500</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| Type | Name | Static | Default | Description |
+| --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>Field</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <span class='m'>0</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>FieldWithDefault</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <span class='m'>500</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Properties
 
-| Type | Getter | Setter | Default | Description |
-| --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Property</span>() {:/} | {::nomarkdown} <span class='nf'>set_Property</span>(<span class='o'>val</span>) {:/} | {::nomarkdown} <span class='m'>0</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithDefault</span>() {:/} | {::nomarkdown} <span class='nf'>set_PropertyWithDefault</span>(<span class='o'>val</span>) {:/} | {::nomarkdown} <span class='m'>25</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithoutSetter</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <span class='m'>75</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithPrivateSetter</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <span class='m'>69</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithStringDefault</span>() {:/} | {::nomarkdown} <span class='nf'>set_PropertyWithStringDefault</span>(<span class='o'>val</span>) {:/} | {::nomarkdown} <span class='s'>'Hello World'</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| Type | Getter | Setter | Static | Default | Description |
+| --- | --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Property</span>() {:/} | {::nomarkdown} <span class='nf'>set_Property</span>(<span class='o'>val</span>) {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <span class='m'>0</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithDefault</span>() {:/} | {::nomarkdown} <span class='nf'>set_PropertyWithDefault</span>(<span class='o'>val</span>) {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <span class='m'>25</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithoutSetter</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <span class='m'>75</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithPrivateSetter</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <span class='m'>69</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_PropertyWithStringDefault</span>() {:/} | {::nomarkdown} <span class='nf'>set_PropertyWithStringDefault</span>(<span class='o'>val</span>) {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <span class='s'>'Hello World'</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Methods
-*Requires an instance!*
+## Static Methods
+*Do not require an instance!*
 {: .notice--warning}
 
 ### ObsoleteStaticMethod
@@ -55,8 +54,6 @@ toc: true
 </div>
 </div>
 
-<span class="c">Parameters</span>
-
 ### VoidMethod
 > Static method
 <div class ="highlighter-rouge">
@@ -67,8 +64,6 @@ toc: true
 </div>
 </div>
 
-<span class="c">Parameters</span>
-
 ### VoidMethod(string)
 > Static method with parameter
 <div class ="highlighter-rouge">
@@ -78,8 +73,6 @@ toc: true
 </pre>
 </div>
 </div>
-
-<span class="c">Parameters</span>
 
 | Type | Name | Description
 | --- | --- | --- |
@@ -94,8 +87,6 @@ toc: true
 </pre>
 </div>
 </div>
-
-<span class="c">Parameters</span>
 
 | Type | Name | Description
 | --- | --- | --- |

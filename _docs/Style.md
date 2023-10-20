@@ -1,7 +1,7 @@
 ---
 title: "Style"
 permalink: /api/style
-categories: [api]
+categories: docs
 toc: true
 ---
 

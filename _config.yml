@@ -26,24 +26,8 @@ description             : >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 url                     : "https://erios.io"
 logo                    : "assets/logo.png"
-search                  : true
-
-lunr:
-  search_within_pages: true
-
-email:
-description: 
-twitter_username: username
-github_username: username
-
-# SEO Related
-# google_site_verification : "" # Replace this with your ID, or delete
-
-# Social Sharing
-twitter:
-    username            : 
-
-
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 
 # Outputting
 permalink: /:categories/:title/
@@ -56,6 +40,7 @@ include:
   - _pages
   - _posts
   - _api
+  - _docs
 encoding                : "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 words_per_minute: 150
@@ -89,6 +74,14 @@ footer:
     #   icon: "fab fa-fw fa-reddit"
     #   url: "https://www.reddit.com/r/EriosTheGame/"
 
+collections:
+  api:
+    output: true
+    permalink: /:collection/:path/
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
   # _posts
   - scope:
@@ -115,6 +108,17 @@ defaults:
   - scope:
       path: "_api"
       type: pages
+    values:
+      layout: single
+      read_time: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "api"
+  # _docs
+  - scope:
+      path: ""
+      type: docs
     values:
       layout: single
       read_time: false

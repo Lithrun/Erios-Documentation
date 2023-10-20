@@ -1,7 +1,7 @@
 ---
 title: "Enum Type"
 permalink: /api/enum
-tags: [api]
+categories: docs
 toc: true
 ---
 **DEPRECATED:** Do not use this enum anymore
