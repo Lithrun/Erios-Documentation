@@ -74,13 +74,13 @@ Gamemodes are also configurable, so the host can change some of the rules. For i
 
 ## Mods
 
-Erios has mod support! Mod developers are able to add new content to the game, like quests, items, AI overriding logic and much more! Documentation on you can create mods will be available once the demo is nearing completion.
+Erios has mod support! Mod developers are able to add new content to the game, like quests, items, AI overriding logic and much more! Documentation on how you can create mods will be available once the demo is nearing completion.
 
 ### LUA ❤️
 
 Erios features a detailed LUA API which is also used internally for AI behavior and quests!
 
-> Example of an triggering a ragdoll whenever a NPC which supports ragdolls walks over trademarked small colored bricks
+> Example of triggering a ragdoll whenever a NPC which supports ragdolls walks over trademarked small colored bricks
 
 ```lua
 Events.Server.OnScriptLoaded(function (testArg)

@@ -1,15 +1,10 @@
 ---
-title: Welcome to the documentation page of Erios!
+title: Documentation
 permalink: /docs/
 categories: [docs]
-summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
 toc: true
 sidebar:
     nav: api
 ---
 
-### Static
-
-### Methods
-
-### Properties & Fields
+Welcome to the official documentation page of Erios. Here you can find tutorials, guides & the API documentation. Obviously there's not that much to read here currently, but once the game is released, this will be a helpful page for all of the community.
