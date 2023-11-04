@@ -12,6 +12,9 @@ On this page you can find answers to frequently asked questions. If your questio
 ## When will the game release?
 - There's no known release date. I work on the project in my free time, thus the amount of progress I make varies a lot per month. Currently I am working towards a demo for the game. Once the demo has been completed, the next phase of the project will begin. See [Roadmap]({% link _pages/features.md %}#roadmap)
 
+## When will the next blog release?
+- There's no set interval for development blogs. They may happen weekly, bi-weekly or monthly, depending on my schedule. Writing blogs takes time, so if you want to stay up to date with the latest of the latest news, [join the community]({% link _pages/join.md %}) as I post small sized updates there more frequently.
+
 ## On what platforms will Erios be released?
 - Erios is supported on Steam for Windows (Linux & Mac support is experimental, but should theoretically work). Perhaps I can also publish the game at other platforms, but will see when the time comes.
 
