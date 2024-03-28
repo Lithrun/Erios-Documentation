@@ -12,6 +12,9 @@ On this page you can find answers to frequently asked questions. If your questio
 ## When will the game release?
 - There's no known release date. I work on the project in my free time, thus the amount of progress I make varies a lot per month. Currently I am working towards a demo for the game. Once the demo has been completed, the next phase of the project will begin. See [Roadmap]({% link _pages/features.md %}#roadmap)
 
+## How can I contribute to Erios?
+- Erios is developed by me, a single person. At this moment of time I do not have the financial resources to hire other people to contribute towards the project, nor should you spend your precious time for free on the project. For now it is rather simple, just spread the word! Make people aware that Erios is coming. You can also help by giving new ideas, suggestions and most importantly: feedback!
+
 ## When will the next blog release?
 - There's no set interval for development blogs. They may happen weekly, bi-weekly or monthly, depending on my schedule. Writing blogs takes time, so if you want to stay up to date with the latest of the latest news, [join the community]({% link _pages/join.md %}) as I post small sized updates there more frequently.
 
@@ -42,7 +45,7 @@ On this page you can find answers to frequently asked questions. If your questio
 - There's anti-cheat protection to a certain degree, yet this may also be disabled by the host due to the usage of mods.
 
 ## What data does Erios process?
-- No data is persisted. The only data which is temporarily stored is data which is sent to the lobby server if you are self hosting a server, this only contains data which is relevant for players to find the server (IP, port, server name, game settings and state). Yet this data is not stored within a database, so the moment a self hosted server stops pinging the lobby server, it will be forgotten and removed from the cache.
+- No data is persisted. The only data which is temporarily stored is data which is sent to the lobby server if you are self hosting a server, this only contains data which is relevant for players to find the server (IP, port, server name, game settings and state). Yet this data is not stored within a database, so the moment a self hosted server stops pinging the lobby server, it will be removed from the cache within 5 minutes.
 
 # Mods
 
