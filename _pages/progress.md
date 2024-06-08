@@ -21,7 +21,7 @@ During the alpha development phase of the game, Erios will be releasing so calle
 
 Below you can find a list of planned features, and get a general overview of where the project currently is in terms of development. This list is subject to change. 
 
-
+Some items in the list may have a tag like `[C1]`, this means that this functionality was added / is going to be added in that chapter update
 
 ## Fundamental
 These are the 4 major pillars of content in Erios. For the demo, the campaign will be limited to Hergen. For release, the scope will be the entire region of Weldanar.
@@ -48,8 +48,6 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 
 ## NPCs
 > Characters populate the world and keep it interesting. They may be your foe or ally, yet there is a lot you can do with them. They will also do things on their own, as Erios is the world that they live in.
-
-Some items in the list may have a tag like `[C1]`, this means that this functionality was added / is going to be added in that chapter update
 
 - [x] State System
 - [ ] Navigation System
