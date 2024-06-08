@@ -1,12 +1,16 @@
 main:
 - title: News
   url: /news/
-- title: About
-  url: /about/
-- title: Features & Roadmap
-  url: /features/
-- title: FAQ
-  url: /faq/
+- title: Progress
+  url: /progress/
+- title: Game Info
+  sub:
+    - title: About
+      url: /about/
+    - title: Features & Roadmap
+      url: /features/
+    - title: FAQ
+      url: /faq/
 - title: Lore
   url: /lore/
 api:

@@ -1,0 +1,48 @@
+  .visible-links .masthead__menu-item.nav ul a {
+    text-decoration: none;
+    color:#E2DFD0;
+    background-color: #344C64;
+    text-align: left;
+    display: block;
+    transition: .3s background-color;
+    padding: 6px 24px !important;
+    border-bottom: 2px solid #240750;
+  }
+  
+  .visible-links .masthead__menu-item.nav ul a:hover {
+    background-color: #577B8D;
+  }
+  
+  .visible-links .masthead__menu-item.nav a {
+      border-bottom:none;
+  }
+  
+  .visible-links .masthead__menu-item.nav ul {
+      position:absolute;
+      display:none;
+      width:inherit;
+      text-align:left;
+  }
+  
+  .visible-links .masthead__menu-item.nav ul li {
+    display: block;
+    float:none !important; /* newly added */
+    height:auto; /* newly added */
+    line-height:34px; /* newly added */
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .hidden-links li.nav a {
+    padding: 4px 20px !important;
+  }
+
+  .hidden-links li.nav {
+    list-style: square inside;
+  }
+
+  .hidden-links li.nav ul li a::before {
+    content: "- ";
+  }

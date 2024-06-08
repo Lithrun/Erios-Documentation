@@ -8,11 +8,12 @@ header:
   text_color: grey
   actions:
     - label: "<i class='fas fa-users'></i> Join now"
+      button: "btn--primary"
       url: "/join/"
     - label: "<i class='fas fa-newspaper'></i> Latest news"
       url: "/latest/"
 excerpt: >
-  Erios is an upcoming action adventure RPG. Venture into the lands of Weldanar and uncover your own story. Stay up to date as development has started on a demo!<br />
+  Erios® is an upcoming action adventure RPG. Venture into the lands of Weldanar and uncover your own story. Stay up to date as development has started on a demo!<br />
 feature_row:
   - image_path: /assets/features_banner.png
     alt: "features"
@@ -40,6 +41,15 @@ feature_row:
   #   btn_class: "btn--primary"
   #   btn_label: "Learn more"
 ---
+
+<div>
+  <h2 class="page__related-title">News</h2>
+  <div class="grid__wrapper">
+    {% for post in site.posts limit:4 %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+</div>
 
 {% include feature_row %}
 

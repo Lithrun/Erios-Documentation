@@ -1,6 +1,34 @@
 {% comment %}<!-- overrides: https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/masthead.html -->{% endcomment %}
 
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
+<link rel="stylesheet" href="/assets/css/navigation.css">
+<!-- <script>
+  document.body.addEventListener('touchstart',function(){},false);
+  document.body.addEventListener('onmouseover',function(){},false);
+</script> -->
+
+<script>
+  var ids = []
+  function toggleMenu(id) {
+    console.log(id)
+    document.getElementById(id).classList.toggle("show");
+    if (ids.some(x => x === id)) return;
+    ids.push(id)
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.menuDropdown')) {
+
+    ids.forEach(x => {
+      var myDropdown = document.getElementById(x);
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    })
+    }
+  }
+</script>
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -15,9 +43,22 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
+            {% if link.sub -%}
+              <li class="masthead__menu-item nav">
+                <a class="menuDropdown" onclick="toggleMenu('{{ link.title }}')">{{ link.title }} <i class="fas fa-caret-down"></i></a>
+                <ul id="{{ link.title }}">
+                  {% for sub in link.sub %}
+                  <li>
+                    <a href="{{ sub.url | relative_url }}"{% if sub.description %} title="{{ sub.description }}"{% endif %}>{{ sub.title }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else -%}
             <li class="masthead__menu-item">
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
+            {% endif %}
           {%- endfor -%}
         </ul>
         {% if site.minimal_mistakes_skin_dark %}
