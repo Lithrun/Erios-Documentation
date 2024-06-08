@@ -51,18 +51,18 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 
 - [x] State System
 - [ ] Navigation System
-    - [x] `[C1]` NavMesh Phase 1: Basic Terrain
-    - [ ] NavMesh Phase 2: Avoidance System
-    - [ ] NavMesh Phase 3: Advanced Terrain ()
+    - [x] `[C1]` 1. Basic Terrain
+    - [ ] 2. Avoidance System
+    - [ ] 3. Advanced Terrain (Jumping over ledges, swimming)
 - [ ] Task System
 - [ ] Follower System
 - [ ] Quest System
 - [ ] Speech Sounds
-    - [x] Speech Sounds Phase 1: Characters make random sounds when speaking
-    - [ ] Speech Sounds Phase 2: Changing speed, pitch & tone
+    - [x] 1. Characters make random sounds when speaking
+    - [ ] 2. Changing speed, pitch & tone
 - [ ] Equipment System
-    - [x] Equipment System Phase 1: Functionality
-    - [ ] Equipment System Phase 2: User Interface
+    - [x] 1. Functionality
+    - [ ] 2. User Interface
 - [ ] Faction/Reputation System
 - [ ] Character Customization Interface (for the player)
 - [ ] Trading & Economy System
@@ -78,15 +78,18 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 > The world within Erios is a living world on itself. Things happen, whether the player is there are not.
 
 - [ ] Time System
-    - [x] Time System Phase 1: Functionality
-    - [ ] Time System Phase 2: Visualization (i.e. the time of day changing from day to night)
+    - [x] 1. Functionality
+    - [ ] 2. Visualization (i.e. the time of day changing from day to night)
 - [ ] Weather System
 - [ ] Ecosystem
-    - [x] `[C1]` Ecosystem Phase 1: Basic implementation
-    - [ ] Ecosystem Phase 2: Evolution
-    - [ ] Ecosystem Phase 3: Visual change
+    - [x] `[C1]` 1. Basic implementation
+    - [ ] 2. Evolution
+    - [ ] 3. Visual change
 - [ ] Dynamic Events
 - [ ] Interactables System
+- [ ] Water System
+    - [x] 1. Visualization
+    - [ ] 2. Physics (Floating, swimming)
 - [x] Loading Screen
 - [ ] Transportation
     - [ ] Horse
@@ -166,16 +169,16 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 - [ ] Completion % tracker
 - [ ] Achievements
 - [ ] Cards
-    - [x] Cards Phase 1: Design
-    - [ ] Cards Phase 2: Collecting cards throughout the world
-    - [ ] Cards Phase 3: Collection UI
+    - [x] 1. Design
+    - [ ] 2. Collecting cards throughout the world
+    - [ ] 3. Collection UI
 
 ## Moddability
 > For players to be able to extend upon the world of Erios is an important feature
 
 - [ ] Mod Loader
-    - [x] Mod Loader Phase 1: Ability to load mods
-    - [ ] Mod Loader Phase 2: Creating & managing mod packs
+    - [x] 1. Ability to load mods
+    - [ ] 2. Creating & managing mod packs
 - [ ] Custom Models
 - [ ] Custom Audio Files
 - [ ] Custom Levels
