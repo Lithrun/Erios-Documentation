@@ -70,7 +70,7 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 ### Creatures
 > The world is large, and even in a region like Weldanar, the ecosystem is diverse
 
-- [ ] Deer
+- [x] `[C1]` Deer
 - [ ] Birds
 - [ ] Wolves
 
@@ -121,7 +121,7 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 > Erios features various skills that players can progress towards
 
 - [ ] Archeology
-- [ ] Arist
+- [ ] Artist
 - [ ] Blacksmithing
 - [ ] Builder
 - [ ] Carpentry
