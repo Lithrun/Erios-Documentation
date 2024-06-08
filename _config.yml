@@ -62,8 +62,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-glossary_tooltip
 
-whitelist:
-  - jekyll-glossary_tooltip
+exclude: [vendor]
 
 footer:
   links:
