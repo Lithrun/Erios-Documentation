@@ -62,6 +62,9 @@ plugins:
   - jekyll-include-cache
   - jekyll-glossary_tooltip
 
+whitelist:
+  - jekyll-glossary_tooltip
+
 footer:
   links:
     - label: "Discord"
