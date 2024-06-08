@@ -177,8 +177,11 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 > For players to be able to extend upon the world of Erios is an important feature
 
 - [ ] Mod Loader
-    - [x] 1. Ability to load mods
-    - [ ] 2. Creating & managing mod packs
+    - [x] 1. Scan and list installed mods
+    - [ ] `[C1]` 2. Activate & Load Mods
+    - [ ] 3. Automatically load previously activated mods
+    - [ ] 4. Creating & managing mod packs
+- [ ] `[C1]` Custom Fonts
 - [ ] Custom Models
 - [ ] Custom Audio Files
 - [ ] Custom Levels
