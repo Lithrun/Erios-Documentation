@@ -132,7 +132,7 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 - [ ] Forestry
 - [ ] Guard
 - [ ] Herbalism
-- [x] `[C1]` {% glossary Skill_Hunting, display: Hunting %}
+- [ ] `[C1]` {% glossary Skill_Hunting, display: Hunting %}
 - [ ] Jewel crafting
 - [ ] Leatherworking
 - [ ] Mining
@@ -178,10 +178,12 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 
 - [ ] Mod Loader
     - [x] 1. Scan and list installed mods
-    - [ ] `[C1]` 2. Activate & Load Mods
+    - [ ] 2. Activate & Load Mods
     - [ ] 3. Automatically load previously activated mods
     - [ ] 4. Creating & managing mod packs
-- [ ] `[C1]` Custom Fonts
+- [x] `[C1]` Resource Packs
+    - [x] `[C1]` Custom Fonts
+    - [ ] Custom UI Themes
 - [ ] Custom Models
 - [ ] Custom Audio Files
 - [ ] Custom Levels
