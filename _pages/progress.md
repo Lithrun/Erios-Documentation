@@ -215,3 +215,6 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 
 ## Post-Release
 > A list of confirmed ideas, but these will only be implemented post-release
+
+- Accessibility
+    - [ ] Controller Support
