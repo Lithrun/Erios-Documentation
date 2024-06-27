@@ -11,12 +11,38 @@ header:
     caption: "Looking into the horizon, wondering what to work on next"
 ---
 
+<style>
+progress {
+  border-radius: 7px; 
+  width: 100%;
+  height: 22px;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+}
+progress::-webkit-progress-bar {
+  background-color: yellow;
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: blue;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+}
+progress::-moz-progress-bar {
+  /* style rules */
+}
+</style>
+
+# Status
+> The progress towards the demo
+<progress id="progressBar" max="100" value="25" title="% completed"></progress>
+<strong id="progressCompleted"></strong> out of <strong id="progressTotal"></strong> tasks completed (<strong id="progressPercentage"></strong>).
+
 # Chapters
 > Currently Chapter 1: The Hunter is under development. This will be the first playable alpha build of Erios
 
 During the alpha development phase of the game, Erios will be releasing so called "Chapter" updates. Each chapter will focus on a few major features, and once those are implemented, a playable build will be made public for everyone to try out. Whether out of curiousity, to help testing the game or to inspire yourself with new ideas.
 
-# Progression
+# Task List
 > Something missing? [Suggest it to be added into the game!]({% link _pages/join.md %}). Erios is a community as much as it is a world, so your feedback matters!
 
 Below you can find a list of planned features, and get a general overview of where the project currently is in terms of development. This list is subject to change. 
@@ -43,8 +69,11 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
     - [ ] 1. Technical Setup
     - [ ] 2. Dungeon: Mines of Hergen
     - [ ] 3. Multiplayer integration
-- [ ] Challenges (Repetitive competitive time-based challenges)
-    - [ ] 1. Design
+- [ ] Challenges (Repetitive competitive score-based challenges)
+    - [x] 1. Technical Setup
+    - [x] 2. Basic Trial Challenges (Complete as fast as possible)
+    - [ ] 3. Challenge Replay System
+    - [ ] 4. Additional challenge types
 
 ## NPCs
 > Characters populate the world and keep it interesting. They may be your foe or ally, yet there is a lot you can do with them. They will also do things on their own, as Erios is the world that they live in.
@@ -216,5 +245,19 @@ These are the 4 major pillars of content in Erios. For the demo, the campaign wi
 ## Post-Release
 > A list of confirmed ideas, but these will only be implemented post-release
 
-- Accessibility
-    - [ ] Controller Support
+**Fundamental**
+- Challenge Mode Leaderboards
+
+**Accessibility**
+- Controller Support
+
+<script>
+  var completed = document.querySelectorAll("input[type='checkbox']:checked").length;
+  var total = document.querySelectorAll("input[type='checkbox']").length;
+  document.getElementById("progressCompleted").innerHTML = completed
+  document.getElementById("progressTotal").innerHTML = total
+  document.getElementById("progressPercentage").innerHTML = Math.round((completed / total) * 10000) / 100 + "%"
+  var progress = document.getElementById("progressBar")
+  progress.max = total
+  progress.value = completed
+</script>
