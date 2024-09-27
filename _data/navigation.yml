@@ -1,6 +1,8 @@
 main:
 - title: News
   url: /news/
+- title: Forums
+  url: https://forum.erios.io/signup
 - title: Progress
   url: /progress/
 - title: Game Info

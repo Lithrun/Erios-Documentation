@@ -7,9 +7,9 @@ header:
   overlay_image: /assets/background2.png
   text_color: grey
   actions:
-    - label: "<i class='fas fa-users'></i> Join now"
+    - label: "<i class='fas fa-users'></i> Forums"
       button: "btn--primary"
-      url: "/join/"
+      url: "https://forum.erios.io/signup"
     - label: "<i class='fas fa-newspaper'></i> Latest news"
       url: "/latest/"
 excerpt: >
