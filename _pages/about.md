@@ -45,8 +45,9 @@ Wow... Now I wrote a lot. I'm not good at introductions or first impressions, bu
 If you dare...
 
 - Discord: lithrun
+- Bluesky: [WorldOfErios](https://bsky.app/profile/worldoferios.bsky.social)
 - Twitter: [WorldOfErios](https://twitter.com/WorldOfErios)
-- Reddit: [EriosDev](https://www.reddit.com/user/EriosDev)
+- Reddit: [EriosGameDev](https://www.reddit.com/user/EriosDev)
 
 ## Project History
 
