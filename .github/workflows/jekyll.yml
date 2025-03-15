@@ -27,9 +27,32 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+
+  # Generate Progress.md
+  generate:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Compendium
+        uses: actions/checkout@v4
+        with:
+          repository: Lithrun/Erios-Compendium
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Run document generation script
+        run: |
+          python generate_progress.py
+      - name: Upload progress.md as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: progress-report
+          path: output/progress.md
+
   # Build job
   build:
     runs-on: ubuntu-22.04
+    needs: [generate]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
