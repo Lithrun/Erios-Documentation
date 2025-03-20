@@ -32,7 +32,7 @@ I'm also improving the documentation generator for the LUA tool. Previously it c
 ![Lua Documentation](/assets/blogs/2023-10-25/next.png)
 *Example of generated LUA documentation*
 
-You can view a live preview here: [documentation]({% link _docs/Introduction.md %})
+You can view a live preview here: [documentation]({% link _docs/documentation.md %})
 
 ## What's next
 

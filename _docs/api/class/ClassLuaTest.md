@@ -1,8 +1,6 @@
-﻿---
+---
 title: ClassLuaTest
-permalink: /api/classluatest/
-search: true
-categories: [api, class]
+categories: [docs]
 toc: true
 ---
             

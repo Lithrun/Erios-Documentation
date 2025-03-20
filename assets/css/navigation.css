@@ -46,3 +46,31 @@
   .hidden-links li.nav ul li a::before {
     content: "- ";
   }
+
+/* Side Menu Toggable Buttons */
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:before {
+  content: '\002B';
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+}
+
+.accordion.active:before {
+  content: "\2212";
+}
+
+.panel {
+  /* padding: 0 20px; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

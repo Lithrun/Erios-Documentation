@@ -1,8 +1,6 @@
-﻿---
+---
 title: StaticLuaTest
-permalink: /api/staticluatest/
-search: true
-categories: [api, class]
+categories: [docs]
 toc: true
 ---
             

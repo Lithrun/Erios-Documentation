@@ -5,6 +5,9 @@ main:
   url: https://forum.erios.io/signup
 - title: Progress
   url: /progress/
+# TODO: Make this visible once documentation stuff is finished
+# - title: Documentation
+#   url: /docs/
 - title: Game Info
   sub:
     - title: About
@@ -16,15 +19,39 @@ main:
 - title: Lore
   url: /lore/
 api:
-- title: Enums
+- title: Home
+  url: /docs/
+- title: About
   children:
-  - title: EnumLuaTest
-    url: /api/enumluatest/
-- title: Classes
+  - title: Introduction
+    url: /docs/about/introduction
+- title: Getting Started
   children:
-  - title: ClassLuaTest
-    url: /api/classluatest/
-- title: Static Classes
+  - title: Introduction
+    url: /docs/getting-started/introduction
+    children:
+      - title: Introduction to Erios Modding
+        url: /docs/getting-started/introduction/introduction-to-erios-modding
+      - title: Lunaris
+        url: /docs/getting-started/introduction/lunaris
+  - title: Step By Step
+    url: /docs/getting-started/step-by-step
+- title: Manual
+- title: Community Resources
   children:
-  - title: StaticLuaTest
-    url: /api/staticluatest/
+  - title: Community Channels
+    url: /docs/community-resources/community-channels
+  - title: Tutorials
+    url: /docs/community-resources/tutorials
+- title: Reference
+  url: /docs/api/
+  children:
+  - title: Static
+    url: /docs/api/#static
+    generateFrom: /docs/api/static/
+  - title: Classes
+    url: /docs/api/#class
+    generateFrom: /docs/api/class/
+  - title: Enums
+    url: /docs/api/#enum
+    generateFrom: /docs/api/enum/
