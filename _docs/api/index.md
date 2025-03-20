@@ -1,7 +1,7 @@
 ---
 title: All References
 categories: [docs]
-permalink: /docs/api
+permalink: /docs/api/
 toc: true
 ---
 # Static

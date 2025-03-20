@@ -2,8 +2,6 @@
 title: Documentation
 categories: [docs]
 toc: true
-sidebar:
-    nav: api
 ---
 
 ```

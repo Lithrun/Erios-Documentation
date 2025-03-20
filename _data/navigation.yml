@@ -44,14 +44,14 @@ api:
   - title: Tutorials
     url: /docs/community-resources/tutorials
 - title: Reference
-  url: /docs/api/
+  url: /docs/api
   children:
   - title: Static
-    url: /docs/api/#static
+    url: /docs/api#static
     generateFrom: /docs/api/static/
   - title: Classes
-    url: /docs/api/#class
+    url: /docs/api#class
     generateFrom: /docs/api/class/
   - title: Enums
-    url: /docs/api/#enum
+    url: /docs/api#enum
     generateFrom: /docs/api/enum/
