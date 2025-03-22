@@ -1,0 +1,22 @@
+<!-- {% assign docs = site.data.navigation.api %}
+{% for doc in docs %}
+  {% if doc.url contains page.url %}
+    <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+  {% endif %}
+{% endfor %} -->
+{% if page.previous or page.next %}
+  <nav class="pagination flex justify-between">
+    {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager flex flex-col" title="{{ page.previous.title | markdownify | strip_html | strip}}">
+        <span class="flex text-xs">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
+        <span class="flex">{{ page.previous.title | markdownify | strip_html | strip}}</span>
+      </a>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="pagination--pager flex flex-col" title="{{ page.next.title | markdownify | strip_html | strip}}">
+        <span class="flex text-xs">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
+        <span class="flex">{{ page.next.title | markdownify | strip_html | strip}}</span>
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}

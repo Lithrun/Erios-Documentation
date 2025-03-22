@@ -74,3 +74,44 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+/* Alerts */
+.alert {
+  margin-bottom:10px;
+  margin-top:10px;
+  overflow: hidden;
+}
+
+.alert-warning {
+  color: #444;
+  background-color: #f0ad4e;
+  border-color: #9c721f;
+}
+
+div.alert code, h2 code {
+  background-color: transparent !important;
+}
+/* without this, the links in these notes aren't visible.*/
+.alert a {
+  text-decoration: underline;
+}
+
+.flex {
+    display: flex !important;
+    flex: 1 1 0%;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.flex-col {
+    flex-direction: column !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.text-xs {
+  font-size: .75rem;
+  line-height: 1rem;
+}

@@ -1,9 +1,9 @@
 ---
-title: Documentation
+title: Introduction
 categories: [docs]
 toc: true
+date: 2002-09-15 14:40:45
 ---
-
 ```
 Game.OnStart(function()
     console.log('Hello World')
@@ -25,13 +25,3 @@ This documentation is organized into several categories:
 - **Class Reference** documents the full Erios API. This is also available in the integrated Mod Editor within the game. You can find information on all classes, functions, events and so on here.
 
 *Have fun reading and creating mods within Erios! I am looking forward to try out your creations!*
-## List of Notes in the Same Folder
-
-To get a sorted list of all notes within the same folder using Jekyll, you can use the following Liquid code snippet:
-
-{% assign notes = site.pages | where_exp: "page", "page.path contains '/docs/about/'" | sort: 'title' %}
-<ul>
-    {% for note in notes %}
-        <li><a href="{{ note.url }}">{{ note.title }}</a></li>
-    {% endfor %}
-</ul>

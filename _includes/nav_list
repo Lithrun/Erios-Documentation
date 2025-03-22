@@ -61,7 +61,11 @@
           <ul>
             {% for child in nav.children %}
               {% if child.generateFrom != null %}
-                {% assign subChildren = site.docs | where_exp: "page", "page.url contains child.generateFrom" | sort: 'title' %}
+                {% if child.sortBy != null %}
+                  {% assign subChildren = site.docs | where_exp: "page", "page.url contains child.generateFrom" | sort: child.sortBy %}
+                {% else %}
+                  {% assign subChildren = site.docs | where_exp: "page", "page.url contains child.generateFrom" | sort: 'title' %}
+                {% endif %}
               {% else %}
                 {% assign subChildren = child.children %}
               {% endif %}

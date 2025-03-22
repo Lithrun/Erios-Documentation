@@ -6,3 +6,18 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin_dark | default: 'dark' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.alert {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  
+    > p,
+    > ul {
+      margin-bottom: 0;
+    }
+  
+    > p + p {
+      margin-top: 5px;
+    }
+  }

@@ -5,9 +5,8 @@ main:
   url: https://forum.erios.io/signup
 - title: Progress
   url: /progress/
-# TODO: Make this visible once documentation stuff is finished
-# - title: Documentation
-#   url: /docs/
+- title: Documentation
+  url: /docs/
 - title: Game Info
   sub:
     - title: About
@@ -29,14 +28,22 @@ api:
   children:
   - title: Introduction
     url: /docs/getting-started/introduction
-    children:
-      - title: Introduction to Erios Modding
-        url: /docs/getting-started/introduction/introduction-to-erios-modding
-      - title: Lunaris
-        url: /docs/getting-started/introduction/lunaris
+    generateFrom: /docs/getting-started/introduction/
+    sortBy: order
   - title: Step By Step
     url: /docs/getting-started/step-by-step
+    generateFrom: /docs/getting-started/step-by-step/
+    sortBy: order
 - title: Manual
+  children:
+  - title: Mod Editor
+    url: /docs/manual/mod-editor
+    generateFrom: /docs/manual/mod-editor/
+    sortBy: order
+  - title: Lunaris
+    url: /docs/manual/lunaris
+    generateFrom: /docs/manual/lunaris/
+    sortBy: order
 - title: Community Resources
   children:
   - title: Community Channels
@@ -55,3 +62,5 @@ api:
   - title: Enums
     url: /docs/api#enum
     generateFrom: /docs/api/enum/
+  - title: Test
+    generateFrom: /docs/api/test/
