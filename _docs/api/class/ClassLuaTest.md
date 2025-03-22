@@ -1,8 +1,27 @@
 ---
+# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
 title: ClassLuaTest
 categories: [docs]
 toc: true
+toc_sticky: true
 ---
+<style>
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+}
+
+h3 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.notice--warning {
+    margin-top: 0.25rem !important;
+    margin-bottom: 1rem !important;
+}
+</style>
             
 An example class
 
@@ -66,26 +85,6 @@ An example class
 <div class ="highlight">
 <pre class ="highlight">
 <span class='nf'>Method</span>() -> <span class='kt'>number</span>
-</pre>
-</div>
-</div>
-
-### AbstractVoid
-> Abstract void
-<div class ="highlighter-rouge">
-<div class ="highlight">
-<pre class ="highlight">
-<span class='nf'>AbstractVoid</span>() -> <span class='kt'>nil</span>
-</pre>
-</div>
-</div>
-
-### AbstractWithOverride
-> Abstract with override
-<div class ="highlighter-rouge">
-<div class ="highlight">
-<pre class ="highlight">
-<span class='nf'>AbstractWithOverride</span>() -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>

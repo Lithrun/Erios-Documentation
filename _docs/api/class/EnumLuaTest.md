@@ -1,6 +1,8 @@
 ---
 title: EnumLuaTest
-categories: [docs]
+permalink: /api/enumluatest/
+search: true
+categories: [api, enum]
 toc: true
 ---
             
