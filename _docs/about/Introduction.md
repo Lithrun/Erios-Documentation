@@ -2,7 +2,6 @@
 title: Introduction
 categories: [docs]
 toc: true
-date: 2002-09-15 14:40:45
 ---
 ```
 Game.OnStart(function()

@@ -6,7 +6,7 @@ toc: true
 ---
 {% include warning.html content="This documentation is still under development! Some pages may not yet be finished, or information can still be inaccurate. Once the demo releases this will all be fixed!" %}
 
-Welcome to the official documentation of **Erios**, the action RPG game that fully immerses you within the world of Erios! If you are new to this documentation, then I would recommend you to read the [introduction page]({% link _docs/about/introduction.md %}) to get an overview of what this documentation has to offer.
+Welcome to the official documentation of **Erios**, the action RPG game that fully immerses you within the world of Erios! If you are new to this documentation, then I would recommend you to read the [introduction page]({{ "docs/about/introduction" | relative_url }}) to get an overview of what this documentation has to offer.
 
 At the table of contents in the sidebar you can easily access the documentation of your topic of interest. You can also use the search function in the top-left corner.
 
