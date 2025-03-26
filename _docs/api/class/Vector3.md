@@ -1,9 +1,10 @@
 ---
-# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
 title: Vector3
 categories: [docs]
 toc: true
-toc_sticky: true
+badge: Class
+badge_color: '#007bff'
 ---
 <style>
 h2 {
@@ -21,6 +22,10 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+table {width: 100%; }
+td {width: 1px; }
+td:last-child {width: 100%; }
+#main {max-width: 1500px !important;}
 </style>
             
 3-element structure that can be used to represent positions in 3D space or any other pair of numeric values.
@@ -52,29 +57,35 @@ h3 {
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>Z</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The vector's Z component. Also accessible by using the index position [2].</span> {:/} |
 {:class="table table-bordered highlight"}
 
+## ReadOnly
+
+| Type | Name | Static | Default | Description |
+| --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Back</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, 1) {:/} | {::nomarkdown} <span class='c'>Back unit vector. Represents the local direction of back, and the global direction of south.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Down</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, -1, 0) {:/} | {::nomarkdown} <span class='c'>Down unit vector.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Forward</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, -1) {:/} | {::nomarkdown} <span class='c'>Forward unit vector. Represents the local direction of forward, and the global direction of north.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Inf</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (Infinity, Infinity, Infinity) {:/} | {::nomarkdown} <span class='c'>Infinity vector, a vector with all components set to .</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Left</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (-1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Left unit vector. Represents the local direction of left, and the global direction of west.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>ModelBottom</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, -1, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the bottom side (down) of imported 3D assets.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>ModelFront</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, 1) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the front side (facing forward) of imported 3D assets.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>ModelLeft</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the left side of imported 3D assets.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>ModelRear</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, -1) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the rear side (back) of imported 3D assets.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>ModelRight</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (-1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the right side of imported 3D assets.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>ModelTop</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 1, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the top side (up) of imported 3D assets.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>One</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (1, 1, 1) {:/} | {::nomarkdown} <span class='c'>One vector, a vector with all components set to 1.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Right</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Right unit vector. Represents the local direction of right, and the global direction of east.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Up</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 1, 0) {:/} | {::nomarkdown} <span class='c'>Up unit vector.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Zero</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, 0) {:/} | {::nomarkdown} <span class='c'>Zero vector, a vector with all components set to 0.</span> {:/} |
+{:class="table table-bordered highlight"}
+
 ## Properties
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Back</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, 1) {:/} | {::nomarkdown} <span class='c'>Back unit vector. Represents the local direction of back, and the global direction of south.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Down</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, -1, 0) {:/} | {::nomarkdown} <span class='c'>Down unit vector.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Forward</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, -1) {:/} | {::nomarkdown} <span class='c'>Forward unit vector. Represents the local direction of forward, and the global direction of north.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Inf</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (Infinity, Infinity, Infinity) {:/} | {::nomarkdown} <span class='c'>Infinity vector, a vector with all components set to .</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Item</span>() {:/} | {::nomarkdown} <span class='nf'>set_Item</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Left</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (-1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Left unit vector. Represents the local direction of left, and the global direction of west.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_ModelBottom</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, -1, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the bottom side (down) of imported 3D assets.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_ModelFront</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, 1) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the front side (facing forward) of imported 3D assets.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_ModelLeft</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the left side of imported 3D assets.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_ModelRear</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, -1) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the rear side (back) of imported 3D assets.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_ModelRight</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (-1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the right side of imported 3D assets.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_ModelTop</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 1, 0) {:/} | {::nomarkdown} <span class='c'>Unit vector pointing towards the top side (up) of imported 3D assets.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_One</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (1, 1, 1) {:/} | {::nomarkdown} <span class='c'>One vector, a vector with all components set to 1.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Right</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (1, 0, 0) {:/} | {::nomarkdown} <span class='c'>Right unit vector. Represents the local direction of right, and the global direction of east.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Up</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 1, 0) {:/} | {::nomarkdown} <span class='c'>Up unit vector.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Zero</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} (0, 0, 0) {:/} | {::nomarkdown} <span class='c'>Zero vector, a vector with all components set to 0.</span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Methods
+## Functions
 *Requires an instance!*
 {: .notice--warning}
 

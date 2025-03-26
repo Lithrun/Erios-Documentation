@@ -1,9 +1,10 @@
 ---
-# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
 title: Entity
 categories: [docs]
 toc: true
-toc_sticky: true
+badge: Class
+badge_color: '#007bff'
 ---
 <style>
 h2 {
@@ -21,6 +22,10 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+table {width: 100%; }
+td {width: 1px; }
+td:last-child {width: 100%; }
+#main {max-width: 1500px !important;}
 </style>
             
 Visual representation of a EntityData
@@ -56,6 +61,17 @@ Visual representation of a EntityData
 | {::nomarkdown} <span class='kt'>Event__instance</span> {:/} | {::nomarkdown} <span class='o'>OnExperienceGained</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
+## ReadOnly
+
+| Type | Name | Static | Default | Description |
+| --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>IsDead</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>JogSpeed</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>LevelNode</span> {:/} | {::nomarkdown} <span class='nf'>Level</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>WorldOffset</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>WorldPosition</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
 ## Properties
 
 | Type | Getter | Setter | Static | Default | Description |
@@ -66,17 +82,12 @@ Visual representation of a EntityData
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Health</span>() {:/} | {::nomarkdown} <span class='nf'>set_Health</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The current health of the entity</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_HealthLimit</span>() {:/} | {::nomarkdown} <span class='nf'>set_HealthLimit</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Max health the entity can have</span> {:/} |
 | {::nomarkdown} <span class='kt'>EUID</span> {:/} | {::nomarkdown} <span class='nf'>get_Id</span>() {:/} | {::nomarkdown} <span class='nf'>set_Id</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The instance ID of the entity</span> {:/} |
-| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_IsDead</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_JogSpeed</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>LevelNode</span> {:/} | {::nomarkdown} <span class='nf'>get_Level</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>EUID</span> {:/} | {::nomarkdown} <span class='nf'>get_LevelId</span>() {:/} | {::nomarkdown} <span class='nf'>set_LevelId</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_LevelPosition</span>() {:/} | {::nomarkdown} <span class='nf'>set_LevelPosition</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>List__ScheduleTask</span> {:/} | {::nomarkdown} <span class='nf'>get_Tasks</span>() {:/} | {::nomarkdown} <span class='nf'>set_Tasks</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Tasks work on a priority order. Tasks at the TOP of the list must be completed first.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_WorldOffset</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_WorldPosition</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Methods
+## Functions
 *Requires an instance!*
 {: .notice--warning}
 

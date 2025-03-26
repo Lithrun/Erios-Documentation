@@ -68,6 +68,11 @@
   content: "\2212";
 }
 
+.accordion:hover {
+  background-color: #8d8d8d; /* Add your desired hover color here */
+  border-radius: 4px; /* Makes the corners rounded */
+}
+
 .panel {
   /* padding: 0 20px; */
   max-height: 0;

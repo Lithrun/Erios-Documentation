@@ -1,9 +1,10 @@
 ---
-# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
 title: Localizer
 categories: [docs]
 toc: true
-toc_sticky: true
+badge: Static
+badge_color: '#FFA500'
 ---
 <style>
 h2 {
@@ -21,10 +22,12 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+table {width: 100%; }
+td {width: 1px; }
+td:last-child {width: 100%; }
+#main {max-width: 1500px !important;}
 </style>
             
-**STATIC CLASS**: A single instance is shared throughout the game
-{: .notice--warning}
 
 
 ## Fields
@@ -34,9 +37,7 @@ h3 {
 | {::nomarkdown} <span class='kt'>DynamicList__Translation__instance__instance</span> {:/} | {::nomarkdown} <span class='o'>Translations</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} Erios.Core.Logging.DynamicList`1[Godot.Translation] {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Static Methods
-*Do not require an instance!*
-{: .notice--warning}
+## Functions
 
 ### AddTranslation(string,string,string)
 <div class ="highlighter-rouge">

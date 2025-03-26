@@ -1,9 +1,10 @@
 ---
-# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
 title: Nullable__Vector3
 categories: [docs]
 toc: true
-toc_sticky: true
+badge: Class
+badge_color: '#007bff'
 ---
 <style>
 h2 {
@@ -21,6 +22,10 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+table {width: 100%; }
+td {width: 1px; }
+td:last-child {width: 100%; }
+#main {max-width: 1500px !important;}
 </style>
             
 
@@ -40,11 +45,11 @@ h3 {
 | {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='o'>value</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Properties
+## ReadOnly
 
-| Type | Getter | Setter | Static | Default | Description |
-| --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_HasValue</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_Value</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| Type | Name | Static | Default | Description |
+| --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>HasValue</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>Value</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 

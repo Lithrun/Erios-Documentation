@@ -1,6 +1,6 @@
 ---
 # This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
-title: Event__T
+title: ControlProxy
 categories: [docs]
 toc: true
 badge: Class
@@ -31,11 +31,25 @@ td:last-child {width: 100%; }
 
 
 ## Constructors
-### Event__T.__new()
+### ControlProxy.__new(Control)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Event__T.__new</span>()
+<span class='nf'>ControlProxy.__new</span>(<span class='o'>control</span>: <span class='kt'>Control</span>)
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Control</span> {:/} | {::nomarkdown} <span class='o'>control</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### ControlProxy.__new()
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>ControlProxy.__new</span>()
 </pre>
 </div>
 </div>
@@ -44,31 +58,17 @@ td:last-child {width: 100%; }
 *Requires an instance!*
 {: .notice--warning}
 
-### AddEventHandler(fun(arg: T))
+### AddChild(ControlProxy)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>AddEventHandler</span>(<span class='o'>action</span>: <span class='kt'>fun(arg: T)</span>) -> <span class='kt'>nil</span>
+<span class='nf'>AddChild</span>(<span class='o'>child</span>: <span class='kt'>ControlProxy</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>fun(arg: T)</span> {:/} | {::nomarkdown} <span class='o'>action</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-{:class="table table-bordered highlight"}
-
-### RemoveEventHandler(fun(arg: T))
-<div class ="highlighter-rouge">
-<div class ="highlight">
-<pre class ="highlight">
-<span class='nf'>RemoveEventHandler</span>(<span class='o'>action</span>: <span class='kt'>fun(arg: T)</span>) -> <span class='kt'>nil</span>
-</pre>
-</div>
-</div>
-
-| Type | Name | Description
-| --- | --- | --- |
-| {::nomarkdown} <span class='kt'>fun(arg: T)</span> {:/} | {::nomarkdown} <span class='o'>action</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ControlProxy</span> {:/} | {::nomarkdown} <span class='o'>child</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 

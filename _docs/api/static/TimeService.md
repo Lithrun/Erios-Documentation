@@ -1,9 +1,10 @@
 ---
-# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
 title: TimeService
 categories: [docs]
 toc: true
-toc_sticky: true
+badge: Static
+badge_color: '#FFA500'
 ---
 <style>
 h2 {
@@ -21,10 +22,12 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+table {width: 100%; }
+td {width: 1px; }
+td:last-child {width: 100%; }
+#main {max-width: 1500px !important;}
 </style>
             
-**STATIC CLASS**: A single instance is shared throughout the game
-{: .notice--warning}
 
 
 ## Constants
@@ -48,15 +51,21 @@ h3 {
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>Debug</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
+## ReadOnly
+
+| Type | Name | Static | Default | Description |
+| --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>TotalTicks</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
 ## Properties
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Ticks</span>() {:/} | {::nomarkdown} <span class='nf'>set_Ticks</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>0.1s is the equivalent to a single tick</span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_TotalTicks</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Methods
+## Functions
 *Requires an instance!*
 {: .notice--warning}
 

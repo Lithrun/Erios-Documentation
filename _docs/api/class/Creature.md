@@ -1,9 +1,10 @@
 ---
-# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
 title: Creature
 categories: [docs]
 toc: true
-toc_sticky: true
+badge: Class
+badge_color: '#007bff'
 ---
 <style>
 h2 {
@@ -21,6 +22,10 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+table {width: 100%; }
+td {width: 1px; }
+td:last-child {width: 100%; }
+#main {max-width: 1500px !important;}
 </style>
             
 
@@ -45,7 +50,7 @@ h3 {
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_HungerPerTickRatio</span>() {:/} | {::nomarkdown} <span class='nf'>set_HungerPerTickRatio</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Methods
+## Functions
 *Requires an instance!*
 {: .notice--warning}
 

@@ -1,6 +1,6 @@
 ---
 # This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
-title: LuaTester
+title: LabelProxy
 categories: [docs]
 toc: true
 badge: Class
@@ -31,19 +31,24 @@ td:last-child {width: 100%; }
 
 
 ## Constructors
-### LuaTester.__new()
+### LabelProxy.__new(Label)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>LuaTester.__new</span>()
+<span class='nf'>LabelProxy.__new</span>(<span class='o'>label</span>: <span class='kt'>Label</span>)
 </pre>
 </div>
 </div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Label</span> {:/} | {::nomarkdown} <span class='o'>label</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
 
 ## Properties
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_Lua</span>() {:/} | {::nomarkdown} <span class='nf'>set_Lua</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_Text</span>() {:/} | {::nomarkdown} <span class='nf'>set_Text</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 

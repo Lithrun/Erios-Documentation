@@ -18,10 +18,10 @@ main:
 - title: Lore
   url: /lore/
 api:
-- title: Home
-  url: /docs/
 - title: About
   children:
+  - title: Welcome
+    url: /docs/
   - title: Introduction
     url: /docs/about/introduction
 - title: Getting Started
@@ -62,5 +62,3 @@ api:
   - title: Enums
     url: /docs/api#enum
     generateFrom: /docs/api/enum/
-  - title: Test
-    generateFrom: /docs/api/test/

@@ -1,9 +1,10 @@
 ---
-# This file was automatically generated on 2025-03-22 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
 title: Array__ItemData
 categories: [docs]
 toc: true
-toc_sticky: true
+badge: Class
+badge_color: '#007bff'
 ---
 <style>
 h2 {
@@ -21,6 +22,10 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+table {width: 100%; }
+td {width: 1px; }
+td:last-child {width: 100%; }
+#main {max-width: 1500px !important;}
 </style>
             
 Typed wrapper around Godot's Array class, an array of Variant
@@ -82,16 +87,22 @@ Typed wrapper around Godot's Array class, an array of Variant
 | {::nomarkdown} <span class='kt'>Array</span> {:/} | {::nomarkdown} <span class='o'>array</span> {:/} | {::nomarkdown} <span class='c'>The untyped array to construct from.</span> {:/} |
 {:class="table table-bordered highlight"}
 
+## ReadOnly
+
+| Type | Name | Static | Default | Description |
+| --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>Count</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Returns the number of elements in this . This is also known as the size or length of the array.</span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>IsReadOnly</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Returns if the array is read-only. See .</span> {:/} |
+{:class="table table-bordered highlight"}
+
 ## Properties
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Count</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Returns the number of elements in this . This is also known as the size or length of the array.</span> {:/} |
-| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_IsReadOnly</span>() {:/} | {::nomarkdown} <i class ='fas fa-times'></i> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Returns if the array is read-only. See .</span> {:/} |
 | {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='nf'>get_Item</span>() {:/} | {::nomarkdown} <span class='nf'>set_Item</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-## Methods
+## Functions
 *Requires an instance!*
 {: .notice--warning}
 
