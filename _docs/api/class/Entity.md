@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Entity
 categories: [docs]
 toc: true
@@ -45,13 +45,15 @@ Visual representation of a EntityData
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>JumpVelocity</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>DashPower</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>Weight</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='o'>Disable</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Dictionary__ItemData__instance__number__instance</span> {:/} | {::nomarkdown} <span class='o'>Inventory</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Inventory is all items that the entity owns</span> {:/} |
 | {::nomarkdown} <span class='kt'>Array__ItemData__instance__instance</span> {:/} | {::nomarkdown} <span class='o'>Equipment</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Inventory is all items that the entity has equipped</span> {:/} |
 | {::nomarkdown} <span class='kt'>SkillSaveData[]__instance</span> {:/} | {::nomarkdown} <span class='o'>Knowledge</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Contains information about the each skill that the entity knows about</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>TickRate</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>gravity</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>Gravity</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector3__instance</span> {:/} | {::nomarkdown} <span class='o'>HorizontalVelocity</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>AnimationNodeStateMachinePlayback__instance</span> {:/} | {::nomarkdown} <span class='o'>Animator</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>WaterDepth</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Nullable__Vector3__instance__instance</span> {:/} | {::nomarkdown} <span class='o'>Destination</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The current desired destination where the Entity wants to move towards.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Array__Attack__instance__instance</span> {:/} | {::nomarkdown} <span class='o'>Attacks</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>State__instance</span> {:/} | {::nomarkdown} <span class='o'>CurrentState</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
@@ -66,6 +68,8 @@ Visual representation of a EntityData
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>IsDead</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>IsInWater</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>IsSwimming</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>JogSpeed</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>LevelNode</span> {:/} | {::nomarkdown} <span class='nf'>Level</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>WorldOffset</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
@@ -402,4 +406,22 @@ Visual representation of a EntityData
 </pre>
 </div>
 </div>
+
+## Static Functions
+*Do not require an instance!*
+{: .notice--warning}
+
+### Spawn(string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>Spawn</span>(<span class='o'>id</span>: <span class='kt'>string</span>) -> <span class='kt'>Entity</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>id</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
 

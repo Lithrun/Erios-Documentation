@@ -1,6 +1,6 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
-title: NotificationsSystem
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
+title: Notification
 categories: [docs]
 toc: true
 badge: Class
@@ -31,11 +31,11 @@ td:last-child {width: 100%; }
 
 
 ## Constructors
-### NotificationsSystem.__new()
+### Notification.__new()
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>NotificationsSystem.__new</span>()
+<span class='nf'>Notification.__new</span>()
 </pre>
 </div>
 </div>

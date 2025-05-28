@@ -1,6 +1,6 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
-title: LunarisString
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
+title: String
 categories: [docs]
 toc: true
 badge: Static
@@ -36,8 +36,7 @@ td:last-child {width: 100%; }
 
 | Type | Name | Value | Description
 | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>NewLine</span> {:/} | {::nomarkdown} <span class='s'>'
-'</span> {:/} | {::nomarkdown} <span class='c'>Represents the NewLine character (\n)</span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>NewLine</span> {:/} | {::nomarkdown} <span class='s'>\n</span> {:/} | {::nomarkdown} <span class='c'>Represents the NewLine character (\n)</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>Empty</span> {:/} | {::nomarkdown} <span class='s'>''</span> {:/} | {::nomarkdown} <span class='c'>Represents the empty string ("").</span> {:/} |
 {:class="table table-bordered highlight"}
 

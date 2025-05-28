@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: ChallengeManager
 categories: [docs]
 toc: true
@@ -50,13 +50,6 @@ td:last-child {width: 100%; }
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>Event__instance</span> {:/} | {::nomarkdown} <span class='o'>OnReady</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-{:class="table table-bordered highlight"}
-
-## ReadOnly
-
-| Type | Name | Static | Default | Description |
-| --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>Challenge</span> {:/} | {::nomarkdown} <span class='nf'>Challenge</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions

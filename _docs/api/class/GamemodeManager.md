@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: GamemodeManager
 categories: [docs]
 toc: true
@@ -31,14 +31,19 @@ td:last-child {width: 100%; }
 
 
 ## Constructors
-### GamemodeManager.__new()
+### GamemodeManager.__new(GamemodeSession)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>GamemodeManager.__new</span>()
+<span class='nf'>GamemodeManager.__new</span>(<span class='o'>session</span>: <span class='kt'>GamemodeSession</span>)
 </pre>
 </div>
 </div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>GamemodeSession</span> {:/} | {::nomarkdown} <span class='o'>session</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
 
 ## Fields
 
@@ -53,17 +58,30 @@ td:last-child {width: 100%; }
 *Requires an instance!*
 {: .notice--warning}
 
-### AddGUI(Control)
+### Restart
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>AddGUI</span>(<span class='o'>proxy</span>: <span class='kt'>Control</span>) -> <span class='kt'>nil</span>
+<span class='nf'>Restart</span>() -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+## Static Functions
+*Do not require an instance!*
+{: .notice--warning}
+
+### Start(GamemodeSession)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>Start</span>(<span class='o'>session</span>: <span class='kt'>GamemodeSession</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>Control</span> {:/} | {::nomarkdown} <span class='o'>proxy</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>GamemodeSession</span> {:/} | {::nomarkdown} <span class='o'>session</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 

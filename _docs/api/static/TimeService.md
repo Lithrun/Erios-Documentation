@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: TimeService
 categories: [docs]
 toc: true
@@ -93,6 +93,15 @@ td:last-child {width: 100%; }
 <div class ="highlight">
 <pre class ="highlight">
 <span class='nf'>Now</span>() -> <span class='kt'>EriosDateTime</span>
+</pre>
+</div>
+</div>
+
+### Init
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>Init</span>() -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Player
 categories: [docs]
 toc: true
@@ -51,6 +51,7 @@ td:last-child {width: 100%; }
 | {::nomarkdown} <span class='kt'>Equipment__instance</span> {:/} | {::nomarkdown} <span class='o'>Equipment_UI</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>SkillMenu__instance</span> {:/} | {::nomarkdown} <span class='o'>UI_Skills</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>DialogueMenu__instance</span> {:/} | {::nomarkdown} <span class='o'>UI_Dialogue</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>HealthBar__instance</span> {:/} | {::nomarkdown} <span class='o'>HUD_HealthBar</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions

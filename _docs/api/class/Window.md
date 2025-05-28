@@ -1,6 +1,6 @@
 ---
 # This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
-title: LuaTester
+title: Window
 categories: [docs]
 toc: true
 badge: Class
@@ -31,19 +31,12 @@ td:last-child {width: 100%; }
 
 
 ## Constructors
-### LuaTester.__new()
+### Window.__new()
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>LuaTester.__new</span>()
+<span class='nf'>Window.__new</span>()
 </pre>
 </div>
 </div>
-
-## Properties
-
-| Type | Getter | Setter | Static | Default | Description |
-| --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_Lua</span>() {:/} | {::nomarkdown} <span class='nf'>set_Lua</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-{:class="table table-bordered highlight"}
 

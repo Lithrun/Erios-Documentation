@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: EUID
 categories: [docs]
 toc: true
@@ -68,21 +68,6 @@ Erios Unique Identifier
 | {::nomarkdown} <span class='kt'>Object</span> {:/} | {::nomarkdown} <span class='o'>requester</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### EUID.__new(EriosObject,boolean)
-<div class ="highlighter-rouge">
-<div class ="highlight">
-<pre class ="highlight">
-<span class='nf'>EUID.__new</span>(<span class='o'>object</span>: <span class='kt'>EriosObject</span>,<span class='o'>asPrefab</span>: <span class='kt'>boolean</span> = False)
-</pre>
-</div>
-</div>
-
-| Type | Name | Description
-| --- | --- | --- |
-| {::nomarkdown} <span class='kt'>EriosObject</span> {:/} | {::nomarkdown} <span class='o'>object</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='o'>asPrefab</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-{:class="table table-bordered highlight"}
-
 ## Fields
 
 | Type | Name | Static | Default | Description |
@@ -95,7 +80,7 @@ Erios Unique Identifier
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>EUIDCategory</span> {:/} | {::nomarkdown} <span class='nf'>Category</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>EUID</span> {:/} | {::nomarkdown} <span class='nf'>Empty</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <Resource#-9223371794776320088> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>EUID</span> {:/} | {::nomarkdown} <span class='nf'>Empty</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <Resource#-9223371803466919062> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>Identifier</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>ModPrefix</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>SubCategory</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |

@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Console
 categories: [docs]
 toc: true
@@ -44,7 +44,7 @@ The Erios Console
 
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>Console__instance</span> {:/} | {::nomarkdown} <span class='o'>Instance</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <Control#32900122038> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Console__instance</span> {:/} | {::nomarkdown} <span class='o'>Instance</span> {:/} | {::nomarkdown} <i class ='fas fa-check'></i>  {:/} | {::nomarkdown} <Control#33067894207> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions

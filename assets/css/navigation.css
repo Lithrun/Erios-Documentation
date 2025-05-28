@@ -80,6 +80,10 @@
   transition: max-height 0.2s ease-out;
 }
 
+.panel a:hover {
+  background-color: #a8a7a7; /* Adjust the color as needed */
+}
+
 /* Alerts */
 .alert {
   margin-bottom:10px;

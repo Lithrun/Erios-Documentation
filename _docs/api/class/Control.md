@@ -1,5 +1,5 @@
 ---
-# This file was automatically generated on 2025-03-26 by the Lunaris Documentation Generator
+# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Control
 categories: [docs]
 toc: true
@@ -6113,18 +6113,19 @@ Base class for all UI-related nodes.  features a bounding rectangle that defines
 *Do not require an instance!*
 {: .notice--warning}
 
-### AddChildren(Control[])
+### AddChildren(boolean,Control[])
 > Adds multiple children to the
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>AddChildren</span>(<span class='o'>children</span>: <span class='kt'>Control[]</span>) -> <span class='kt'>nil</span>
+<span class='nf'>AddChildren</span>(<span class='o'>forceReadableNames</span>: <span class='kt'>boolean</span> = False,<span class='o'>children</span>: <span class='kt'>Control[]</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='o'>forceReadableNames</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Control[]</span> {:/} | {::nomarkdown} <span class='o'>children</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 

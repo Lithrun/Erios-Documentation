@@ -76,9 +76,13 @@
                   <a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a>
                 </div>
                 <ul class="panel">
-                  {% for subchild in subChildren %}
-                    <li>• <a href="{{ subchild.url | relative_url }}"{% if subchild.url == page.url %} class="active"{% endif %}>{{ subchild.title }}</a></li>
-                  {% endfor %}
+                    {% for subchild in subChildren %}
+                    <li> 
+                      <a href="{{ subchild.url | relative_url }}"{% if subchild.url == page.url %} class="active"{% endif %} style="display: block; width: 100%;">
+                        • {{ subchild.title }}
+                      </a>
+                    </li>
+                    {% endfor %}
                 </ul>
               </li>
               {% else %}
