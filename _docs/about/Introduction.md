@@ -1,6 +1,7 @@
 ---
 title: Introduction
 categories: [docs]
+permalink: /docs/about/introduction
 toc: true
 ---
 ```
