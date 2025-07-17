@@ -1,22 +1,62 @@
-<!-- {% assign docs = site.data.navigation.api %}
-{% for doc in docs %}
-  {% if doc.url contains page.url %}
-    <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
-  {% endif %}
-{% endfor %} -->
-{% if page.previous or page.next %}
+{%- assign current_url = page.url | relative_url | replace: "/index.html", "/" | replace: "//", "/" -%}
+
+{%- assign flat_urls = "" | split: "" -%}
+{%- assign flat_titles = "" | split: "" -%}
+{%- assign nav_groups = site.data.navigation.api -%}
+
+{%- for group in nav_groups -%}
+  {%- if group.children -%}
+    {%- for child in group.children -%}
+      {%- assign child_url = child.url | relative_url | replace: "/index.html", "/" | replace: "//", "/" -%}
+      {%- assign flat_urls = flat_urls | push: child_url -%}
+      {%- assign flat_titles = flat_titles | push: child.title -%}
+
+      {%- if child.generateFrom != nil -%}
+        {%- if child.sortBy != nil -%}
+          {%- assign subChildren = site.docs | where_exp: "p", "p.url contains child.generateFrom" | sort: child.sortBy -%}
+        {%- else -%}
+          {%- assign subChildren = site.docs | where_exp: "p", "p.url contains child.generateFrom" | sort: 'title' -%}
+        {%- endif -%}
+
+        {%- for sub in subChildren -%}
+          {%- assign sub_url = sub.url | relative_url | replace: "/index.html", "/" | replace: "//", "/" -%}
+          {%- assign flat_urls = flat_urls | push: sub_url -%}
+          {%- assign flat_titles = flat_titles | push: sub.title -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign group_url = group.url | relative_url | replace: "/index.html", "/" | replace: "//", "/" -%}
+    {%- assign flat_urls = flat_urls | push: group_url -%}
+    {%- assign flat_titles = flat_titles | push: group.title -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign index = -1 -%}
+{%- for url in flat_urls -%}
+  {%- assign normalized_url = url | relative_url | replace: "/index.html", "/" | replace: "//", "/" -%}
+  {%- if normalized_url == current_url -%}
+    {%- assign index = forloop.index0 -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign previous_index = index | minus: 1 -%}
+{%- assign next_index = index | plus: 1 -%}
+
+{%- if index != -1 -%}
   <nav class="pagination flex justify-between">
-    {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager flex flex-col" title="{{ page.previous.title | markdownify | strip_html | strip}}">
+    {%- if previous_index >= 0 -%}
+      <a href="{{ flat_urls[previous_index] | relative_url }}" class="pagination--pager flex flex-col" title="{{ flat_titles[previous_index] }}">
         <span class="flex text-xs">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
-        <span class="flex">{{ page.previous.title | markdownify | strip_html | strip}}</span>
+        <span class="flex">{{ flat_titles[previous_index] }}</span>
       </a>
-    {% endif %}
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" class="pagination--pager flex flex-col" title="{{ page.next.title | markdownify | strip_html | strip}}">
+    {%- endif -%}
+    {%- if next_index < flat_urls.size -%}
+      <a href="{{ flat_urls[next_index] | relative_url }}" class="pagination--pager flex flex-col" title="{{ flat_titles[next_index] }}">
         <span class="flex text-xs">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
-        <span class="flex">{{ page.next.title | markdownify | strip_html | strip}}</span>
+        <span class="flex">{{ flat_titles[next_index] }}</span>
       </a>
-    {% endif %}
+    {%- endif -%}
   </nav>
-{% endif %}
+{%- endif -%}

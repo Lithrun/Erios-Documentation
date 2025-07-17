@@ -1,23 +1,25 @@
 <nav class="nav__list">
-  {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+  {% if page.sidebar.title %}
+    <h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>
+  {% endif %}
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
 
-  <ul class="nav__items" style="overflow-y: auto; scrollbar-width: thin; scrollbar-color: #888 #ccc;">
+  <ul class="nav__items" style="max-height: calc(100vh - 200px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #888 #ccc;">
     <input type="text" id="search-bar" placeholder="Search..." onkeyup="filterLinks()" style="border: 1px solid #ccc; padding: 5px;" />
+
     <script>
       function filterLinks() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById('search-bar');
-        filter = input.value.toUpperCase();
-        ul = document.querySelector('.nav__items');
-        li = ul.getElementsByTagName('li');
+        var input = document.getElementById('search-bar');
+        var filter = input.value.toUpperCase();
+        var ul = document.querySelector('.nav__items');
+        var li = ul.getElementsByTagName('li');
 
-        for (i = 0; i < li.length; i++) {
+        for (var i = 0; i < li.length; i++) {
           var links = li[i].getElementsByTagName('a');
           var match = false;
           for (var j = 0; j < links.length; j++) {
-            txtValue = links[j].textContent || links[j].innerText;
+            var txtValue = links[j].textContent || links[j].innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
               match = true;
               break;
@@ -29,9 +31,7 @@
             if (accordion) {
               accordion.classList.add('active');
               var panel = accordion.nextElementSibling;
-              if (panel) {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-              }
+              if (panel) panel.style.maxHeight = panel.scrollHeight + "px";
             }
           } else {
             li[i].style.display = "none";
@@ -39,14 +39,13 @@
             if (accordion) {
               accordion.classList.remove('active');
               var panel = accordion.nextElementSibling;
-              if (panel) {
-                panel.style.maxHeight = null;
-              }
+              if (panel) panel.style.maxHeight = null;
             }
           }
         }
       }
     </script>
+
     {% for navname in include.nav %}
       {% assign navigation = site.data.navigation[navname] %}
       {% for nav in navigation %}
@@ -58,57 +57,77 @@
           {% endif %}
 
           {% if nav.children != null %}
-          <ul>
-            {% for child in nav.children %}
-              {% if child.generateFrom != null %}
-                {% if child.sortBy != null %}
-                  {% assign subChildren = site.docs | where_exp: "page", "page.url contains child.generateFrom" | sort: child.sortBy %}
+            <ul>
+              {% for child in nav.children %}
+                {% if child.generateFrom != null %}
+                  {% if child.sortBy != null %}
+                    {% assign subChildren = site.docs | where_exp: "page", "page.url contains child.generateFrom" | sort: child.sortBy %}
+                  {% else %}
+                    {% assign subChildren = site.docs | where_exp: "page", "page.url contains child.generateFrom" | sort: 'title' %}
+                  {% endif %}
                 {% else %}
-                  {% assign subChildren = site.docs | where_exp: "page", "page.url contains child.generateFrom" | sort: 'title' %}
+                  {% assign subChildren = child.children %}
                 {% endif %}
-              {% else %}
-                {% assign subChildren = child.children %}
-              {% endif %}
 
-              {% if subChildren != null %}
-              <li>
-                <div class="accordion">
-                  <a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a>
-                </div>
-                <ul class="panel">
-                    {% for subchild in subChildren %}
-                    <li> 
-                      <a href="{{ subchild.url | relative_url }}"{% if subchild.url == page.url %} class="active"{% endif %} style="display: block; width: 100%;">
-                        • {{ subchild.title }}
-                      </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-              </li>
-              {% else %}
-              <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+                {% assign childIsActive = false %}
+                {% if child.url == page.url %}
+                  {% assign childIsActive = true %}
+                {% endif %}
+                {% for sub in subChildren %}
+                  {% if sub.url == page.url %}
+                    {% assign childIsActive = true %}
+                  {% endif %}
+                {% endfor %}
+
+                {% if subChildren != null %}
+                  <li>
+                    <div class="accordion{% if childIsActive %} active{% endif %}">
+                      <a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a>
+                    </div>
+                    <ul class="panel" style="{% if childIsActive %}max-height: 9999px;{% endif %}">
+                      {% for subchild in subChildren %}
+                        <li>
+                          <a href="{{ subchild.url | relative_url }}"{% if subchild.url == page.url %} class="active"{% endif %} style="display: block; width: 100%;">
+                            • {{ subchild.title }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
           {% endif %}
         </li>
       {% endfor %}
     {% endfor %}
   </ul>
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
+  <script>
+    // Accordion toggle logic
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
         } else {
           panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
+        }
       });
     }
+
+    // Scroll active link into view
+    window.addEventListener('DOMContentLoaded', function () {
+      var activeLink = document.querySelector('.nav__items a.active');
+      if (activeLink) {
+        setTimeout(function () {
+          activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      }
+    });
   </script>
 </nav>

@@ -23,7 +23,7 @@ api:
   - title: Welcome
     url: /docs/
   - title: Introduction
-    url: /docs/about/introduction
+    url: /docs/about/introduction/
 - title: Getting Started
   children:
   - title: Introduction
