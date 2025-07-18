@@ -5,7 +5,7 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
 
-  <ul class="nav__items" style="max-height: calc(100vh - 200px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #888 #ccc;">
+  <ul class="nav__items" style="overflow-y: auto; scrollbar-width: thin; scrollbar-color: #888 #ccc;">
     <input type="text" id="search-bar" placeholder="Search..." onkeyup="filterLinks()" style="border: 1px solid #ccc; padding: 5px;" />
 
     <script>

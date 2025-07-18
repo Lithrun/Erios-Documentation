@@ -124,3 +124,15 @@ div.alert code, h2 code {
   font-size: .75rem;
   line-height: 1rem;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+  .panel {
+    max-height: 0 !important;
+  }
+
+  .accordion.active + .panel {
+    max-height: 500px !important;
+  }
+}
