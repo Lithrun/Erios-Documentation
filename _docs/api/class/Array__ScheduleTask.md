@@ -1,5 +1,5 @@
 ---
-title: Array__ItemData
+title: Array__ScheduleTask
 categories: [docs]
 toc: true
 generated: true
@@ -68,50 +68,50 @@ Typed wrapper around Godot's Array class, an array of
 ## Constructors
 {:.constructor}
 
-### Array__ItemData.__new()
+### Array__ScheduleTask.__new()
 > Constructs a new empty .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Array__ItemData.__new</span>()
+<span class='nf'>Array__ScheduleTask.__new</span>()
 </pre>
 </div>
 </div>
 
-### Array__ItemData.__new(IEnumerable__ItemData)
+### Array__ScheduleTask.__new(IEnumerable__ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Array__ItemData.__new</span>(<span class='o'>collection</span>: <span class='kt'>IEnumerable__ItemData</span>)
+<span class='nf'>Array__ScheduleTask.__new</span>(<span class='o'>collection</span>: <span class='kt'>IEnumerable__ScheduleTask</span>)
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>IEnumerable__ItemData</span> {:/} | {::nomarkdown} <span class='o'>collection</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>IEnumerable__ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>collection</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### Array__ItemData.__new(ItemData[])
+### Array__ScheduleTask.__new(ScheduleTask[])
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Array__ItemData.__new</span>(<span class='o'>array</span>: <span class='kt'>ItemData[]</span>)
+<span class='nf'>Array__ScheduleTask.__new</span>(<span class='o'>array</span>: <span class='kt'>ScheduleTask[]</span>)
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData[]</span> {:/} | {::nomarkdown} <span class='o'>array</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask[]</span> {:/} | {::nomarkdown} <span class='o'>array</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### Array__ItemData.__new(Array)
+### Array__ScheduleTask.__new(Array)
 > Constructs a typed from an untyped .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Array__ItemData.__new</span>(<span class='o'>array</span>: <span class='kt'>Array</span>)
+<span class='nf'>Array__ScheduleTask.__new</span>(<span class='o'>array</span>: <span class='kt'>Array</span>)
 </pre>
 </div>
 </div>
@@ -135,7 +135,7 @@ Typed wrapper around Godot's Array class, an array of
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='nf'>get_Item</span>() {:/} | {::nomarkdown} <span class='nf'>set_Item</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='nf'>get_Item</span>() {:/} | {::nomarkdown} <span class='nf'>set_Item</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions
@@ -149,7 +149,7 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Duplicate</span>(<span class='o'>deep</span>: <span class='kt'>boolean</span> = False) -> <span class='kt'>Array__ItemData</span>
+<span class='nf'>Duplicate</span>(<span class='o'>deep</span>: <span class='kt'>boolean</span> = False) -> <span class='kt'>Array__ScheduleTask</span>
 </pre>
 </div>
 </div>
@@ -159,18 +159,18 @@ Typed wrapper around Godot's Array class, an array of
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='o'>deep</span> {:/} | {::nomarkdown} <span class='c'>If , performs a deep copy.</span> {:/} |
 {:class="table table-bordered highlight"}
 
-### Fill(ItemData)
+### Fill(ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Fill</span>(<span class='o'>value</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>nil</span>
+<span class='nf'>Fill</span>(<span class='o'>value</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>value</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>value</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ### Max
@@ -178,7 +178,7 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Max</span>() -> <span class='kt'>ItemData</span>
+<span class='nf'>Max</span>() -> <span class='kt'>ScheduleTask</span>
 </pre>
 </div>
 </div>
@@ -188,7 +188,7 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Min</span>() -> <span class='kt'>ItemData</span>
+<span class='nf'>Min</span>() -> <span class='kt'>ScheduleTask</span>
 </pre>
 </div>
 </div>
@@ -198,24 +198,24 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>PickRandom</span>() -> <span class='kt'>ItemData</span>
+<span class='nf'>PickRandom</span>() -> <span class='kt'>ScheduleTask</span>
 </pre>
 </div>
 </div>
 
-### RecursiveEqual(Array__ItemData)
+### RecursiveEqual(Array__ScheduleTask)
 > Compares this against the recursively. Returns if the sizes and contents of the arrays are equal, otherwise.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>RecursiveEqual</span>(<span class='o'>other</span>: <span class='kt'>Array__ItemData</span>) -> <span class='kt'>boolean</span>
+<span class='nf'>RecursiveEqual</span>(<span class='o'>other</span>: <span class='kt'>Array__ScheduleTask</span>) -> <span class='kt'>boolean</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>Array__ItemData</span> {:/} | {::nomarkdown} <span class='o'>other</span> {:/} | {::nomarkdown} <span class='c'>The other array to compare against.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Array__ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>other</span> {:/} | {::nomarkdown} <span class='c'>The other array to compare against.</span> {:/} |
 {:class="table table-bordered highlight"}
 
 ### Resize(number)
@@ -258,7 +258,7 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Slice</span>(<span class='o'>start</span>: <span class='kt'>number</span>) -> <span class='kt'>Array__ItemData</span>
+<span class='nf'>Slice</span>(<span class='o'>start</span>: <span class='kt'>number</span>) -> <span class='kt'>Array__ScheduleTask</span>
 </pre>
 </div>
 </div>
@@ -273,7 +273,7 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Slice</span>(<span class='o'>start</span>: <span class='kt'>number</span>,<span class='o'>length</span>: <span class='kt'>number</span>) -> <span class='kt'>Array__ItemData</span>
+<span class='nf'>Slice</span>(<span class='o'>start</span>: <span class='kt'>number</span>,<span class='o'>length</span>: <span class='kt'>number</span>) -> <span class='kt'>Array__ScheduleTask</span>
 </pre>
 </div>
 </div>
@@ -289,7 +289,7 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>GetSliceRange</span>(<span class='o'>start</span>: <span class='kt'>number</span>,<span class='o'>end</span>: <span class='kt'>number</span>,<span class='o'>step</span>: <span class='kt'>number</span> = 1,<span class='o'>deep</span>: <span class='kt'>boolean</span> = False) -> <span class='kt'>Array__ItemData</span>
+<span class='nf'>GetSliceRange</span>(<span class='o'>start</span>: <span class='kt'>number</span>,<span class='o'>end</span>: <span class='kt'>number</span>,<span class='o'>step</span>: <span class='kt'>number</span> = 1,<span class='o'>deep</span>: <span class='kt'>boolean</span> = False) -> <span class='kt'>Array__ScheduleTask</span>
 </pre>
 </div>
 </div>
@@ -312,32 +312,32 @@ Typed wrapper around Godot's Array class, an array of
 </div>
 </div>
 
-### IndexOf(ItemData)
+### IndexOf(ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>IndexOf</span>(<span class='o'>item</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>number</span>
+<span class='nf'>IndexOf</span>(<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>number</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### IndexOf(ItemData,number)
+### IndexOf(ScheduleTask,number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>IndexOf</span>(<span class='o'>item</span>: <span class='kt'>ItemData</span>,<span class='o'>index</span>: <span class='kt'>number</span>) -> <span class='kt'>number</span>
+<span class='nf'>IndexOf</span>(<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>,<span class='o'>index</span>: <span class='kt'>number</span>) -> <span class='kt'>number</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>index</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
@@ -372,11 +372,11 @@ Typed wrapper around Godot's Array class, an array of
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>index</span> {:/} | {::nomarkdown} <span class='c'>The initial search index to start from.</span> {:/} |
 {:class="table table-bordered highlight"}
 
-### Insert(number,ItemData)
+### Insert(number,ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Insert</span>(<span class='o'>index</span>: <span class='kt'>number</span>,<span class='o'>item</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>nil</span>
+<span class='nf'>Insert</span>(<span class='o'>index</span>: <span class='kt'>number</span>,<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -384,7 +384,7 @@ Typed wrapper around Godot's Array class, an array of
 | Type | Name | Description
 | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>index</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ### RemoveAt(number)
@@ -412,40 +412,40 @@ Typed wrapper around Godot's Array class, an array of
 </div>
 </div>
 
-### Add(ItemData)
+### Add(ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Add</span>(<span class='o'>item</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>nil</span>
+<span class='nf'>Add</span>(<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### AddRange(IEnumerable__ItemData)
+### AddRange(IEnumerable__ScheduleTask)
 > Adds the elements of the specified collection to the end of this .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>AddRange</span>(<span class='o'>collection</span>: <span class='kt'>IEnumerable__ItemData</span>) -> <span class='kt'>nil</span>
+<span class='nf'>AddRange</span>(<span class='o'>collection</span>: <span class='kt'>IEnumerable__ScheduleTask</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>IEnumerable__ItemData</span> {:/} | {::nomarkdown} <span class='o'>collection</span> {:/} | {::nomarkdown} <span class='c'>Collection of  items to add.</span> {:/} |
+| {::nomarkdown} <span class='kt'>IEnumerable__ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>collection</span> {:/} | {::nomarkdown} <span class='c'>Collection of  items to add.</span> {:/} |
 {:class="table table-bordered highlight"}
 
-### BinarySearch(number,number,ItemData)
+### BinarySearch(number,number,ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>BinarySearch</span>(<span class='o'>index</span>: <span class='kt'>number</span>,<span class='o'>count</span>: <span class='kt'>number</span>,<span class='o'>item</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>number</span>
+<span class='nf'>BinarySearch</span>(<span class='o'>index</span>: <span class='kt'>number</span>,<span class='o'>count</span>: <span class='kt'>number</span>,<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>number</span>
 </pre>
 </div>
 </div>
@@ -454,21 +454,21 @@ Typed wrapper around Godot's Array class, an array of
 | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>index</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>count</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### BinarySearch(ItemData)
+### BinarySearch(ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>BinarySearch</span>(<span class='o'>item</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>number</span>
+<span class='nf'>BinarySearch</span>(<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>number</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ### Clear
@@ -481,47 +481,47 @@ Typed wrapper around Godot's Array class, an array of
 </div>
 </div>
 
-### Contains(ItemData)
+### Contains(ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Contains</span>(<span class='o'>item</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>boolean</span>
+<span class='nf'>Contains</span>(<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>boolean</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### CopyTo(ItemData[],number)
+### CopyTo(ScheduleTask[],number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>CopyTo</span>(<span class='o'>array</span>: <span class='kt'>ItemData[]</span>,<span class='o'>arrayIndex</span>: <span class='kt'>number</span>) -> <span class='kt'>nil</span>
+<span class='nf'>CopyTo</span>(<span class='o'>array</span>: <span class='kt'>ScheduleTask[]</span>,<span class='o'>arrayIndex</span>: <span class='kt'>number</span>) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData[]</span> {:/} | {::nomarkdown} <span class='o'>array</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask[]</span> {:/} | {::nomarkdown} <span class='o'>array</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>arrayIndex</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### Remove(ItemData)
+### Remove(ScheduleTask)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Remove</span>(<span class='o'>item</span>: <span class='kt'>ItemData</span>) -> <span class='kt'>boolean</span>
+<span class='nf'>Remove</span>(<span class='o'>item</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>boolean</span>
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ### GetEnumerator
@@ -529,7 +529,7 @@ Typed wrapper around Godot's Array class, an array of
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>GetEnumerator</span>() -> <span class='kt'>IEnumerator__ItemData</span>
+<span class='nf'>GetEnumerator</span>() -> <span class='kt'>IEnumerator__ScheduleTask</span>
 </pre>
 </div>
 </div>

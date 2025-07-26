@@ -59,7 +59,8 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
-        {% include page__date.html %}
+        {% unless page.hide_page_date or page.generated %}{% include page__date.html %}{% endunless %}
+        {% if page.generated %}{% include page__generated.html %}{% endif %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}

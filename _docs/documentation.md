@@ -3,8 +3,9 @@ permalink: /docs/
 title: "Documentation"
 excerpt: "Become an Erios expert!"
 toc: true
+hide_page_date: true
 ---
-{% include warning.html content="This documentation is still under development! Some pages may not yet be finished, or information can still be inaccurate. Once the demo releases this will all be fixed!" %}
+{% include warning.html content="This documentation is still under development! Some pages may not yet be finished!" %}
 
 Welcome to the official documentation of **Erios**, the action RPG game that fully immerses you within the world of Erios! If you are new to this documentation, then I would recommend you to read the [introduction page]({{ "docs/about/introduction" | relative_url }}) to get an overview of what this documentation has to offer.
 

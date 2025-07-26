@@ -1,5 +1,5 @@
 ---
-title: Deer
+title: Character
 categories: [docs]
 toc: true
 generated: true
@@ -65,22 +65,27 @@ h2.function::before {
 ## Constructors
 {:.constructor}
 
-### Deer.__new()
+### Character.__new()
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Deer.__new</span>()
+<span class='nf'>Character.__new</span>()
 </pre>
 </div>
 </div>
 
-## Properties
-{:.property}
+## Functions
+{:.function}
 
-| Type | Getter | Setter | Static | Default | Description |
-| --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>Node3D</span> {:/} | {::nomarkdown} <span class='nf'>get_LowDetail</span>() {:/} | {::nomarkdown} <span class='nf'>set_LowDetail</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>NavigationAgent3D</span> {:/} | {::nomarkdown} <span class='nf'>get_NavigationAgent</span>() {:/} | {::nomarkdown} <span class='nf'>set_NavigationAgent</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>Node3D</span> {:/} | {::nomarkdown} <span class='nf'>get_Visual</span>() {:/} | {::nomarkdown} <span class='nf'>set_Visual</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-{:class="table table-bordered highlight"}
+*Requires an instance!*
+{: .notice--warning}
+
+### GetEquippedItems
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetEquippedItems</span>() -> <span class='kt'>ItemData[]</span>
+</pre>
+</div>
+</div>
 

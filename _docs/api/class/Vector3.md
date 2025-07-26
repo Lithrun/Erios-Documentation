@@ -1,10 +1,10 @@
 ---
-# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Vector3
 categories: [docs]
 toc: true
+generated: true
 badge: Class
-badge_color: '#007bff'
+badge_color: '#49C4AF'
 ---
 <style>
 h2 {
@@ -22,15 +22,49 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+blockquote {
+    margin-top: 0.4rem;
+    margin-bottom: 0.25rem; 
+}
+blockquote p {
+    margin-bottom: 0 !important;
+    font-size: 0.8em !important;
+}
 table {width: 100%; }
 td {width: 1px; }
 td:last-child {width: 100%; }
 #main {max-width: 1500px !important;}
+h2.constructor::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f013";
+  margin-right: 0.5em;
+}
+h2.readonly::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f023";
+  margin-right: 0.5em;
+}
+h2.property::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f466";
+  margin-right: 0.5em;
+}
+h2.function::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0e7";
+  margin-right: 0.5em;
+}
 </style>
             
 3-element structure that can be used to represent positions in 3D space or any other pair of numeric values.
 
 ## Constructors
+{:.constructor}
+
 ### Vector3.__new(number,number,number)
 > Constructs a new with the given components.
 <div class ="highlighter-rouge">
@@ -58,6 +92,7 @@ td:last-child {width: 100%; }
 {:class="table table-bordered highlight"}
 
 ## ReadOnly
+{:.readonly}
 
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
@@ -79,6 +114,7 @@ td:last-child {width: 100%; }
 {:class="table table-bordered highlight"}
 
 ## Properties
+{:.property}
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
@@ -86,6 +122,8 @@ td:last-child {width: 100%; }
 {:class="table table-bordered highlight"}
 
 ## Functions
+{:.function}
+
 *Requires an instance!*
 {: .notice--warning}
 
@@ -473,6 +511,21 @@ td:last-child {width: 100%; }
 | {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='o'>with</span> {:/} | {::nomarkdown} <span class='c'>The other vector to use.</span> {:/} |
 {:class="table table-bordered highlight"}
 
+### Min(number)
+> Returns the result of the component-wise minimum between this vector and . Equivalent to new Vector3(Mathf.Min(X, with), Mathf.Min(Y, with), Mathf.Min(Z, with)).
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>Min</span>(<span class='o'>with</span>: <span class='kt'>number</span>) -> <span class='kt'>Vector3</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>with</span> {:/} | {::nomarkdown} <span class='c'>The other value to use.</span> {:/} |
+{:class="table table-bordered highlight"}
+
 ### MaxAxisIndex
 > Returns the axis of the vector's highest value. See . If all components are equal, this method returns .
 <div class ="highlighter-rouge">
@@ -707,6 +760,16 @@ td:last-child {width: 100%; }
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>step</span> {:/} | {::nomarkdown} <span class='c'>The step size to snap to.</span> {:/} |
 {:class="table table-bordered highlight"}
 
+### OctahedronEncode
+> Returns the octahedral-encoded (oct32) form of this Vector3 as a Vector2. Since a Vector2 occupies 1/3 less memory compared to Vector3, this form of compression can be used to pass greater amounts of normalized Vector3s without increasing storage or memory requirements. See also , . Note: OctahedronEncode can only be used for normalized vectors. OctahedronEncode does not check whether this Vector3 is normalized, and will return a value that does not decompress to the original value if the Vector3 is not normalized. Note: Octahedral compression is lossy, although visual differences are rarely perceptible in real world scenarios.
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>OctahedronEncode</span>() -> <span class='kt'>Vector2</span>
+</pre>
+</div>
+</div>
+
 ### Equals(Object)
 > Returns if the vector is exactly equal to the given object (). Note: Due to floating-point precision errors, consider using instead, which is more reliable.
 <div class ="highlighter-rouge">
@@ -795,5 +858,24 @@ td:last-child {width: 100%; }
 | Type | Name | Description
 | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>format</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+## Static Functions
+*Do not require an instance!*
+{: .notice--warning}
+
+### OctahedronDecode(Vector2)
+> Returns the Vector3 from an octahedral-compressed form created using (stored as a Vector2).
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>OctahedronDecode</span>(<span class='o'>oct</span>: <span class='kt'>Vector2</span>) -> <span class='kt'>Vector3</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='o'>oct</span> {:/} | {::nomarkdown} <span class='c'>Encoded Vector2</span> {:/} |
 {:class="table table-bordered highlight"}
 

@@ -1,10 +1,10 @@
 ---
-# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Label
 categories: [docs]
 toc: true
+generated: true
 badge: Class
-badge_color: '#007bff'
+badge_color: '#49C4AF'
 ---
 <style>
 h2 {
@@ -22,15 +22,49 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+blockquote {
+    margin-top: 0.4rem;
+    margin-bottom: 0.25rem; 
+}
+blockquote p {
+    margin-bottom: 0 !important;
+    font-size: 0.8em !important;
+}
 table {width: 100%; }
 td {width: 1px; }
 td:last-child {width: 100%; }
 #main {max-width: 1500px !important;}
+h2.constructor::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f013";
+  margin-right: 0.5em;
+}
+h2.readonly::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f023";
+  margin-right: 0.5em;
+}
+h2.property::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f466";
+  margin-right: 0.5em;
+}
+h2.function::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0e7";
+  margin-right: 0.5em;
+}
 </style>
             
 A control for displaying plain text. It gives you control over the horizontal and vertical alignment and can wrap the text inside the node's bounding rectangle. It doesn't support bold, italics, or other rich text formatting. For that, use  instead.
 
 ## Constructors
+{:.constructor}
+
 ### Label.__new()
 <div class ="highlighter-rouge">
 <div class ="highlight">
@@ -41,6 +75,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ## ReadOnly
+{:.readonly}
 
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
@@ -49,10 +84,18 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ## Properties
+{:.property}
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get__ImportPath</span>() {:/} | {::nomarkdown} <span class='nf'>set__ImportPath</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='nf'>get_AccessibilityControlsNodes</span>() {:/} | {::nomarkdown} <span class='nf'>set_AccessibilityControlsNodes</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The paths to the nodes which are controlled by this node.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='nf'>get_AccessibilityDescribedByNodes</span>() {:/} | {::nomarkdown} <span class='nf'>set_AccessibilityDescribedByNodes</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The paths to the nodes which are describing this node.</span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_AccessibilityDescription</span>() {:/} | {::nomarkdown} <span class='nf'>set_AccessibilityDescription</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The human-readable node description that is reported to assistive apps.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='nf'>get_AccessibilityFlowToNodes</span>() {:/} | {::nomarkdown} <span class='nf'>set_AccessibilityFlowToNodes</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The paths to the nodes which this node flows into.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='nf'>get_AccessibilityLabeledByNodes</span>() {:/} | {::nomarkdown} <span class='nf'>set_AccessibilityLabeledByNodes</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The paths to the nodes which label this node.</span> {:/} |
+| {::nomarkdown} <span class='kt'>AccessibilityLiveMode</span> {:/} | {::nomarkdown} <span class='nf'>get_AccessibilityLive</span>() {:/} | {::nomarkdown} <span class='nf'>set_AccessibilityLive</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The mode with which a live region updates. A live region is a that is updated as a result of an external event when the user's focus may be elsewhere.</span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_AccessibilityName</span>() {:/} | {::nomarkdown} <span class='nf'>set_AccessibilityName</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The human-readable node name that is reported to assistive apps.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_AnchorBottom</span>() {:/} | {::nomarkdown} <span class='nf'>set_AnchorBottom</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Anchors the bottom edge of the node to the origin, the center, or the end of its parent control. It changes how the bottom offset updates when the node moves or changes size. You can use one of the constants for convenience.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_AnchorLeft</span>() {:/} | {::nomarkdown} <span class='nf'>set_AnchorLeft</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Anchors the left edge of the node to the origin, the center or the end of its parent control. It changes how the left offset updates when the node moves or changes size. You can use one of the constants for convenience.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_AnchorRight</span>() {:/} | {::nomarkdown} <span class='nf'>set_AnchorRight</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Anchors the right edge of the node to the origin, the center or the end of its parent control. It changes how the right offset updates when the node moves or changes size. You can use one of the constants for convenience.</span> {:/} |
@@ -60,14 +103,16 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_AnchorTop</span>() {:/} | {::nomarkdown} <span class='nf'>set_AnchorTop</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Anchors the top edge of the node to the origin, the center or the end of its parent control. It changes how the top offset updates when the node moves or changes size. You can use one of the constants for convenience.</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_AutoTranslate</span>() {:/} | {::nomarkdown} <span class='nf'>set_AutoTranslate</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Toggles if any text should automatically change to its translated version depending on the current locale.</span> {:/} |
 | {::nomarkdown} <span class='kt'>AutoTranslateModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_AutoTranslateMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_AutoTranslateMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Defines if any text should automatically change to its translated version depending on the current locale (for nodes such as , , , etc.). Also decides if the node's strings should be parsed for POT generation.Note: For the root node, auto translate mode can also be set via ProjectSettings.internationalization/rendering/root_node_auto_translate.</span> {:/} |
-| {::nomarkdown} <span class='kt'>AutowrapMode</span> {:/} | {::nomarkdown} <span class='nf'>get_AutowrapMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_AutowrapMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If set to something other than , the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see .</span> {:/} |
-| {::nomarkdown} <span class='kt'>ClipChildrenMode</span> {:/} | {::nomarkdown} <span class='nf'>get_ClipChildren</span>() {:/} | {::nomarkdown} <span class='nf'>set_ClipChildren</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Allows the current node to clip child nodes, essentially acting as a mask.Note: Clipping nodes cannot be nested or placed within s. If an ancestor of this node clips its children or is a , then this node's clip mode should be set to to avoid unexpected behavior.</span> {:/} |
+| {::nomarkdown} <span class='kt'>AutowrapMode</span> {:/} | {::nomarkdown} <span class='nf'>get_AutowrapMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_AutowrapMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If set to something other than , the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text.</span> {:/} |
+| {::nomarkdown} <span class='kt'>LineBreakFlag</span> {:/} | {::nomarkdown} <span class='nf'>get_AutowrapTrimFlags</span>() {:/} | {::nomarkdown} <span class='nf'>set_AutowrapTrimFlags</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Autowrap space trimming flags. See and for more info.</span> {:/} |
+| {::nomarkdown} <span class='kt'>ClipChildrenMode</span> {:/} | {::nomarkdown} <span class='nf'>get_ClipChildren</span>() {:/} | {::nomarkdown} <span class='nf'>set_ClipChildren</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The mode in which this node clips its children, acting as a mask.Note: Clipping nodes cannot be nested or placed within a . If an ancestor of this node clips its children or is a , then this node's clip mode should be set to to avoid unexpected behavior.</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_ClipContents</span>() {:/} | {::nomarkdown} <span class='nf'>set_ClipContents</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Enables whether rendering of based children should be clipped to this control's rectangle. If , parts of a child which would be visibly outside of this control's rectangle will not be rendered and won't receive input.</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_ClipText</span>() {:/} | {::nomarkdown} <span class='nf'>set_ClipText</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , the Label only shows the text that fits inside its bounding rectangle and will clip text horizontally.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='nf'>get_CustomMinimumSize</span>() {:/} | {::nomarkdown} <span class='nf'>set_CustomMinimumSize</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The minimum size of the node's bounding rectangle. If you set it to a value greater than (0, 0), the node's bounding rectangle will always have at least this size. Note that nodes have their internal minimum size returned by . It depends on the control's contents, like text, textures, or style boxes. The actual minimum size is the maximum value of this property and the internal minimum size (see ).</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_EditorDescription</span>() {:/} | {::nomarkdown} <span class='nf'>set_EditorDescription</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>An optional description to the node. It will be displayed as a tooltip when hovering over the node in the editor's Scene dock.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_EllipsisChar</span>() {:/} | {::nomarkdown} <span class='nf'>set_EllipsisChar</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Ellipsis character used for text clipping.</span> {:/} |
-| {::nomarkdown} <span class='kt'>FocusModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_FocusMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_FocusMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The focus access mode for the control (None, Click or All). Only one Control can be focused at the same time, and it will receive keyboard, gamepad, and mouse signals.</span> {:/} |
+| {::nomarkdown} <span class='kt'>FocusBehaviorRecursiveEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_FocusBehaviorRecursive</span>() {:/} | {::nomarkdown} <span class='nf'>set_FocusBehaviorRecursive</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Determines which controls can be focused together with . See . Since the default behavior is , this can be used to prevent all children controls from getting focused.</span> {:/} |
+| {::nomarkdown} <span class='kt'>FocusModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_FocusMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_FocusMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Determines which controls can be focused. Only one control can be focused at a time, and the focused control will receive keyboard, gamepad, and mouse events in . Use to determine if a control can grab focus, since also affects it. See also .</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_FocusNeighborBottom</span>() {:/} | {::nomarkdown} <span class='nf'>set_FocusNeighborBottom</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Tells Godot which node it should give focus to if the user presses the down arrow on the keyboard or down on a gamepad by default. You can change the key by editing the ProjectSettings.input/ui_down input action. The node must be a . If this property is not set, Godot will give focus to the closest to the bottom of this one.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_FocusNeighborLeft</span>() {:/} | {::nomarkdown} <span class='nf'>set_FocusNeighborLeft</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Tells Godot which node it should give focus to if the user presses the left arrow on the keyboard or left on a gamepad by default. You can change the key by editing the ProjectSettings.input/ui_left input action. The node must be a . If this property is not set, Godot will give focus to the closest to the left of this one.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_FocusNeighborRight</span>() {:/} | {::nomarkdown} <span class='nf'>set_FocusNeighborRight</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Tells Godot which node it should give focus to if the user presses the right arrow on the keyboard or right on a gamepad by default. You can change the key by editing the ProjectSettings.input/ui_right input action. The node must be a . If this property is not set, Godot will give focus to the closest to the right of this one.</span> {:/} |
@@ -77,8 +122,8 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='nf'>get_GlobalPosition</span>() {:/} | {::nomarkdown} <span class='nf'>set_GlobalPosition</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's global position, relative to the world (usually to the ).</span> {:/} |
 | {::nomarkdown} <span class='kt'>GrowDirection</span> {:/} | {::nomarkdown} <span class='nf'>get_GrowHorizontal</span>() {:/} | {::nomarkdown} <span class='nf'>set_GrowHorizontal</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.</span> {:/} |
 | {::nomarkdown} <span class='kt'>GrowDirection</span> {:/} | {::nomarkdown} <span class='nf'>get_GrowVertical</span>() {:/} | {::nomarkdown} <span class='nf'>set_GrowVertical</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.</span> {:/} |
-| {::nomarkdown} <span class='kt'>HorizontalAlignment</span> {:/} | {::nomarkdown} <span class='nf'>get_HorizontalAlignment</span>() {:/} | {::nomarkdown} <span class='nf'>set_HorizontalAlignment</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls the text's horizontal alignment. Supports left, center, right, and fill, or justify. Set it to one of the constants.</span> {:/} |
-| {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='nf'>get_JustificationFlags</span>() {:/} | {::nomarkdown} <span class='nf'>set_JustificationFlags</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Line fill alignment rules. See for more information.</span> {:/} |
+| {::nomarkdown} <span class='kt'>HorizontalAlignment</span> {:/} | {::nomarkdown} <span class='nf'>get_HorizontalAlignment</span>() {:/} | {::nomarkdown} <span class='nf'>set_HorizontalAlignment</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls the text's horizontal alignment. Supports left, center, right, and fill (also known as justify).</span> {:/} |
+| {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='nf'>get_JustificationFlags</span>() {:/} | {::nomarkdown} <span class='nf'>set_JustificationFlags</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Line fill alignment rules.</span> {:/} |
 | {::nomarkdown} <span class='kt'>LabelSettings</span> {:/} | {::nomarkdown} <span class='nf'>get_LabelSettings</span>() {:/} | {::nomarkdown} <span class='nf'>set_LabelSettings</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>A resource that can be shared between multiple nodes. Takes priority over theme properties.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_Language</span>() {:/} | {::nomarkdown} <span class='nf'>set_Language</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Language code used for line-breaking and text shaping algorithms, if left empty current locale is used instead.</span> {:/} |
 | {::nomarkdown} <span class='kt'>LayoutDirectionEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_LayoutDirection</span>() {:/} | {::nomarkdown} <span class='nf'>set_LayoutDirection</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls layout direction and text writing direction. Right-to-left layouts are necessary for certain languages (e.g. Arabic and Hebrew). See also .</span> {:/} |
@@ -89,8 +134,9 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Material</span> {:/} | {::nomarkdown} <span class='nf'>get_Material</span>() {:/} | {::nomarkdown} <span class='nf'>set_Material</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The material applied to this .</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_MaxLinesVisible</span>() {:/} | {::nomarkdown} <span class='nf'>set_MaxLinesVisible</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Limits the lines of text the node shows on screen.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Color</span> {:/} | {::nomarkdown} <span class='nf'>get_Modulate</span>() {:/} | {::nomarkdown} <span class='nf'>set_Modulate</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The color applied to this . This property does affect child s, unlike which only affects the node itself.</span> {:/} |
+| {::nomarkdown} <span class='kt'>MouseBehaviorRecursiveEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_MouseBehaviorRecursive</span>() {:/} | {::nomarkdown} <span class='nf'>set_MouseBehaviorRecursive</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Determines which controls can receive mouse input together with . See . Since the default behavior is , this can be used to prevent all children controls from receiving mouse input.</span> {:/} |
 | {::nomarkdown} <span class='kt'>CursorShape</span> {:/} | {::nomarkdown} <span class='nf'>get_MouseDefaultCursorShape</span>() {:/} | {::nomarkdown} <span class='nf'>set_MouseDefaultCursorShape</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The default cursor shape for this control. Useful for Godot plugins and applications or games that use the system's mouse cursors.Note: On Linux, shapes may vary depending on the cursor theme of the system.</span> {:/} |
-| {::nomarkdown} <span class='kt'>MouseFilterEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_MouseFilter</span>() {:/} | {::nomarkdown} <span class='nf'>set_MouseFilter</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls whether the control will be able to receive mouse button input events through and how these events should be handled. Also controls whether the control can receive the , and signals. See the constants to learn what each does.</span> {:/} |
+| {::nomarkdown} <span class='kt'>MouseFilterEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_MouseFilter</span>() {:/} | {::nomarkdown} <span class='nf'>set_MouseFilter</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Determines which controls will be able to receive mouse button input events through and the , and signals. Also determines how these events should be propagated. See the constants to learn what each does. Use to determine if a control can receive mouse input, since also affects it.</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_MouseForcePassScrollEvents</span>() {:/} | {::nomarkdown} <span class='nf'>set_MouseForcePassScrollEvents</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>When enabled, scroll wheel events processed by will be passed to the parent control even if is set to .You should disable it on the root of your UI if you do not want scroll events to go to the processing.Note: Because this property defaults to , this allows nested scrollable containers to work out of the box.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_Name</span>() {:/} | {::nomarkdown} <span class='nf'>set_Name</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The name of the node. This name must be unique among the siblings (other child nodes from the same parent). When set to an existing sibling's name, the node is automatically renamed.Note: When changing the name, the following characters will be replaced with an underscore: (.:@/"%). In particular, the @ character is reserved for auto-generated names. See also String.validate_node_name.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_OffsetBottom</span>() {:/} | {::nomarkdown} <span class='nf'>set_OffsetBottom</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Distance between the node's bottom edge and its parent control, based on .Offsets are often controlled by one or multiple parent nodes, so you should not modify them manually if your node is a direct child of a . Offsets update automatically when you move or resize the node.</span> {:/} |
@@ -99,10 +145,10 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_OffsetTop</span>() {:/} | {::nomarkdown} <span class='nf'>set_OffsetTop</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Distance between the node's top edge and its parent control, based on .Offsets are often controlled by one or multiple parent nodes, so you should not modify them manually if your node is a direct child of a . Offsets update automatically when you move or resize the node.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Node</span> {:/} | {::nomarkdown} <span class='nf'>get_Owner</span>() {:/} | {::nomarkdown} <span class='nf'>set_Owner</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The owner of this node. The owner must be an ancestor of this node. When packing the owner node in a , all the nodes it owns are also saved with it. See also .Note: In the editor, nodes not owned by the scene root are usually not displayed in the Scene dock, and will not be saved. To prevent this, remember to set the owner after calling .</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_ParagraphSeparator</span>() {:/} | {::nomarkdown} <span class='nf'>set_ParagraphSeparator</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>String used as a paragraph separator. Each paragraph is processed independently, in its own BiDi context.</span> {:/} |
-| {::nomarkdown} <span class='kt'>PhysicsInterpolationModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_PhysicsInterpolationMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_PhysicsInterpolationMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Allows enabling or disabling physics interpolation per node, offering a finer grain of control than turning physics interpolation on and off globally. See ProjectSettings.physics/common/physics_interpolation and for the global setting.Note: When teleporting a node to a distant position you should temporarily disable interpolation with .</span> {:/} |
+| {::nomarkdown} <span class='kt'>PhysicsInterpolationModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_PhysicsInterpolationMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_PhysicsInterpolationMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The physics interpolation mode to use for this node. Only effective if ProjectSettings.physics/common/physics_interpolation or is .By default, nodes inherit the physics interpolation mode from their parent. This property can enable or disable physics interpolation individually for each node, regardless of their parents' physics interpolation mode.Note: Some node types like have physics interpolation disabled by default, as they rely on their own custom solution.Note: When teleporting a node to a distant position, it's recommended to temporarily disable interpolation with after moving the node. This avoids creating a visual streak between the old and new positions.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='nf'>get_PivotOffset</span>() {:/} | {::nomarkdown} <span class='nf'>set_PivotOffset</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>By default, the node's pivot is its top-left corner. When you change its or , it will rotate or scale around this pivot. Set this property to / 2 to pivot around the Control's center.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='nf'>get_Position</span>() {:/} | {::nomarkdown} <span class='nf'>set_Position</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's position, relative to its containing node. It corresponds to the rectangle's top-left corner. The property is not affected by .</span> {:/} |
-| {::nomarkdown} <span class='kt'>ProcessModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_ProcessMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_ProcessMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's processing behavior (see ). To check if the node can process in its current mode, use .</span> {:/} |
+| {::nomarkdown} <span class='kt'>ProcessModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_ProcessMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_ProcessMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's processing behavior. To check if the node can process in its current mode, use .</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_ProcessPhysicsPriority</span>() {:/} | {::nomarkdown} <span class='nf'>set_ProcessPhysicsPriority</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Similar to but for , , or .</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_ProcessPriority</span>() {:/} | {::nomarkdown} <span class='nf'>set_ProcessPriority</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's execution order of the process callbacks (, , and ). Nodes whose priority value is lower call their process callbacks first, regardless of tree order.</span> {:/} |
 | {::nomarkdown} <span class='kt'>ProcessThreadGroupEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_ProcessThreadGroup</span>() {:/} | {::nomarkdown} <span class='nf'>set_ProcessThreadGroup</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Set the process thread group for this node (basically, whether it receives , , or (and the internal versions) on the main thread or in a sub-thread.By default, the thread group is , which means that this node belongs to the same thread group as the parent node. The thread groups means that nodes in a specific thread group will process together, separate to other thread groups (depending on ). If the value is set is , this thread group will occur on a sub thread (not the main thread), otherwise if set to it will process on the main thread. If there is not a parent or grandparent node set to something other than inherit, the node will belong to the default thread group. This default group will process on the main thread and its group order is 0.During processing in a sub-thread, accessing most functions in nodes outside the thread group is forbidden (and it will result in an error in debug mode). Use , , and the likes in order to communicate from the thread groups to the main thread (or to other thread groups).To better understand process thread groups, the idea is that any node set to any other value than will include any child (and grandchild) nodes set to inherit into its process thread group. This means that the processing of all the nodes in the group will happen together, at the same time as the node including them.</span> {:/} |
@@ -110,11 +156,11 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>ProcessThreadMessagesEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_ProcessThreadMessages</span>() {:/} | {::nomarkdown} <span class='nf'>set_ProcessThreadMessages</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Set whether the current thread group will process messages (calls to on threads), and whether it wants to receive them during regular process or physics process callbacks.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Rotation</span>() {:/} | {::nomarkdown} <span class='nf'>set_Rotation</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's rotation around its pivot, in radians. See to change the pivot's position.Note: This property is edited in the inspector in degrees. If you want to use degrees in a script, use .</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_RotationDegrees</span>() {:/} | {::nomarkdown} <span class='nf'>set_RotationDegrees</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Helper property to access in degrees instead of radians.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='nf'>get_Scale</span>() {:/} | {::nomarkdown} <span class='nf'>set_Scale</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's scale, relative to its . Change this property to scale the node around its . The Control's will also scale according to this value.Note: This property is mainly intended to be used for animation purposes. To support multiple resolutions in your project, use an appropriate viewport stretch mode as described in the documentation instead of scaling Controls individually.Note: does not take into account. This means that scaling up/down will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated. To ensure text remains crisp regardless of scale, you can enable MSDF font rendering by enabling ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field (applies to the default project font only), or enabling Multichannel Signed Distance Field in the import options of a DynamicFont for custom fonts. On system fonts, can be enabled in the inspector.Note: If the Control node is a child of a node, the scale will be reset to Vector2(1, 1) when the scene is instantiated. To set the Control's scale when it's instantiated, wait for one frame using await get_tree().process_frame then set its property.</span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='nf'>get_Scale</span>() {:/} | {::nomarkdown} <span class='nf'>set_Scale</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The node's scale, relative to its . Change this property to scale the node around its . The Control's tooltip will also scale according to this value.Note: This property is mainly intended to be used for animation purposes. To support multiple resolutions in your project, use an appropriate viewport stretch mode as described in the documentation instead of scaling Controls individually.Note: does not take into account. This means that scaling up/down will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated. To ensure text remains crisp regardless of scale, you can enable MSDF font rendering by enabling ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field (applies to the default project font only), or enabling Multichannel Signed Distance Field in the import options of a DynamicFont for custom fonts. On system fonts, can be enabled in the inspector.Note: If the Control node is a child of a node, the scale will be reset to Vector2(1, 1) when the scene is instantiated. To set the Control's scale when it's instantiated, wait for one frame using await get_tree().process_frame then set its property.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_SceneFilePath</span>() {:/} | {::nomarkdown} <span class='nf'>set_SceneFilePath</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The original scene's file path, if the node has been instantiated from a file. Only scene root nodes contains this.</span> {:/} |
-| {::nomarkdown} <span class='kt'>Color</span> {:/} | {::nomarkdown} <span class='nf'>get_SelfModulate</span>() {:/} | {::nomarkdown} <span class='nf'>set_SelfModulate</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The color applied to this . This property does not affect child s, unlike which affects both the node itself and its children.Note: Internal children (e.g. sliders in or tab bar in ) are also not affected by this property (see include_internal parameter of and other similar methods).</span> {:/} |
+| {::nomarkdown} <span class='kt'>Color</span> {:/} | {::nomarkdown} <span class='nf'>get_SelfModulate</span>() {:/} | {::nomarkdown} <span class='nf'>set_SelfModulate</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The color applied to this . This property does not affect child s, unlike which affects both the node itself and its children.Note: Internal children are also not affected by this property (see the include_internal parameter in ). For built-in nodes this includes sliders in , and the tab bar in .</span> {:/} |
 | {::nomarkdown} <span class='kt'>Node</span> {:/} | {::nomarkdown} <span class='nf'>get_ShortcutContext</span>() {:/} | {::nomarkdown} <span class='nf'>set_ShortcutContext</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The which must be a parent of the focused for the shortcut to be activated. If , the shortcut can be activated when any control is focused (a global shortcut). This allows shortcuts to be accepted only when the user has a certain area of the GUI focused.</span> {:/} |
-| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_ShowBehindParent</span>() {:/} | {::nomarkdown} <span class='nf'>set_ShowBehindParent</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , the object draws behind its parent.</span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_ShowBehindParent</span>() {:/} | {::nomarkdown} <span class='nf'>set_ShowBehindParent</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , this node draws behind its parent.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='nf'>get_Size</span>() {:/} | {::nomarkdown} <span class='nf'>set_Size</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The size of the node's bounding rectangle, in the node's coordinate system. nodes update this property automatically.</span> {:/} |
 | {::nomarkdown} <span class='kt'>SizeFlags</span> {:/} | {::nomarkdown} <span class='nf'>get_SizeFlagsHorizontal</span>() {:/} | {::nomarkdown} <span class='nf'>set_SizeFlagsHorizontal</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Tells the parent nodes how they should resize and place the node on the X axis. Use a combination of the constants to change the flags. See the constants to learn what each does.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_SizeFlagsStretchRatio</span>() {:/} | {::nomarkdown} <span class='nf'>set_SizeFlagsStretchRatio</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If the node and at least one of its neighbors uses the size flag, the parent will let it take more or less space depending on this property. If this node has a stretch ratio of 2 and its neighbor a ratio of 1, this node will take two thirds of the available space.</span> {:/} |
@@ -124,9 +170,9 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Single[]</span> {:/} | {::nomarkdown} <span class='nf'>get_TabStops</span>() {:/} | {::nomarkdown} <span class='nf'>set_TabStops</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Aligns text to the given tab-stops.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_Text</span>() {:/} | {::nomarkdown} <span class='nf'>set_Text</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The text to display on screen.</span> {:/} |
 | {::nomarkdown} <span class='kt'>TextDirection</span> {:/} | {::nomarkdown} <span class='nf'>get_TextDirection</span>() {:/} | {::nomarkdown} <span class='nf'>set_TextDirection</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Base text writing direction.</span> {:/} |
-| {::nomarkdown} <span class='kt'>OverrunBehavior</span> {:/} | {::nomarkdown} <span class='nf'>get_TextOverrunBehavior</span>() {:/} | {::nomarkdown} <span class='nf'>set_TextOverrunBehavior</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Sets the clipping behavior when the text exceeds the node's bounding rectangle. See for a description of all modes.</span> {:/} |
-| {::nomarkdown} <span class='kt'>TextureFilterEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_TextureFilter</span>() {:/} | {::nomarkdown} <span class='nf'>set_TextureFilter</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The texture filtering mode to use on this .</span> {:/} |
-| {::nomarkdown} <span class='kt'>TextureRepeatEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_TextureRepeat</span>() {:/} | {::nomarkdown} <span class='nf'>set_TextureRepeat</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The texture repeating mode to use on this .</span> {:/} |
+| {::nomarkdown} <span class='kt'>OverrunBehavior</span> {:/} | {::nomarkdown} <span class='nf'>get_TextOverrunBehavior</span>() {:/} | {::nomarkdown} <span class='nf'>set_TextOverrunBehavior</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The clipping behavior when the text exceeds the node's bounding rectangle.</span> {:/} |
+| {::nomarkdown} <span class='kt'>TextureFilterEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_TextureFilter</span>() {:/} | {::nomarkdown} <span class='nf'>set_TextureFilter</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The filtering mode used to render this 's texture(s).</span> {:/} |
+| {::nomarkdown} <span class='kt'>TextureRepeatEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_TextureRepeat</span>() {:/} | {::nomarkdown} <span class='nf'>set_TextureRepeat</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The repeating mode used to render this 's texture(s). It affects what happens when the texture is sampled outside its extents, for example by setting a that is larger than the texture or assigning UV points outside the texture.Note: is not affected by , as it uses its own texture repeating implementation.</span> {:/} |
 | {::nomarkdown} <span class='kt'>Theme</span> {:/} | {::nomarkdown} <span class='nf'>get_Theme</span>() {:/} | {::nomarkdown} <span class='nf'>set_Theme</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The resource this node and all its and children use. If a child node has its own resource set, theme items are merged with child's definitions having higher priority.Note: styles will have no effect unless the window is embedded.</span> {:/} |
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='nf'>get_ThemeTypeVariation</span>() {:/} | {::nomarkdown} <span class='nf'>set_ThemeTypeVariation</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The name of a theme type variation used by this to look up its own theme items. When empty, the class name of the node is used (e.g. Button for the control), as well as the class names of all parent classes (in order of inheritance).When set, this property gives the highest priority to the type of the specified name. This type can in turn extend another type, forming a dependency chain. See . If the theme item cannot be found using this type or its base types, lookup falls back on the class names.Note: To look up 's own items use various get_theme_* methods without specifying theme_type.Note: Theme items are looked for in the tree order, from branch to root, where each node is checked for its property. The earliest match against any type/class name is returned. The project-level Theme and the default Theme are checked last.</span> {:/} |
 | {::nomarkdown} <span class='kt'>AutoTranslateModeEnum</span> {:/} | {::nomarkdown} <span class='nf'>get_TooltipAutoTranslateMode</span>() {:/} | {::nomarkdown} <span class='nf'>set_TooltipAutoTranslateMode</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Defines if tooltip text should automatically change to its translated version depending on the current locale. Uses the same auto translate mode as this control when set to .Note: Tooltips customized using do not use this auto translate mode automatically.</span> {:/} |
@@ -134,19 +180,21 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_TopLevel</span>() {:/} | {::nomarkdown} <span class='nf'>set_TopLevel</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , this will not inherit its transform from parent s. Its draw order will also be changed to make it draw on top of other s that do not have set to . The will effectively act as if it was placed as a child of a bare .</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_UniqueNameInOwner</span>() {:/} | {::nomarkdown} <span class='nf'>set_UniqueNameInOwner</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , the node can be accessed from any node sharing the same or from the itself, with special %Name syntax in .Note: If another node with the same shares the same as this node, the other node will no longer be accessible as unique.</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_Uppercase</span>() {:/} | {::nomarkdown} <span class='nf'>set_Uppercase</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , all the text displays as UPPERCASE.</span> {:/} |
-| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_UseParentMaterial</span>() {:/} | {::nomarkdown} <span class='nf'>set_UseParentMaterial</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , the parent 's property is used as this one's material.</span> {:/} |
-| {::nomarkdown} <span class='kt'>VerticalAlignment</span> {:/} | {::nomarkdown} <span class='nf'>get_VerticalAlignment</span>() {:/} | {::nomarkdown} <span class='nf'>set_VerticalAlignment</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls the text's vertical alignment. Supports top, center, bottom, and fill. Set it to one of the constants.</span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_UseParentMaterial</span>() {:/} | {::nomarkdown} <span class='nf'>set_UseParentMaterial</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , the parent 's is used as this node's material.</span> {:/} |
+| {::nomarkdown} <span class='kt'>VerticalAlignment</span> {:/} | {::nomarkdown} <span class='nf'>get_VerticalAlignment</span>() {:/} | {::nomarkdown} <span class='nf'>set_VerticalAlignment</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls the text's vertical alignment. Supports top, center, bottom, and fill.</span> {:/} |
 | {::nomarkdown} <span class='kt'>UInt32</span> {:/} | {::nomarkdown} <span class='nf'>get_VisibilityLayer</span>() {:/} | {::nomarkdown} <span class='nf'>set_VisibilityLayer</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The rendering layer in which this is rendered by nodes. A will render a if it and all its parents share a layer with the 's canvas cull mask.</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_Visible</span>() {:/} | {::nomarkdown} <span class='nf'>set_Visible</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , this may be drawn. Whether this is actually drawn depends on the visibility of all of its ancestors. In other words: this will be drawn when returns and all ancestors share at least one with this .Note: For controls that inherit , the correct way to make them visible is to call one of the multiple popup*() functions instead.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_VisibleCharacters</span>() {:/} | {::nomarkdown} <span class='nf'>set_VisibleCharacters</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The number of characters to display. If set to -1, all characters are displayed. This can be useful when animating the text appearing in a dialog box.Note: Setting this property updates accordingly.</span> {:/} |
-| {::nomarkdown} <span class='kt'>VisibleCharactersBehavior</span> {:/} | {::nomarkdown} <span class='nf'>get_VisibleCharactersBehavior</span>() {:/} | {::nomarkdown} <span class='nf'>set_VisibleCharactersBehavior</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Sets the clipping behavior when or is set. See for more info.</span> {:/} |
+| {::nomarkdown} <span class='kt'>VisibleCharactersBehavior</span> {:/} | {::nomarkdown} <span class='nf'>get_VisibleCharactersBehavior</span>() {:/} | {::nomarkdown} <span class='nf'>set_VisibleCharactersBehavior</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The clipping behavior when or is set.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_VisibleRatio</span>() {:/} | {::nomarkdown} <span class='nf'>set_VisibleRatio</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The fraction of characters to display, relative to the total number of characters (see ). If set to 1.0, all characters are displayed. If set to 0.5, only half of the characters will be displayed. This can be useful when animating the text appearing in a dialog box.Note: Setting this property updates accordingly.</span> {:/} |
 | {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_YSortEnabled</span>() {:/} | {::nomarkdown} <span class='nf'>set_YSortEnabled</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , this and child nodes with a higher Y position are rendered in front of nodes with a lower Y position. If , this and child nodes are rendered normally in scene tree order.With Y-sorting enabled on a parent node ('A') but disabled on a child node ('B'), the child node ('B') is sorted but its children ('C1', 'C2', etc.) render together on the same Y position as the child node ('B'). This allows you to organize the render order of a scene without changing the scene tree.Nodes sort relative to each other only if they are on the same .</span> {:/} |
-| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_ZAsRelative</span>() {:/} | {::nomarkdown} <span class='nf'>set_ZAsRelative</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , the node's Z index is relative to its parent's Z index. If this node's Z index is 2 and its parent's effective Z index is 3, then this node's effective Z index will be 2 + 3 = 5.</span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_ZIndex</span>() {:/} | {::nomarkdown} <span class='nf'>set_ZIndex</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Controls the order in which the nodes render. A node with a higher Z index will display in front of others. Must be between and (inclusive).Note: Changing the Z index of a only affects the drawing order, not the order in which input events are handled. This can be useful to implement certain UI animations, e.g. a menu where hovered items are scaled and should overlap others.</span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='nf'>get_ZAsRelative</span>() {:/} | {::nomarkdown} <span class='nf'>set_ZAsRelative</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>If , this node's final Z index is relative to its parent's Z index.For example, if is 2 and its parent's final Z index is 3, then this node's final Z index will be 5 (2 + 3).</span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_ZIndex</span>() {:/} | {::nomarkdown} <span class='nf'>set_ZIndex</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The order in which this node is drawn. A node with a higher Z index will display in front of others. Must be between and (inclusive).Note: The Z index does not affect the order in which nodes are processed or the way input events are handled. This is especially important to keep in mind for nodes.</span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions
+{:.function}
+
 *Requires an instance!*
 {: .notice--warning}
 
@@ -330,6 +378,29 @@ A control for displaying plain text. It gives you control over the horizontal an
 <div class ="highlight">
 <pre class ="highlight">
 <span class='nf'>GetAutowrapMode</span>() -> <span class='kt'>AutowrapMode</span>
+</pre>
+</div>
+</div>
+
+### SetAutowrapTrimFlags(LineBreakFlag)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAutowrapTrimFlags</span>(<span class='o'>autowrapTrimFlags</span>: <span class='kt'>LineBreakFlag</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>LineBreakFlag</span> {:/} | {::nomarkdown} <span class='o'>autowrapTrimFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAutowrapTrimFlags
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAutowrapTrimFlags</span>() -> <span class='kt'>LineBreakFlag</span>
 </pre>
 </div>
 </div>
@@ -707,8 +778,18 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>pos</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
+### _AccessibilityGetContextualInfo
+> Return the description of the keyboard shortcuts and other contextual help for this control.
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>_AccessibilityGetContextualInfo</span>() -> <span class='kt'>string</span>
+</pre>
+</div>
+</div>
+
 ### _CanDropData(Vector2,Variant)
-> Godot calls this method to test if from a control's can be dropped at . is local to this control.This method should only be used to test the data. Process the data in . public override bool _CanDropData(Vector2 atPosition, Variant data) { // Check position if it is relevant to you // Otherwise, just check data return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("expected"); }
+> Godot calls this method to test if from a control's can be dropped at . is local to this control.This method should only be used to test the data. Process the data in .Note: If the drag was initiated by a keyboard shortcut or , is set to Vector2.INF, and the currently selected item/text position should be used as the drop position. public override bool _CanDropData(Vector2 atPosition, Variant data) { // Check position if it is relevant to you // Otherwise, just check data return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("expected"); }
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -724,7 +805,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### _DropData(Vector2,Variant)
-> Godot calls this method to pass you the from a control's result. Godot first calls to test if is allowed to drop at where is local to this control. public override bool _CanDropData(Vector2 atPosition, Variant data) { return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("color"); } public override void _DropData(Vector2 atPosition, Variant data) { Color color = data.AsGodotDictionary()["color"].AsColor(); }
+> Godot calls this method to pass you the from a control's result. Godot first calls to test if is allowed to drop at where is local to this control.Note: If the drag was initiated by a keyboard shortcut or , is set to Vector2.INF, and the currently selected item/text position should be used as the drop position. public override bool _CanDropData(Vector2 atPosition, Variant data) { return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("color"); } public override void _DropData(Vector2 atPosition, Variant data) { Color color = data.AsGodotDictionary()["color"].AsColor(); }
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -739,8 +820,23 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Variant</span> {:/} | {::nomarkdown} <span class='o'>data</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
+### _GetAccessibilityContainerName(Node)
+> Override this method to return a human-readable description of the position of the child in the custom container, added to the .
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>_GetAccessibilityContainerName</span>(<span class='o'>node</span>: <span class='kt'>Node</span>) -> <span class='kt'>string</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Node</span> {:/} | {::nomarkdown} <span class='o'>node</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
 ### _GetDragData(Vector2)
-> Godot calls this method to get data that can be dragged and dropped onto controls that expect drop data. Returns if there is no data to drag. Controls that want to receive drop data should implement and . is local to this control. Drag may be forced with .A preview that will follow the mouse that should represent the data can be set with . A good time to set the preview is in this method. public override Variant _GetDragData(Vector2 atPosition) { var myData = MakeData(); // This is your custom method generating the drag data. SetDragPreview(MakePreview(myData)); // This is your custom method generating the preview of the drag data. return myData; }
+> Godot calls this method to get data that can be dragged and dropped onto controls that expect drop data. Returns if there is no data to drag. Controls that want to receive drop data should implement and . is local to this control. Drag may be forced with .A preview that will follow the mouse that should represent the data can be set with . A good time to set the preview is in this method.Note: If the drag was initiated by a keyboard shortcut or , is set to Vector2.INF, and the currently selected item/text position should be used as the drag position. public override Variant _GetDragData(Vector2 atPosition) { var myData = MakeData(); // This is your custom method generating the drag data. SetDragPreview(MakePreview(myData)); // This is your custom method generating the preview of the drag data. return myData; }
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -1308,6 +1404,39 @@ A control for displaying plain text. It gives you control over the horizontal an
 <div class ="highlight">
 <pre class ="highlight">
 <span class='nf'>GetFocusMode</span>() -> <span class='kt'>FocusModeEnum</span>
+</pre>
+</div>
+</div>
+
+### GetFocusModeWithOverride
+> Returns the , but takes the into account. If is set to , or it is set to and its ancestor is set to , then this returns .
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetFocusModeWithOverride</span>() -> <span class='kt'>FocusModeEnum</span>
+</pre>
+</div>
+</div>
+
+### SetFocusBehaviorRecursive(FocusBehaviorRecursiveEnum)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetFocusBehaviorRecursive</span>(<span class='o'>focusBehaviorRecursive</span>: <span class='kt'>FocusBehaviorRecursiveEnum</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>FocusBehaviorRecursiveEnum</span> {:/} | {::nomarkdown} <span class='o'>focusBehaviorRecursive</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetFocusBehaviorRecursive
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetFocusBehaviorRecursive</span>() -> <span class='kt'>FocusBehaviorRecursiveEnum</span>
 </pre>
 </div>
 </div>
@@ -2256,6 +2385,187 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Control</span> {:/} | {::nomarkdown} <span class='o'>preview</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
+### AccessibilityDrag
+> Starts drag-and-drop operation without using a mouse.
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>AccessibilityDrag</span>() -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+### AccessibilityDrop
+> Ends drag-and-drop operation without using a mouse.
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>AccessibilityDrop</span>() -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+### SetAccessibilityName(string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAccessibilityName</span>(<span class='o'>name</span>: <span class='kt'>string</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>name</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAccessibilityName
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityName</span>() -> <span class='kt'>string</span>
+</pre>
+</div>
+</div>
+
+### SetAccessibilityDescription(string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAccessibilityDescription</span>(<span class='o'>description</span>: <span class='kt'>string</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>description</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAccessibilityDescription
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityDescription</span>() -> <span class='kt'>string</span>
+</pre>
+</div>
+</div>
+
+### SetAccessibilityLive(AccessibilityLiveMode)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAccessibilityLive</span>(<span class='o'>mode</span>: <span class='kt'>AccessibilityLiveMode</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>AccessibilityLiveMode</span> {:/} | {::nomarkdown} <span class='o'>mode</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAccessibilityLive
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityLive</span>() -> <span class='kt'>AccessibilityLiveMode</span>
+</pre>
+</div>
+</div>
+
+### SetAccessibilityControlsNodes(Array__string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAccessibilityControlsNodes</span>(<span class='o'>nodePath</span>: <span class='kt'>Array__string</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='o'>nodePath</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAccessibilityControlsNodes
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityControlsNodes</span>() -> <span class='kt'>Array__string</span>
+</pre>
+</div>
+</div>
+
+### SetAccessibilityDescribedByNodes(Array__string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAccessibilityDescribedByNodes</span>(<span class='o'>nodePath</span>: <span class='kt'>Array__string</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='o'>nodePath</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAccessibilityDescribedByNodes
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityDescribedByNodes</span>() -> <span class='kt'>Array__string</span>
+</pre>
+</div>
+</div>
+
+### SetAccessibilityLabeledByNodes(Array__string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAccessibilityLabeledByNodes</span>(<span class='o'>nodePath</span>: <span class='kt'>Array__string</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='o'>nodePath</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAccessibilityLabeledByNodes
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityLabeledByNodes</span>() -> <span class='kt'>Array__string</span>
+</pre>
+</div>
+</div>
+
+### SetAccessibilityFlowToNodes(Array__string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetAccessibilityFlowToNodes</span>(<span class='o'>nodePath</span>: <span class='kt'>Array__string</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Array__string</span> {:/} | {::nomarkdown} <span class='o'>nodePath</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetAccessibilityFlowToNodes
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityFlowToNodes</span>() -> <span class='kt'>Array__string</span>
+</pre>
+</div>
+</div>
+
 ### SetMouseFilter(MouseFilterEnum)
 <div class ="highlighter-rouge">
 <div class ="highlight">
@@ -2275,6 +2585,39 @@ A control for displaying plain text. It gives you control over the horizontal an
 <div class ="highlight">
 <pre class ="highlight">
 <span class='nf'>GetMouseFilter</span>() -> <span class='kt'>MouseFilterEnum</span>
+</pre>
+</div>
+</div>
+
+### GetMouseFilterWithOverride
+> Returns the , but takes the into account. If is set to , or it is set to and its ancestor is set to , then this returns .
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetMouseFilterWithOverride</span>() -> <span class='kt'>MouseFilterEnum</span>
+</pre>
+</div>
+</div>
+
+### SetMouseBehaviorRecursive(MouseBehaviorRecursiveEnum)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetMouseBehaviorRecursive</span>(<span class='o'>mouseBehaviorRecursive</span>: <span class='kt'>MouseBehaviorRecursiveEnum</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>MouseBehaviorRecursiveEnum</span> {:/} | {::nomarkdown} <span class='o'>mouseBehaviorRecursive</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### GetMouseBehaviorRecursive
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetMouseBehaviorRecursive</span>() -> <span class='kt'>MouseBehaviorRecursiveEnum</span>
 </pre>
 </div>
 </div>
@@ -2449,7 +2792,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### IsLayoutRtl
-> Returns if layout is right-to-left. See also .
+> Returns if the layout is right-to-left. See also .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -2515,7 +2858,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetCanvasItem
-> Returns the canvas item RID used by for this item.
+> Returns the internal canvas item used by the for this node.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -2558,7 +2901,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### Show
-> Show the if it's currently hidden. This is equivalent to setting to . For controls that inherit , the correct way to make them visible is to call one of the multiple popup*() functions instead.
+> Show the if it's currently hidden. This is equivalent to setting to .Note: For controls that inherit , the correct way to make them visible is to call one of the multiple popup*() functions instead.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -2588,7 +2931,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### MoveToFront
-> Moves this node to display on top of its siblings.Internally, the node is moved to the bottom of parent's child list. The method has no effect on nodes without a parent.
+> Moves this node below its siblings, usually causing the node to draw on top of its siblings. Does nothing if this node does not have a parent. See also .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3233,11 +3576,11 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Texture2D</span> {:/} | {::nomarkdown} <span class='o'>texture</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### DrawString(Font,Vector2,string,HorizontalAlignment,number,number,Nullable__Color,JustificationFlag,Direction,Orientation)
+### DrawString(Font,Vector2,string,HorizontalAlignment,number,number,Nullable__Color,JustificationFlag,Direction,Orientation,number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>DrawString</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal) -> <span class='kt'>nil</span>
+<span class='nf'>DrawString</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal,<span class='o'>oversampling</span>: <span class='kt'>number</span> = 0) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -3254,13 +3597,14 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>oversampling</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### DrawMultilineString(Font,Vector2,string,HorizontalAlignment,number,number,number,Nullable__Color,LineBreakFlag,JustificationFlag,Direction,Orientation)
+### DrawMultilineString(Font,Vector2,string,HorizontalAlignment,number,number,number,Nullable__Color,LineBreakFlag,JustificationFlag,Direction,Orientation,number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>DrawMultilineString</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>maxLines</span>: <span class='kt'>number</span> = -1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>brkFlags</span>: <span class='kt'>LineBreakFlag</span> = Mandatory, WordBound,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal) -> <span class='kt'>nil</span>
+<span class='nf'>DrawMultilineString</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>maxLines</span>: <span class='kt'>number</span> = -1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>brkFlags</span>: <span class='kt'>LineBreakFlag</span> = Mandatory, WordBound,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal,<span class='o'>oversampling</span>: <span class='kt'>number</span> = 0) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -3279,13 +3623,14 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>oversampling</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### DrawStringOutline(Font,Vector2,string,HorizontalAlignment,number,number,number,Nullable__Color,JustificationFlag,Direction,Orientation)
+### DrawStringOutline(Font,Vector2,string,HorizontalAlignment,number,number,number,Nullable__Color,JustificationFlag,Direction,Orientation,number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>DrawStringOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>size</span>: <span class='kt'>number</span> = 1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal) -> <span class='kt'>nil</span>
+<span class='nf'>DrawStringOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>size</span>: <span class='kt'>number</span> = 1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal,<span class='o'>oversampling</span>: <span class='kt'>number</span> = 0) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -3303,13 +3648,14 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>oversampling</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### DrawMultilineStringOutline(Font,Vector2,string,HorizontalAlignment,number,number,number,number,Nullable__Color,LineBreakFlag,JustificationFlag,Direction,Orientation)
+### DrawMultilineStringOutline(Font,Vector2,string,HorizontalAlignment,number,number,number,number,Nullable__Color,LineBreakFlag,JustificationFlag,Direction,Orientation,number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>DrawMultilineStringOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>maxLines</span>: <span class='kt'>number</span> = -1,<span class='o'>size</span>: <span class='kt'>number</span> = 1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>brkFlags</span>: <span class='kt'>LineBreakFlag</span> = Mandatory, WordBound,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal) -> <span class='kt'>nil</span>
+<span class='nf'>DrawMultilineStringOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span> = Left,<span class='o'>width</span>: <span class='kt'>number</span> = -1,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>maxLines</span>: <span class='kt'>number</span> = -1,<span class='o'>size</span>: <span class='kt'>number</span> = 1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>brkFlags</span>: <span class='kt'>LineBreakFlag</span> = Mandatory, WordBound,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span> = Kashida, WordBound,<span class='o'>direction</span>: <span class='kt'>Direction</span> = Auto,<span class='o'>orientation</span>: <span class='kt'>Orientation</span> = Horizontal,<span class='o'>oversampling</span>: <span class='kt'>number</span> = 0) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -3329,13 +3675,14 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>oversampling</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### DrawChar(Font,Vector2,string,number,Nullable__Color)
+### DrawChar(Font,Vector2,string,number,Nullable__Color,number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>DrawChar</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>char</span>: <span class='kt'>string</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>) -> <span class='kt'>nil</span>
+<span class='nf'>DrawChar</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>char</span>: <span class='kt'>string</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>oversampling</span>: <span class='kt'>number</span> = 0) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -3347,13 +3694,14 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>char</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>oversampling</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### DrawCharOutline(Font,Vector2,string,number,number,Nullable__Color)
+### DrawCharOutline(Font,Vector2,string,number,number,Nullable__Color,number)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>DrawCharOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>char</span>: <span class='kt'>string</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>size</span>: <span class='kt'>number</span> = -1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>) -> <span class='kt'>nil</span>
+<span class='nf'>DrawCharOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>char</span>: <span class='kt'>string</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span> = 16,<span class='o'>size</span>: <span class='kt'>number</span> = -1,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>oversampling</span>: <span class='kt'>number</span> = 0) -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -3366,6 +3714,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>size</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>oversampling</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ### DrawMesh(Mesh,Texture2D,Nullable__Transform2D,Nullable__Color)
@@ -3461,7 +3810,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetTransform
-> Returns the transform matrix of this item.
+> Returns the transform matrix of this .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3491,7 +3840,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetViewportTransform
-> Returns the transform from the coordinate system of the canvas, this item is in, to the s embedders coordinate system.
+> Returns the transform of this node, converted from its registered canvas's coordinate system to its viewport embedder's coordinate system. See also and .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3501,7 +3850,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetViewportRect
-> Returns the viewport's boundaries as a .
+> Returns this node's viewport boundaries as a . See also .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3511,7 +3860,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetCanvasTransform
-> Returns the transform from the coordinate system of the canvas, this item is in, to the s coordinate system.
+> Returns the transform of this node, converted from its registered canvas's coordinate system to its viewport's coordinate system. See also .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3541,7 +3890,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetGlobalMousePosition
-> Returns the mouse's position in the that this is in using the coordinate system of the .Note: For screen-space coordinates (e.g. when using a non-embedded ), you can use .
+> Returns mouse cursor's global position relative to the that contains this node.Note: For screen-space coordinates (e.g. when using a non-embedded ), you can use .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3551,7 +3900,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetCanvas
-> Returns the of the canvas where this item is in.
+> Returns the of the canvas where this node is registered to, used by the .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3571,7 +3920,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### GetWorld2D
-> Returns the where this item is in.
+> Returns the this node is registered to.Usually, this is the same as this node's viewport (see and ).
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3658,7 +4007,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### SetNotifyLocalTransform(boolean)
-> If is , this node will receive when its local transform changes.
+> If , the node will receive whenever its local transform changes.Note: Many canvas items such as or automatically enable this in order to function correctly.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3673,7 +4022,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### IsLocalTransformNotificationEnabled
-> Returns if local transform notifications are communicated to children.
+> Returns if the node receives whenever its local transform changes. This is enabled with .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3683,7 +4032,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### SetNotifyTransform(boolean)
-> If is , this node will receive when its global transform changes.
+> If , the node will receive whenever global transform changes.Note: Many canvas items such as or automatically enable this in order to function correctly.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3698,7 +4047,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### IsTransformNotificationEnabled
-> Returns if global transform notifications are communicated to children.
+> Returns if the node receives whenever its global transform changes. This is enabled with .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3708,7 +4057,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### ForceUpdateTransform
-> Forces the transform to update. Transform changes in physics are not instant for performance reasons. Transforms are accumulated and then set. Use this if you need an up-to-date transform when doing physics operations.
+> Forces the node's transform to update. Fails if the node is not inside the tree. See also .Note: For performance reasons, transform changes are usually accumulated and applied once at the end of the frame. The update propagates through children, as well. Therefore, use this method only when you need an up-to-date transform (such as during physics operations).
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3733,7 +4082,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### MakeInputLocal(InputEvent)
-> Transformations issued by 's inputs are applied in local space instead of global space.
+> Returns a copy of the given with its coordinates converted from global space to this 's local space. If not possible, returns the same unchanged.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3787,7 +4136,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### GetVisibilityLayerBit(UInt32)
-> Returns an individual bit on the rendering visibility layer.
+> Returns if the layer at the given index is set in .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -3991,6 +4340,141 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Color</span> {:/} | {::nomarkdown} <span class='o'>color</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
+### DrawCharOutline(Font,Vector2,string,number,number,Nullable__Color)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>DrawCharOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>char</span>: <span class='kt'>string</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span>,<span class='o'>size</span>: <span class='kt'>number</span>,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Font</span> {:/} | {::nomarkdown} <span class='o'>font</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='o'>pos</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>char</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>size</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### DrawChar(Font,Vector2,string,number,Nullable__Color)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>DrawChar</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>char</span>: <span class='kt'>string</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span>,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Font</span> {:/} | {::nomarkdown} <span class='o'>font</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='o'>pos</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>char</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### DrawMultilineStringOutline(Font,Vector2,string,HorizontalAlignment,number,number,number,number,Nullable__Color,LineBreakFlag,JustificationFlag,Direction,Orientation)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>DrawMultilineStringOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span>,<span class='o'>width</span>: <span class='kt'>number</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span>,<span class='o'>maxLines</span>: <span class='kt'>number</span>,<span class='o'>size</span>: <span class='kt'>number</span>,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>brkFlags</span>: <span class='kt'>LineBreakFlag</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span>,<span class='o'>direction</span>: <span class='kt'>Direction</span>,<span class='o'>orientation</span>: <span class='kt'>Orientation</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Font</span> {:/} | {::nomarkdown} <span class='o'>font</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='o'>pos</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>text</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>HorizontalAlignment</span> {:/} | {::nomarkdown} <span class='o'>alignment</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>width</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>maxLines</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>size</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>LineBreakFlag</span> {:/} | {::nomarkdown} <span class='o'>brkFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### DrawStringOutline(Font,Vector2,string,HorizontalAlignment,number,number,number,Nullable__Color,JustificationFlag,Direction,Orientation)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>DrawStringOutline</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span>,<span class='o'>width</span>: <span class='kt'>number</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span>,<span class='o'>size</span>: <span class='kt'>number</span>,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span>,<span class='o'>direction</span>: <span class='kt'>Direction</span>,<span class='o'>orientation</span>: <span class='kt'>Orientation</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Font</span> {:/} | {::nomarkdown} <span class='o'>font</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='o'>pos</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>text</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>HorizontalAlignment</span> {:/} | {::nomarkdown} <span class='o'>alignment</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>width</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>size</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### DrawMultilineString(Font,Vector2,string,HorizontalAlignment,number,number,number,Nullable__Color,LineBreakFlag,JustificationFlag,Direction,Orientation)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>DrawMultilineString</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span>,<span class='o'>width</span>: <span class='kt'>number</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span>,<span class='o'>maxLines</span>: <span class='kt'>number</span>,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>brkFlags</span>: <span class='kt'>LineBreakFlag</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span>,<span class='o'>direction</span>: <span class='kt'>Direction</span>,<span class='o'>orientation</span>: <span class='kt'>Orientation</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Font</span> {:/} | {::nomarkdown} <span class='o'>font</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='o'>pos</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>text</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>HorizontalAlignment</span> {:/} | {::nomarkdown} <span class='o'>alignment</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>width</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>maxLines</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>LineBreakFlag</span> {:/} | {::nomarkdown} <span class='o'>brkFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### DrawString(Font,Vector2,string,HorizontalAlignment,number,number,Nullable__Color,JustificationFlag,Direction,Orientation)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>DrawString</span>(<span class='o'>font</span>: <span class='kt'>Font</span>,<span class='o'>pos</span>: <span class='kt'>Vector2</span>,<span class='o'>text</span>: <span class='kt'>string</span>,<span class='o'>alignment</span>: <span class='kt'>HorizontalAlignment</span>,<span class='o'>width</span>: <span class='kt'>number</span>,<span class='o'>fontSize</span>: <span class='kt'>number</span>,<span class='o'>modulate</span>: <span class='kt'>Nullable__Color</span>,<span class='o'>justificationFlags</span>: <span class='kt'>JustificationFlag</span>,<span class='o'>direction</span>: <span class='kt'>Direction</span>,<span class='o'>orientation</span>: <span class='kt'>Orientation</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Font</span> {:/} | {::nomarkdown} <span class='o'>font</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Vector2</span> {:/} | {::nomarkdown} <span class='o'>pos</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>text</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>HorizontalAlignment</span> {:/} | {::nomarkdown} <span class='o'>alignment</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>width</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>fontSize</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Nullable__Color</span> {:/} | {::nomarkdown} <span class='o'>modulate</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>JustificationFlag</span> {:/} | {::nomarkdown} <span class='o'>justificationFlags</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Direction</span> {:/} | {::nomarkdown} <span class='o'>direction</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Orientation</span> {:/} | {::nomarkdown} <span class='o'>orientation</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
 ### GetNode(string)
 > Fetches a node. The can either be a relative path (from this node), or an absolute path (from the ) to a node. If does not point to a valid node, generates an error and returns . Attempts to access methods on the return value will result in an "Attempt to call <method> on a null instance." error.Note: Fetching by absolute path only works when the node is inside the scene tree (see ).Example: Assume this method is called from the Character node, inside the following tree: ┖╴root ┠╴Character (you are here!) ┃ ┠╴Sword ┃ ┖╴Backpack ┃ ┖╴Dagger ┠╴MyGame ┖╴Swamp ┠╴Alligator ┠╴Mosquito ┖╴Goblin The following calls will return a valid node: GetNode("Sword"); GetNode("Backpack/Dagger"); GetNode("../Swamp/Alligator"); GetNode("/root/MyGame");
 <div class ="highlighter-rouge">
@@ -4022,7 +4506,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### GetChild(number,boolean)
-> Fetches a child node by its index. Each child node has an index relative its siblings (see ). The first child is at index 0. Negative values can also be used to start from the end of the list. This method can be used in combination with to iterate over this node's children. If no child exists at the given index, this method returns and an error is generated.If is , internal children are ignored (see 's internal parameter). # Assuming the following are children of this node, in order: # First, Middle, Last. var a = get_child(0).name # a is "First" var b = get_child(1).name # b is "Middle" var b = get_child(2).name # b is "Last" var c = get_child(-1).name # c is "Last" Note: To fetch a node by , use .
+> Fetches a child node by its index. Each child node has an index relative to its siblings (see ). The first child is at index 0. Negative values can also be used to start from the end of the list. This method can be used in combination with to iterate over this node's children. If no child exists at the given index, this method returns and an error is generated.If is , internal children are ignored (see 's internal parameter). # Assuming the following are children of this node, in order: # First, Middle, Last. var a = get_child(0).name # a is "First" var b = get_child(1).name # b is "Middle" var b = get_child(2).name # b is "Last" var c = get_child(-1).name # c is "Last" Note: To fetch a node by , use .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -4109,12 +4593,32 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 </div>
 
+### _GetAccessibilityConfigurationWarnings
+> The elements in the array returned from this method are displayed as warnings in the Scene dock if the script that overrides it is a tool script, and accessibility warnings are enabled in the editor settings.Returning an empty array produces no warnings.
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>_GetAccessibilityConfigurationWarnings</span>() -> <span class='kt'>String[]</span>
+</pre>
+</div>
+</div>
+
 ### _GetConfigurationWarnings
 > The elements in the array returned from this method are displayed as warnings in the Scene dock if the script that overrides it is a tool script.Returning an empty array produces no warnings.Call when the warnings need to be updated for this node. @export var energy = 0: set(value): energy = value update_configuration_warnings() func _get_configuration_warnings(): if energy < 0: return ["Energy must be 0 or greater."] else: return []
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
 <span class='nf'>_GetConfigurationWarnings</span>() -> <span class='kt'>String[]</span>
+</pre>
+</div>
+</div>
+
+### _GetFocusedAccessibilityElement
+> Called during accessibility information updates to determine the currently focused sub-element, should return a sub-element RID or the value returned by .
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>_GetFocusedAccessibilityElement</span>() -> <span class='kt'>Rid</span>
 </pre>
 </div>
 </div>
@@ -4336,7 +4840,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### GetChild(number,boolean)
-> Fetches a child node by its index. Each child node has an index relative its siblings (see ). The first child is at index 0. Negative values can also be used to start from the end of the list. This method can be used in combination with to iterate over this node's children. If no child exists at the given index, this method returns and an error is generated.If is , internal children are ignored (see 's internal parameter). # Assuming the following are children of this node, in order: # First, Middle, Last. var a = get_child(0).name # a is "First" var b = get_child(1).name # b is "Middle" var b = get_child(2).name # b is "Last" var c = get_child(-1).name # c is "Last" Note: To fetch a node by , use .
+> Fetches a child node by its index. Each child node has an index relative to its siblings (see ). The first child is at index 0. Negative values can also be used to start from the end of the list. This method can be used in combination with to iterate over this node's children. If no child exists at the given index, this method returns and an error is generated.If is , internal children are ignored (see 's internal parameter). # Assuming the following are children of this node, in order: # First, Middle, Last. var a = get_child(0).name # a is "First" var b = get_child(1).name # b is "Middle" var b = get_child(2).name # b is "Last" var c = get_child(-1).name # c is "Last" Note: To fetch a node by , use .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -4472,7 +4976,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### GetNodeAndResource(string)
-> Fetches a node and its most nested resource as specified by the 's subname. Returns an of size 3 where:- Element 0 is the , or if not found;- Element 1 is the subname's last nested , or if not found;- Element 2 is the remaining , referring to an existing, non- property (see ).Example: Assume that the child's has been assigned a : var a = GetNodeAndResource(NodePath("Area2D/Sprite2D")); GD.Print(a[0].Name); // Prints Sprite2D GD.Print(a[1]); // Prints <null> GD.Print(a[2]); // Prints ^" var b = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas")); GD.Print(b[0].name); // Prints Sprite2D GD.Print(b[1].get_class()); // Prints AtlasTexture GD.Print(b[2]); // Prints ^"" var c = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas:region")); GD.Print(c[0].name); // Prints Sprite2D GD.Print(c[1].get_class()); // Prints AtlasTexture GD.Print(c[2]); // Prints ^":region"
+> Fetches a node and its most nested resource as specified by the 's subname. Returns an of size 3 where:- Element 0 is the , or if not found;- Element 1 is the subname's last nested , or if not found;- Element 2 is the remaining , referring to an existing, non- property (see ).Example: Assume that the child's has been assigned an : var a = GetNodeAndResource(NodePath("Area2D/Sprite2D")); GD.Print(a[0].Name); // Prints Sprite2D GD.Print(a[1]); // Prints <null> GD.Print(a[2]); // Prints ^" var b = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas")); GD.Print(b[0].name); // Prints Sprite2D GD.Print(b[1].get_class()); // Prints AtlasTexture GD.Print(b[2]); // Prints ^"" var c = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas:region")); GD.Print(c[0].name); // Prints Sprite2D GD.Print(c[1].get_class()); // Prints AtlasTexture GD.Print(c[2]); // Prints ^":region"
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5085,6 +5589,26 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 </div>
 
+### QueueAccessibilityUpdate
+> Queues an accessibility information update for this node.
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>QueueAccessibilityUpdate</span>() -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+### GetAccessibilityElement
+> Returns main accessibility element RID.Note: This method should be called only during accessibility information updates ().
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetAccessibilityElement</span>() -> <span class='kt'>Rid</span>
+</pre>
+</div>
+</div>
+
 ### SetDisplayFolded(boolean)
 > If set to , the node appears folded in the Scene dock. As a result, all of its children are hidden. This method is intended to be used in editor plugins and tools, but it also works in release builds. See also .
 <div class ="highlighter-rouge">
@@ -5236,6 +5760,16 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 </div>
 
+### CanAutoTranslate
+> Returns if this node can automatically translate messages depending on the current locale. See , , and .
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>CanAutoTranslate</span>() -> <span class='kt'>boolean</span>
+</pre>
+</div>
+</div>
+
 ### SetTranslationDomainInherited
 > Makes this node inherit the translation domain from its parent node. If this node has no parent, the main translation domain will be used.This is the default behavior for all nodes. Calling disables this behavior.
 <div class ="highlighter-rouge">
@@ -5287,7 +5821,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### Duplicate(number)
-> Duplicates the node, returning a new node with all of its properties, signals, groups, and children copied from the original. The behavior can be tweaked through the (see ).Note: For nodes with a attached, if has been defined with required parameters, the duplicated node will not have a .
+> Duplicates the node, returning a new node with all of its properties, signals, groups, and children copied from the original. The behavior can be tweaked through the (see ). Internal nodes are not duplicated.Note: For nodes with a attached, if has been defined with required parameters, the duplicated node will not have a .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5318,7 +5852,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### SetSceneInstanceLoadPlaceholder(boolean)
-> If set to , the node becomes a when packed and instantiated from a . See also .
+> If set to , the node becomes an when packed and instantiated from a . See also .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5474,12 +6008,12 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>Variant</span> {:/} | {::nomarkdown} <span class='o'>config</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
-### GetRpcConfig
-> Returns a mapping method names to their RPC configuration defined for this node using .
+### GetNodeRpcConfig
+> Returns a mapping method names to their RPC configuration defined for this node using .Note: This method only returns the RPC configuration assigned via . See to retrieve the RPCs defined by the .
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>GetRpcConfig</span>() -> <span class='kt'>Variant</span>
+<span class='nf'>GetNodeRpcConfig</span>() -> <span class='kt'>Variant</span>
 </pre>
 </div>
 </div>
@@ -5762,6 +6296,29 @@ A control for displaying plain text. It gives you control over the horizontal an
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>what</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
+### GetRpcConfig
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>GetRpcConfig</span>() -> <span class='kt'>Variant</span>
+</pre>
+</div>
+</div>
+
+### SetName(string)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>SetName</span>(<span class='o'>name</span>: <span class='kt'>string</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>name</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
 ### Dispose
 > Disposes of this .
 <div class ="highlighter-rouge">
@@ -5799,7 +6356,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### _Get(string)
-> Override this method to customize the behavior of . Should return the given 's value, or if the should be handled normally.Combined with and , this method allows defining custom properties, which is particularly useful for editor plugins. Note that a property must be present in , otherwise this method will not be called. public override Variant _Get(StringName property) { if (property == "FakeProperty") { GD.Print("Getting my property!"); return 4; } return default; } public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList() { return [ new Godot.Collections.Dictionary() { { "name", "FakeProperty" }, { "type", (int)Variant.Type.Int }, }, ]; }
+> Override this method to customize the behavior of . Should return the given 's value, or if the should be handled normally.Combined with and , this method allows defining custom properties, which is particularly useful for editor plugins.Note: This method is not called when getting built-in properties of an object, including properties defined with [annotation @GDScript.@export]. public override Variant _Get(StringName property) { if (property == "FakeProperty") { GD.Print("Getting my property!"); return 4; } return default; } public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList() { return [ new Godot.Collections.Dictionary() { { "name", "FakeProperty" }, { "type", (int)Variant.Type.Int }, }, ]; }
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5824,7 +6381,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### _IterGet(Variant)
-> Returns the current iterable value. stores the iteration state, but unlike and the state is supposed to be read-only, so there is no wrapper.
+> Returns the current iterable value. stores the iteration state, but unlike and the state is supposed to be read-only, so there is no wrapper.Tip: In GDScript, you can use a subtype of as the return type for . The specified type will be used to set the type of the iterator variable in for loops, enhancing type safety.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5839,7 +6396,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### _IterInit(Array)
-> Initializes the iterator. stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns so long as the iterator has not reached the end.Example: class MyRange: var _from var _to func _init(from, to): assert(from <= to) _from = from _to = to func _iter_init(iter): iter[0] = _from return iter[0] < _to func _iter_next(iter): iter[0] += 1 return iter[0] < _to func _iter_get(iter): return iter func _ready(): var my_range = MyRange.new(2, 5) for x in my_range: print(x) # Prints 2, 3, 4. Note: Alternatively, you can ignore and use the object's state instead, see online docs for an example. Note that in this case you will not be able to reuse the same iterator instance in nested loops. Also, make sure you reset the iterator state in this method if you want to reuse the same instance multiple times.
+> Initializes the iterator. stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns so long as the iterator has not reached the end. class MyRange: var _from var _to func _init(from, to): assert(from <= to) _from = from _to = to func _iter_init(iter): iter[0] = _from return iter[0] < _to func _iter_next(iter): iter[0] += 1 return iter[0] < _to func _iter_get(iter): return iter func _ready(): var my_range = MyRange.new(2, 5) for x in my_range: print(x) # Prints 2, 3, 4. Note: Alternatively, you can ignore and use the object's state instead, see online docs for an example. Note that in this case you will not be able to reuse the same iterator instance in nested loops. Also, make sure you reset the iterator state in this method if you want to reuse the same instance multiple times.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5869,7 +6426,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### _Notification(number)
-> Called when the object receives a notification, which can be identified in by comparing it with a constant. See also . public override void _Notification(int what) { if (what == NotificationPredelete) { GD.Print("Goodbye!"); } } Note: The base defines a few notifications ( and ). Inheriting classes such as define a lot more notifications, which are also received by this method.
+> Called when the object receives a notification, which can be identified in by comparing it with a constant. See also . public override void _Notification(int what) { if (what == NotificationPredelete) { GD.Print("Goodbye!"); } } Note: The base defines a few notifications ( and ). Inheriting classes such as define a lot more notifications, which are also received by this method.Note: Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via super in GDScript or its equivalents in other languages.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5914,7 +6471,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### _Set(string,Variant)
-> Override this method to customize the behavior of . Should set the to and return , or if the should be handled normally. The exact way to set the is up to this method's implementation.Combined with and , this method allows defining custom properties, which is particularly useful for editor plugins. Note that a property must be present in , otherwise this method will not be called. private Godot.Collections.Dictionary _internalData = new Godot.Collections.Dictionary(); public override bool _Set(StringName property, Variant value) { if (property == "FakeProperty") { // Storing the value in the fake property. _internalData["FakeProperty"] = value; return true; } return false; } public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList() { return [ new Godot.Collections.Dictionary() { { "name", "FakeProperty" }, { "type", (int)Variant.Type.Int }, }, ]; }
+> Override this method to customize the behavior of . Should set the to and return , or if the should be handled normally. The exact way to set the is up to this method's implementation.Combined with and , this method allows defining custom properties, which is particularly useful for editor plugins.Note: This method is not called when setting built-in properties of an object, including properties defined with [annotation @GDScript.@export]. private Godot.Collections.Dictionary _internalData = new Godot.Collections.Dictionary(); public override bool _Set(StringName property, Variant value) { if (property == "FakeProperty") { // Storing the value in the fake property. _internalData["FakeProperty"] = value; return true; } return false; } public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList() { return [ new Godot.Collections.Dictionary() { { "name", "FakeProperty" }, { "type", (int)Variant.Type.Int }, }, ]; }
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -5945,7 +6502,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 {:class="table table-bordered highlight"}
 
 ### Free
-> Deletes the object from memory. Pre-existing references to the object become invalid, and any attempt to access them will result in a run-time error. Checking the references with @GlobalScope.is_instance_valid will return .
+> Deletes the object from memory. Pre-existing references to the object become invalid, and any attempt to access them will result in a runtime error. Checking the references with @GlobalScope.is_instance_valid will return . This is equivalent to the memdelete function in GDExtension C++.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
@@ -6466,7 +7023,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 </div>
 
 ### Connect(string,Callable,UInt32)
-> Connects a by name to a . Optional can be also added to configure the connection's behavior (see constants).A signal can only be connected once to the same . If the signal is already connected, this method returns and pushes an error message, unless the signal is connected with . To prevent this, use first to check for existing connections.If the 's object is freed, the connection will be lost.Examples with recommended syntax:Connecting signals is one of the most common operations in Godot and the API gives many options to do so, which are described further down. The code block below shows the recommended approach. public override void _Ready() { var button = new Button(); // C# supports passing signals as events, so we can use this idiomatic construct: button.ButtonDown += OnButtonDown; // This assumes that a `Player` class exists, which defines a `Hit` signal. var player = new Player(); // We can use lambdas when we need to bind additional parameters. player.Hit += () => OnPlayerHit("sword", 100); } private void OnButtonDown() { GD.Print("Button down!"); } private void OnPlayerHit(string weaponType, int damage) { GD.Print($"Hit with weapon {weaponType} for {damage} damage."); } Object.connect() or Signal.connect()?As seen above, the recommended method to connect signals is not . The code block below shows the four options for connecting signals, using either this legacy method or the recommended Signal.connect, and using either an implicit or a manually defined one. public override void _Ready() { var button = new Button(); // Option 1: In C#, we can use signals as events and connect with this idiomatic syntax: button.ButtonDown += OnButtonDown; // Option 2: GodotObject.Connect() with a constructed Callable from a method group. button.Connect(Button.SignalName.ButtonDown, Callable.From(OnButtonDown)); // Option 3: GodotObject.Connect() with a constructed Callable using a target object and method name. button.Connect(Button.SignalName.ButtonDown, new Callable(this, MethodName.OnButtonDown)); } private void OnButtonDown() { GD.Print("Button down!"); } While all options have the same outcome (button's signal will be connected to _on_button_down), option 3 offers the best validation: it will print a compile-time error if either the button_down or the _on_button_down are not defined. On the other hand, option 2 only relies on string names and will only be able to validate either names at runtime: it will print a runtime error if "button_down" doesn't correspond to a signal, or if "_on_button_down" is not a registered method in the object self. The main reason for using options 1, 2, or 4 would be if you actually need to use strings (e.g. to connect signals programmatically based on strings read from a configuration file). Otherwise, option 3 is the recommended (and fastest) method.Binding and passing parameters:The syntax to bind parameters is through Callable.bind, which returns a copy of the with its parameters bound.When calling or Signal.emit, the signal parameters can be also passed. The examples below show the relationship between these signal parameters and bound parameters. public override void _Ready() { // This assumes that a `Player` class exists, which defines a `Hit` signal. var player = new Player(); // Using lambda expressions that create a closure that captures the additional parameters. // The lambda only receives the parameters defined by the signal's delegate. player.Hit += (hitBy, level) => OnPlayerHit(hitBy, level, "sword", 100); // Parameters added when emitting the signal are passed first. player.EmitSignal(SignalName.Hit, "Dark lord", 5); } // We pass two arguments when emitting (`hit_by`, `level`), // and bind two more arguments when connecting (`weapon_type`, `damage`). private void OnPlayerHit(string hitBy, int level, string weaponType, int damage) { GD.Print($"Hit by {hitBy} (level {level}) with weapon {weaponType} for {damage} damage."); }
+> Connects a by name to a . Optional can be also added to configure the connection's behavior (see constants).A signal can only be connected once to the same . If the signal is already connected, this method returns and generates an error, unless the signal is connected with . To prevent this, use first to check for existing connections.Note: If the 's object is freed, the connection will be lost.Note: In GDScript, it is generally recommended to connect signals with Signal.connect instead.Note: This operation (and all other signal related operations) is thread-safe.
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">

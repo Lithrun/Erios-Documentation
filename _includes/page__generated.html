@@ -1,0 +1,4 @@
+
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% assign generationDate = "2025-07-26" %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].generated_label | default: "Generated:" }}</strong> <time class="dt-published" datetime="{{ generationDate | date: "%Y-%m-%d" }}">{{ generationDate | date: date_format }}</time></p>

@@ -1,10 +1,10 @@
 ---
-# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Entity
 categories: [docs]
 toc: true
+generated: true
 badge: Class
-badge_color: '#007bff'
+badge_color: '#49C4AF'
 ---
 <style>
 h2 {
@@ -22,10 +22,42 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+blockquote {
+    margin-top: 0.4rem;
+    margin-bottom: 0.25rem; 
+}
+blockquote p {
+    margin-bottom: 0 !important;
+    font-size: 0.8em !important;
+}
 table {width: 100%; }
 td {width: 1px; }
 td:last-child {width: 100%; }
 #main {max-width: 1500px !important;}
+h2.constructor::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f013";
+  margin-right: 0.5em;
+}
+h2.readonly::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f023";
+  margin-right: 0.5em;
+}
+h2.property::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f466";
+  margin-right: 0.5em;
+}
+h2.function::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0e7";
+  margin-right: 0.5em;
+}
 </style>
             
 Visual representation of a EntityData
@@ -34,7 +66,7 @@ Visual representation of a EntityData
 
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>EUID__instance</span> {:/} | {::nomarkdown} <span class='o'>PrefabId</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>string</span> {:/} | {::nomarkdown} <span class='o'>_prefabId</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>ThirdPersonCamera__instance</span> {:/} | {::nomarkdown} <span class='o'>Camera</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>AnimationTree__instance</span> {:/} | {::nomarkdown} <span class='o'>AnimationTree</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Skeleton3D__instance</span> {:/} | {::nomarkdown} <span class='o'>Skeleton</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
@@ -64,6 +96,7 @@ Visual representation of a EntityData
 {:class="table table-bordered highlight"}
 
 ## ReadOnly
+{:.readonly}
 
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
@@ -77,6 +110,7 @@ Visual representation of a EntityData
 {:class="table table-bordered highlight"}
 
 ## Properties
+{:.property}
 
 | Type | Getter | Setter | Static | Default | Description |
 | --- | --- | --- | --- | --- | --- |
@@ -85,13 +119,16 @@ Visual representation of a EntityData
 | {::nomarkdown} <span class='kt'>Group</span> {:/} | {::nomarkdown} <span class='nf'>get_Group</span>() {:/} | {::nomarkdown} <span class='nf'>set_Group</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_Health</span>() {:/} | {::nomarkdown} <span class='nf'>set_Health</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The current health of the entity</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='nf'>get_HealthLimit</span>() {:/} | {::nomarkdown} <span class='nf'>set_HealthLimit</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Max health the entity can have</span> {:/} |
-| {::nomarkdown} <span class='kt'>EUID</span> {:/} | {::nomarkdown} <span class='nf'>get_Id</span>() {:/} | {::nomarkdown} <span class='nf'>set_Id</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The instance ID of the entity</span> {:/} |
-| {::nomarkdown} <span class='kt'>EUID</span> {:/} | {::nomarkdown} <span class='nf'>get_LevelId</span>() {:/} | {::nomarkdown} <span class='nf'>set_LevelId</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Euid</span> {:/} | {::nomarkdown} <span class='nf'>get_Id</span>() {:/} | {::nomarkdown} <span class='nf'>set_Id</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>The ID of the entity</span> {:/} |
+| {::nomarkdown} <span class='kt'>Euid</span> {:/} | {::nomarkdown} <span class='nf'>get_LevelId</span>() {:/} | {::nomarkdown} <span class='nf'>set_LevelId</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>Vector3</span> {:/} | {::nomarkdown} <span class='nf'>get_LevelPosition</span>() {:/} | {::nomarkdown} <span class='nf'>set_LevelPosition</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Euid</span> {:/} | {::nomarkdown} <span class='nf'>get_PrefabId</span>() {:/} | {::nomarkdown} <span class='nf'>set_PrefabId</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>List__ScheduleTask</span> {:/} | {::nomarkdown} <span class='nf'>get_Tasks</span>() {:/} | {::nomarkdown} <span class='nf'>set_Tasks</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Tasks work on a priority order. Tasks at the TOP of the list must be completed first.</span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions
+{:.function}
+
 *Requires an instance!*
 {: .notice--warning}
 
@@ -101,6 +138,29 @@ Visual representation of a EntityData
 <div class ="highlight">
 <pre class ="highlight">
 <span class='nf'>GetScheduledTask</span>() -> <span class='kt'>ScheduleTask</span>
+</pre>
+</div>
+</div>
+
+### InterruptCurrentTask(ScheduleTask)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>InterruptCurrentTask</span>(<span class='o'>newTask</span>: <span class='kt'>ScheduleTask</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>ScheduleTask</span> {:/} | {::nomarkdown} <span class='o'>newTask</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### FinishCurrentTask
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>FinishCurrentTask</span>() -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
@@ -258,6 +318,97 @@ Visual representation of a EntityData
 | --- | --- | --- |
 | {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>count</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### RemoveItem(Euid,number)
+> Removes the item to the
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>RemoveItem</span>(<span class='o'>itemId</span>: <span class='kt'>Euid</span>,<span class='o'>count</span>: <span class='kt'>number</span> = 1) -> <span class='kt'>boolean</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Euid</span> {:/} | {::nomarkdown} <span class='o'>itemId</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>count</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### RemoveItem(ItemData,number)
+> Removes the item to the
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>RemoveItem</span>(<span class='o'>item</span>: <span class='kt'>ItemData</span>,<span class='o'>count</span>: <span class='kt'>number</span> = 1) -> <span class='kt'>boolean</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>ItemData</span> {:/} | {::nomarkdown} <span class='o'>item</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>count</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### HasItem(Euid,number)
+> Checks if the entity has an item with a specific ID and count in the inventory.
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>HasItem</span>(<span class='o'>id</span>: <span class='kt'>Euid</span>,<span class='o'>count</span>: <span class='kt'>number</span> = 1) -> <span class='kt'>boolean</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Euid</span> {:/} | {::nomarkdown} <span class='o'>id</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>count</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### IsEquipped(Euid)
+> Checks if the entity has equipped a specific item
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>IsEquipped</span>(<span class='o'>id</span>: <span class='kt'>Euid</span>) -> <span class='kt'>boolean</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Euid</span> {:/} | {::nomarkdown} <span class='o'>id</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### RemoveEquipped(Euid)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>RemoveEquipped</span>(<span class='o'>id</span>: <span class='kt'>Euid</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Euid</span> {:/} | {::nomarkdown} <span class='o'>id</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+### _Init(EntityPrefab)
+<div class ="highlighter-rouge">
+<div class ="highlight">
+<pre class ="highlight">
+<span class='nf'>_Init</span>(<span class='o'>prefab</span>: <span class='kt'>EntityPrefab</span>) -> <span class='kt'>nil</span>
+</pre>
+</div>
+</div>
+
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>EntityPrefab</span> {:/} | {::nomarkdown} <span class='o'>prefab</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ### _Init(CreaturePrefab,boolean)

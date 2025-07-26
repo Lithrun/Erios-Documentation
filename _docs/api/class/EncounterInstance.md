@@ -1,5 +1,5 @@
 ---
-title: GamemodeManager
+title: EncounterInstance
 categories: [docs]
 toc: true
 generated: true
@@ -65,27 +65,35 @@ h2.function::before {
 ## Constructors
 {:.constructor}
 
-### GamemodeManager.__new(GamemodeSession)
+### EncounterInstance.__new(Encounter)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>GamemodeManager.__new</span>(<span class='o'>session</span>: <span class='kt'>GamemodeSession</span>)
+<span class='nf'>EncounterInstance.__new</span>(<span class='o'>configuration</span>: <span class='kt'>Encounter</span>)
 </pre>
 </div>
 </div>
 
 | Type | Name | Description
 | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>GamemodeSession</span> {:/} | {::nomarkdown} <span class='o'>session</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Encounter</span> {:/} | {::nomarkdown} <span class='o'>configuration</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Fields
 
 | Type | Name | Static | Default | Description |
 | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>SyncEvent__instance</span> {:/} | {::nomarkdown} <span class='o'>OnReady</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Invoked when the game starts</span> {:/} |
-| {::nomarkdown} <span class='kt'>SyncEvent__instance</span> {:/} | {::nomarkdown} <span class='o'>OnTick</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Invoked every gamemode tick (0.1s)</span> {:/} |
-| {::nomarkdown} <span class='kt'>SyncEvent__instance</span> {:/} | {::nomarkdown} <span class='o'>OnSecond</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'>Invoked every second</span> {:/} |
+| {::nomarkdown} <span class='kt'>Func__Decimal__instance__Task__instance__instance</span> {:/} | {::nomarkdown} <span class='o'>Tick</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='o'>IsValid</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>boolean</span> {:/} | {::nomarkdown} <span class='o'>IsFinished</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
+
+## Properties
+{:.property}
+
+| Type | Getter | Setter | Static | Default | Description |
+| --- | --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Encounter</span> {:/} | {::nomarkdown} <span class='nf'>get_Configuration</span>() {:/} | {::nomarkdown} <span class='nf'>set_Configuration</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions
@@ -94,30 +102,21 @@ h2.function::before {
 *Requires an instance!*
 {: .notice--warning}
 
-### Restart
+### Start
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Restart</span>() -> <span class='kt'>nil</span>
+<span class='nf'>Start</span>() -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
 
-## Static Functions
-*Do not require an instance!*
-{: .notice--warning}
-
-### Start(GamemodeSession)
+### End
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Start</span>(<span class='o'>session</span>: <span class='kt'>GamemodeSession</span>) -> <span class='kt'>nil</span>
+<span class='nf'>End</span>() -> <span class='kt'>nil</span>
 </pre>
 </div>
 </div>
-
-| Type | Name | Description
-| --- | --- | --- |
-| {::nomarkdown} <span class='kt'>GamemodeSession</span> {:/} | {::nomarkdown} <span class='o'>session</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-{:class="table table-bordered highlight"}
 

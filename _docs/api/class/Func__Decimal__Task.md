@@ -1,5 +1,5 @@
 ---
-title: Deer
+title: Func__Decimal__Task
 categories: [docs]
 toc: true
 generated: true
@@ -65,22 +65,27 @@ h2.function::before {
 ## Constructors
 {:.constructor}
 
-### Deer.__new()
+### Func__Decimal__Task.__new(Object,IntPtr)
 <div class ="highlighter-rouge">
 <div class ="highlight">
 <pre class ="highlight">
-<span class='nf'>Deer.__new</span>()
+<span class='nf'>Func__Decimal__Task.__new</span>(<span class='o'>object</span>: <span class='kt'>Object</span>,<span class='o'>method</span>: <span class='kt'>IntPtr</span>)
 </pre>
 </div>
 </div>
 
-## Properties
-{:.property}
+| Type | Name | Description
+| --- | --- | --- |
+| {::nomarkdown} <span class='kt'>Object</span> {:/} | {::nomarkdown} <span class='o'>object</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>IntPtr</span> {:/} | {::nomarkdown} <span class='o'>method</span> {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+{:class="table table-bordered highlight"}
 
-| Type | Getter | Setter | Static | Default | Description |
-| --- | --- | --- | --- | --- | --- |
-| {::nomarkdown} <span class='kt'>Node3D</span> {:/} | {::nomarkdown} <span class='nf'>get_LowDetail</span>() {:/} | {::nomarkdown} <span class='nf'>set_LowDetail</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>NavigationAgent3D</span> {:/} | {::nomarkdown} <span class='nf'>get_NavigationAgent</span>() {:/} | {::nomarkdown} <span class='nf'>set_NavigationAgent</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
-| {::nomarkdown} <span class='kt'>Node3D</span> {:/} | {::nomarkdown} <span class='nf'>get_Visual</span>() {:/} | {::nomarkdown} <span class='nf'>set_Visual</span>(<span class='o'>val</span>) {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+## ReadOnly
+{:.readonly}
+
+| Type | Name | Static | Default | Description |
+| --- | --- | --- | --- | --- |
+| {::nomarkdown} <span class='kt'>MethodInfo</span> {:/} | {::nomarkdown} <span class='nf'>Method</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
+| {::nomarkdown} <span class='kt'>Object</span> {:/} | {::nomarkdown} <span class='nf'>Target</span> {:/} | {::nomarkdown}   {:/} | {::nomarkdown}  {:/} | {::nomarkdown} <span class='c'></span> {:/} |
 {:class="table table-bordered highlight"}
 

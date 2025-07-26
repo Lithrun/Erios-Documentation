@@ -1,8 +1,8 @@
 ---
-# This file was automatically generated on 2025-05-28 by the Lunaris Documentation Generator
 title: Math
 categories: [docs]
 toc: true
+generated: true
 badge: Static
 badge_color: '#FFA500'
 ---
@@ -22,10 +22,42 @@ h3 {
     margin-top: 0.25rem !important;
     margin-bottom: 1rem !important;
 }
+blockquote {
+    margin-top: 0.4rem;
+    margin-bottom: 0.25rem; 
+}
+blockquote p {
+    margin-bottom: 0 !important;
+    font-size: 0.8em !important;
+}
 table {width: 100%; }
 td {width: 1px; }
 td:last-child {width: 100%; }
 #main {max-width: 1500px !important;}
+h2.constructor::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f013";
+  margin-right: 0.5em;
+}
+h2.readonly::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f023";
+  margin-right: 0.5em;
+}
+h2.property::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f466";
+  margin-right: 0.5em;
+}
+h2.function::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0e7";
+  margin-right: 0.5em;
+}
 </style>
             
 Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.
@@ -42,8 +74,8 @@ Provides constants and static methods for trigonometric, logarithmic, and other 
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>Infinity</span> {:/} | {::nomarkdown} <span class='m'>Infinity</span> {:/} | {::nomarkdown} <span class='c'>Represents the positive infinity value.</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>NaN</span> {:/} | {::nomarkdown} <span class='m'>NaN</span> {:/} | {::nomarkdown} <span class='c'>Represents a value that is not a number (NaN).</span> {:/} |
 | {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>Epsilon</span> {:/} | {::nomarkdown} <span class='m'>5E-324</span> {:/} | {::nomarkdown} <span class='c'>Represents the smallest positive numeric value greater than zero.</span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>MinValue</span> {:/} | {::nomarkdown} <span class='m'>-1.7976931348623157E+308</span> {:/} | {::nomarkdown} <span class='c'>Represents the smallest possible value of a Double.</span> {:/} |
-| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>MaxValue</span> {:/} | {::nomarkdown} <span class='m'>1.7976931348623157E+308</span> {:/} | {::nomarkdown} <span class='c'>Represents the largest possible value of a Double.</span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>MinValue</span> {:/} | {::nomarkdown} <span class='m'>-1.7976931348623157E+308</span> {:/} | {::nomarkdown} <span class='c'>Represents the smallest possible value of a number.</span> {:/} |
+| {::nomarkdown} <span class='kt'>number</span> {:/} | {::nomarkdown} <span class='o'>MaxValue</span> {:/} | {::nomarkdown} <span class='m'>1.7976931348623157E+308</span> {:/} | {::nomarkdown} <span class='c'>Represents the largest possible value of a number.</span> {:/} |
 {:class="table table-bordered highlight"}
 
 ## Functions
