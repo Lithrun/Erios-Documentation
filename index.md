@@ -53,12 +53,13 @@ feature_row:
 
 {% include feature_row %}
 
-<!-- Simple script to change /latest/ to the actual first blog post -->
 {% assign latest = site.posts.first %}
+{% if latest %}
 <script>
   var els = document.querySelectorAll("a[href='/latest/']");
+  var latestUrl = "{{ latest.url | relative_url }}";
   for (var i = 0, l = els.length; i < l; i++) {
-    var el = els[i];
-    el.href = {{ latest.url }};
+    els[i].href = latestUrl;
   }
 </script>
+{% endif %}
