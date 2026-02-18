@@ -19,7 +19,7 @@ On this page you can find answers to frequently asked questions. If your questio
 - There's no set interval for development blogs. They may happen weekly, bi-weekly or monthly, depending on my schedule. Writing blogs takes time, so if you want to stay up to date with the latest of the latest news, [join the community]({% link _pages/join.md %}) as I post small sized updates there more frequently.
 
 ## On what platforms will Erios be released?
-- Erios is supported on Steam for Windows (Linux & Mac support is experimental, but should theoretically work). Perhaps I can also publish the game at other platforms, but will see when the time comes.
+- Erios is supported on Steam for Windows & Linux (Mac support is experimental, but should theoretically work). Perhaps I can also publish the game at other platforms, but will see when the time comes.
 
 ## What are the system requirements?
 - It's too early to tell now. After the demo is complete I can do benchmarking and make an estimate on what the average system requirements are. The graphics are simplistic thanks to the low poly style and there's also various graphical settings to play around with, so low-end devices should be able to run the game smoothly.
@@ -30,8 +30,11 @@ On this page you can find answers to frequently asked questions. If your questio
 ## Will there be NFTs, Subscriptions, Microtransactions, Lootboxes or Season Passes?
 - No. I am not a fan of all of these systems, as their primary focus is on generating revenue for a business, not on providing value to the game. I do not believe that it is worth it to sacrifice the integrity of the game for the sake of generating additional revenue. Erios is a passion project at first, money generated from it comes second.
 
+## Does the game include AI assets?
+- No. The assets (textures, fonts, models, audio, story, dialogue) are all human-made. Unfortunately I am not talented enough to create every asset by myself, so for assets that are bought, these are created by humans to the best of my knowledge. With everything created post-2023 it is getting harder and harder to verify the authenticity of the author, so most of the assets from Erios are from before the AI era. I do use ChatGPT as a search engine, and sometimes for code related questions. AI is good as an assistant, but terrible as a replacement. I would not recommend someone who is new to programming to get into the "vibe" coding, as it is important that you understand the fundamentals of programming. Learn it, you will thank me later.
+
 ## Will there be a mobile version?
-- Technically it could be possible, as the art style of the game is low poly, which means mobile devices should be able to render the game at a decent framerate. Hopefully one day, but this will mainly depend on my time and if there's an actual audience for a mobile version. Main focus is still on the desktop version.
+- Technically there already is! Unfortunately for you, it is only installed on my phone and not publicly available. Whenever I release a new build of Erios, the game is also tested on Android, and well, those all succeed. The main challenge with a mobile version is the UI & control scheme. There is generally a high resolution, on a very small screen. And for controls, just your fingers to use. So, hopefully one day, but the focus is on the desktop version.
 
 # Multiplayer
 
@@ -62,3 +65,6 @@ On this page you can find answers to frequently asked questions. If your questio
 
 ## Will there be physical copies of the Erios book series?
 - Once I have finished writing the books, I do plan on finding a publisher so that physical copies can be sold. There will also be an e-book version.
+
+## Was AI used in the creative writing process of Erios?
+- No. All of the stories and events within Erios are authored by me. I have spend years creating stories, based on my imagination or real life events that I have witnessed. Erios is my own fantasy world, that I am sharing with everyone to enjoy and experience. Using AI to do that for me would defeat the entire purpose of Erios.
