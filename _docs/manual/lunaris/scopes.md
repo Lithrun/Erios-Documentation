@@ -1,0 +1,139 @@
+---
+title: Scopes
+categories: [docs]
+order: 2
+toc: true
+---
+
+Lunaris scripts run inside a **scope**. A scope determines two important things:
+- What object `self` refers to
+- Which callback methods are available
+*`Main.luna` does __not__ have a `self`, as it isn't running on any object*
+
+Here is a complete list of all scopes, what the available callbacks are, and what `self` refers to.
+
+# Elements
+
+Within Erios, anything that is exists in the game world, either as 2D or 3D is considered an element. You see a Tree in-game? That is actually an **ElementObject**. That has a reference ID to the model, and transform data (position, rotation & scale). Many of the interactable objects you see in Erios are Elements with Lunaris scripts.
+
+## Element3D
+
+**Self**: [Element3D]({% link _docs/api/class/Quest.md %})
+
+**OnInteract**
+
+Any 3D object can optionally be interacted with. Either by the Player, or by an NPC. When they do, the `OnInteract` callback is invoked.
+
+```lunaris
+// This is the OnInteract logic of a light object. When the player interacts with it, the light effects will be turned on/off
+function OnInteract()
+	IsLit = not IsLit
+	Toggle(IsLit)
+	self.InvokeEvent("OnLit")
+end
+```
+
+**OnLoad**
+
+Global variables are automatically persisted on Lunaris scripts. OnLoad is called after the global variables have been restored. This can be used to restore a previous state
+```lunaris
+// When the player loads their save file, IsLit is true when the torch was lit. Yet it doesn't automatically turn on, so to enable the light effects, this is done with the OnLoad callback
+function OnLoad()
+	Toggle(IsLit)
+	if IsLit then
+		self.InvokeEvent("OnLit")
+	end
+end
+```
+
+# Quest
+
+**Self**: [Quest]({% link _docs/api/class/Quest.md %})
+
+**OnStart**
+
+Invoked when the Quest is started.
+
+```lunaris
+// Auto-complete the tutorial if player isn't in the tutorial level
+function OnStart()
+	local player = ActivePlayer();
+	playerPosition = player.LevelPosition;
+	// Do not run the tutorial on existing save files
+	if (player.LevelId != Euid.__new("L:TUTORIAL")) then
+		Self.CurrentStage = 99
+	end
+end
+
+```
+
+**OnTick(tickDelta)**
+
+Invoked approximately every 5 seconds if the Quest is active. Since this is a delta, the actual value is between 5-6 seconds.
+
+```lunaris
+// This snipped is from the Tutorial quest. Every 5 seconds it checks if the conditions are met to proceed to the next quest stage
+function OnTick()
+	local stage = Self.CurrentStage
+	if (stage == 0) then
+		Self.CurrentStage = 10
+	elseif (stage == 10) then
+		l_steps.set_Text(Localizer.Translate("PRESS_MOVEMENT",	Input.GetKeys("UP", "LEFT", "DOWN", "RIGHT")))
+		if (playerPosition.DistanceTo(ActivePlayer().LevelPosition) > 5) then
+			Self.CurrentStage = 20
+		end
+	elseif (stage == 20) then
+		l_steps.set_Text(Localizer.Translate("PRESS_JUMP", Input.GetKey("JUMP")))
+		if (Self.GetTarget("JUMP_LOCATION").DistanceTo() <= 7) then
+			Self.CurrentStage = 30
+		end
+	elseif (stage == 30) then
+		l_steps.set_Text(Localizer.Translate("PRESS_INTERACT", Input.GetKey("INTERACT")))
+		if not Element.Exists("I:STONE") then
+			Self.CurrentStage = 99
+		end
+	end
+end
+```
+
+**OnComplete**
+
+Invoked when the Quest has been completed.
+
+```lunaris
+// When the quest tutorial has been completed, delete the popup label and teleport the player into Weldanar
+function OnComplete()
+	l_steps.Delete()
+	ActivePlayer().Teleport("L:WELDANAR", Vector3.__new(5926.6, 248.5, -557.4))
+end
+```
+
+# QuestStage
+
+**Self**: [Quest]({% link _docs/api/class/Quest.md %})
+
+A quest consists of multiple stages, and one stage is active at a time. The quest stage can also have a Lunaris script running. The Quest Stage script itself does not have any callbacks, and it is executed when the stage becomes active.
+
+# Item Effect
+
+**Self**: [Quest]({% link _docs/api/class/Quest.md %})
+
+Item Effects are used for alchemy.
+
+**OnStart(target: Entity, amount: number, duration: number)**
+
+Invoked when the Effect is to be applied.
+
+```lunaris
+function OnStart(target, amount, duration)
+	target.Health.Add(amount, duration)
+end
+```
+
+**OnTick(target: Entity, amount: number, duration: number, elpased: number, deltaTime: number)**
+
+Invoked every Effect tick (frame interval)
+
+**OnEnd(target: Entity, amount: number, duration: nunber)**
+
+Invoked when the Effect has been finished

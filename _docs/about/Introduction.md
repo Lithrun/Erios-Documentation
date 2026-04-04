@@ -4,7 +4,7 @@ categories: [docs]
 permalink: /docs/about/introduction
 toc: true
 ---
-```
+```lunaris
 Game.OnStart(function()
     console.log('Hello World')
 end)
@@ -22,6 +22,6 @@ This documentation is organized into several categories:
 - **Manual** can be read or referenced as needed, in any order. It contains feature-specific tutorials and documentation.
 - **Contributing** gives information on how you can contribute to the modding community of Erios. Whether it is by testing the limits of modding, helping to maintain this documentation or other parts.
 - **Community** is dedicated to the life of Erios's modding community and contains a list of recommended third-party tutorials and materials outside of this documentation.
-- **Class Reference** documents the full Erios API. This is also available in the integrated Mod Editor within the game. You can find information on all classes, functions, events and so on here.
+- **API Reference** documents the full Erios API. This is also available in the integrated Mod Editor within the game. You can find information on all classes, functions, events and so on here.
 
 *Have fun reading and creating mods within Erios! I am looking forward to try out your creations!*

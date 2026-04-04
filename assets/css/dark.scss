@@ -5,7 +5,28 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin_dark | default: 'dark' }}"; // skin
+@import "erios/docs-layout";
+@import "erios/syntax";
+@import "erios/typography";
+
 @import "minimal-mistakes"; // main partials
+
+@include erios-docs-layout-overrides;
+@include erios-syntax-overrides(
+  #1f232c,
+  #343a46,
+  #e5e7eb,
+  #9ca3af,
+  #60a5fa,
+  #dbe2ea,
+  #4fd1c5,
+  #fbbf24,
+  #c084fc,
+  #a5b4fc,
+  #93c5fd,
+  #f472b6
+);
+@include erios-typography-overrides;
 
 .alert {
     padding: 15px;

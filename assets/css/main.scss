@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "erios/docs-layout";
+@import "erios/syntax";
+@import "erios/typography";
+
+@import "minimal-mistakes"; // main partials
+
+@include erios-docs-layout-overrides;
+@include erios-syntax-overrides(
+  #f7f8fb,
+  #d8dde7,
+  #212936,
+  #6a7282,
+  #0f5bd8,
+  #1f2937,
+  #0d9488,
+  #b54708,
+  #7c3aed,
+  #475569,
+  #2563eb,
+  #9333ea
+);
+@include erios-typography-overrides;

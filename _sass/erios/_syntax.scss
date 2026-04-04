@@ -1,0 +1,133 @@
+@mixin erios-syntax-overrides(
+  $bg,
+  $border,
+  $text,
+  $comment,
+  $keyword,
+  $name,
+  $function,
+  $string,
+  $number,
+  $operator,
+  $builtin,
+  $decorator
+) {
+  .highlighter-rouge {
+    margin-bottom: 1.5rem;
+  }
+
+  .highlighter-rouge .highlight,
+  div.highlighter-rouge {
+    background: $bg;
+    border: 1px solid $border;
+    border-radius: 0.75rem;
+  }
+
+  .highlighter-rouge pre.highlight,
+  div.highlighter-rouge pre.highlight,
+  figure.highlight pre {
+    background: transparent;
+    color: $text;
+    margin: 0;
+    padding: 1rem 1.125rem;
+  }
+
+  .highlighter-rouge code,
+  .highlighter-rouge pre,
+  .highlighter-rouge .highlight {
+    color: $text;
+  }
+
+  .highlight .c,
+  .highlight .c1,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .cs,
+  .highlight .gh,
+  .highlight .gp,
+  .highlight .gt {
+    color: $comment;
+  }
+
+  .highlight .k,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt,
+  .highlight .ow {
+    color: $keyword;
+  }
+
+  .highlight .n,
+  .highlight .na,
+  .highlight .nb,
+  .highlight .nc,
+  .highlight .nd,
+  .highlight .ne,
+  .highlight .ni,
+  .highlight .nl,
+  .highlight .nn,
+  .highlight .no,
+  .highlight .nt,
+  .highlight .nv,
+  .highlight .nx,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi {
+    color: $name;
+  }
+
+  .highlight .nf,
+  .highlight .fm {
+    color: $function;
+  }
+
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sr,
+  .highlight .ss,
+  .highlight .sx,
+  .highlight .dl {
+    color: $string;
+  }
+
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .il {
+    color: $number;
+  }
+
+  .highlight .o {
+    color: $operator;
+  }
+
+  .highlight .bp {
+    color: $builtin;
+  }
+
+  .highlight .err {
+    color: $decorator;
+  }
+
+  .highlight .nd {
+    color: $decorator;
+  }
+
+  .highlight .p,
+  .highlight .w {
+    color: $text;
+  }
+}

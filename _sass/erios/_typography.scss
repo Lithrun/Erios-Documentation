@@ -1,0 +1,49 @@
+/* GitBook-like typography scale for Minimal Mistakes */
+
+$type-size-1: 2em;
+$type-size-2: 1.5em;
+$type-size-3: 1.25em;
+$type-size-4: 1.125em;
+$type-size-5: 1em;
+$type-size-6: 0.875em;
+$type-size-7: 0.8125em;
+$type-size-8: 0.75em;
+
+$h-size-1: 1.875em;
+$h-size-2: 1.5em;
+$h-size-3: 1.25em;
+$h-size-4: 1.125em;
+$h-size-5: 1em;
+$h-size-6: 0.875em;
+
+@mixin erios-typography-overrides {
+  html {
+    font-size: 16px;
+  }
+
+  @media (min-width: 48em) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 64em) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 80em) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  .nav__list .nav__items {
+    font-size: 1rem;
+  }
+
+  .page__lead {
+    font-size: 1.0625em;
+  }
+}

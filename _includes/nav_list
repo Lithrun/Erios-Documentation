@@ -5,8 +5,10 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
 
-  <ul class="nav__items" style="overflow-y: auto; scrollbar-width: thin; scrollbar-color: #888 #ccc;">
-    <input type="text" id="search-bar" placeholder="Search..." onkeyup="filterLinks()" style="border: 1px solid #ccc; padding: 5px;" />
+  <ul class="nav__items docs-nav__items">
+    <li class="docs-nav__search-item">
+      <input type="text" id="search-bar" class="docs-nav__search-input" placeholder="Search..." onkeyup="filterLinks()" />
+    </li>
 
     <script>
       function filterLinks() {
@@ -16,6 +18,10 @@
         var li = ul.getElementsByTagName('li');
 
         for (var i = 0; i < li.length; i++) {
+          if (li[i].classList.contains('docs-nav__search-item')) {
+            continue;
+          }
+
           var links = li[i].getElementsByTagName('a');
           var match = false;
           for (var j = 0; j < links.length; j++) {

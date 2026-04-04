@@ -1,0 +1,48 @@
+@mixin erios-docs-layout-overrides {
+  @media (min-width: 64em) {
+    #main.docs-main {
+      max-width: none;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    #main.docs-main .sidebar.sticky {
+      top: 1rem;
+      max-height: calc(100vh - 2rem);
+      padding-right: 0.5rem;
+      scrollbar-gutter: stable;
+      scrollbar-width: thin;
+    }
+
+    #main.docs-main .nav__list {
+      margin-bottom: 0;
+    }
+
+    #main.docs-main .docs-nav__items {
+      padding-right: 0.25rem;
+    }
+
+    #main.docs-main .docs-nav__search-item {
+      list-style: none;
+      margin-bottom: 1rem;
+      background-color: inherit;
+    }
+
+    #main.docs-main .docs-nav__search-input {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.625rem 0.75rem;
+      border: 1px solid #7a8288;
+      border-radius: 4px;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: 80em) {
+    #main.docs-main {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

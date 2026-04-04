@@ -1,3 +1,9 @@
+PATH
+  remote: vendor/jekyll-lunaris-highlighter
+  specs:
+    jekyll-lunaris-highlighter (0.1.0)
+      rouge (>= 3.0, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -266,6 +272,7 @@ DEPENDENCIES
   github-pages
   jekyll-glossary_tooltip (~> 1.5)
   jekyll-include-cache
+  jekyll-lunaris-highlighter!
   jekyll-postfiles
   webrick (~> 1.8)
 

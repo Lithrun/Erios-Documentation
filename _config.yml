@@ -46,7 +46,12 @@ words_per_minute: 150
 
 # Conversion
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 highlighter: rouge
+safe: false
+plugins_dir: _plugins
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
@@ -61,6 +66,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-glossary_tooltip
   - jekyll-postfiles
+  - jekyll-lunaris-highlighter
 
 exclude: [vendor]
 
