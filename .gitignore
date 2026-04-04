@@ -38,3 +38,6 @@ Thumbs.db
 
 # Folders #
 _site/
+
+# Jekyll specific #
+.jekyll-metadata

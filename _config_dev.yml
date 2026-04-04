@@ -1,0 +1,4 @@
+# Local development overrides for faster Jekyll rebuilds.
+incremental: true
+search: false
+search_full_content: false
