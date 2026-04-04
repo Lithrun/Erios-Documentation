@@ -16,6 +16,10 @@
     margin-bottom: 1.5rem;
   }
 
+  .code-copy-host {
+    position: relative;
+  }
+
   .highlighter-rouge .highlight,
   div.highlighter-rouge {
     background: $bg;
@@ -30,6 +34,54 @@
     color: $text;
     margin: 0;
     padding: 1rem 1.125rem;
+  }
+
+  .code-copy-host pre.highlight,
+  div.code-copy-host > pre,
+  pre.code-copy-host {
+    padding-top: 2.9rem;
+  }
+
+  .code-copy-button {
+    align-items: center;
+    background: mix($bg, $text, 88%);
+    border: 1px solid $border;
+    border-radius: 0.5rem;
+    color: $text;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.75rem;
+    font-weight: 600;
+    gap: 0.35rem;
+    line-height: 1;
+    opacity: 0;
+    padding: 0.4rem 0.65rem;
+    pointer-events: none;
+    position: absolute;
+    right: 0.7rem;
+    top: 0.7rem;
+    transform: translateY(-0.15rem);
+    transition: opacity 120ms ease, transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+    z-index: 2;
+  }
+
+  .code-copy-button:hover,
+  .code-copy-button:focus-visible {
+    background: mix($bg, $text, 78%);
+    border-color: mix($border, $text, 60%);
+    outline: none;
+  }
+
+  .code-copy-host:hover .code-copy-button,
+  .code-copy-host:focus-within .code-copy-button,
+  .code-copy-button[data-copy-state="copied"] {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .code-copy-button-label {
+    display: inline-block;
   }
 
   .highlighter-rouge code,
