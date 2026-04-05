@@ -6,7 +6,7 @@ toc: true
 ---
 ```lunaris
 Game.OnStart(function()
-    console.log('Hello World')
+    print('Hello World')
 end)
 ```
 
