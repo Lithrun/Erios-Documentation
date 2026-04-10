@@ -97,6 +97,12 @@
   border-color: #9c721f;
 }
 
+.alert-info {
+  color: var(--alert-info-color);
+  background-color: var(--alert-info-bg);
+  border-color: var(--alert-info-border);
+}
+
 div.alert code, h2 code {
   background-color: transparent !important;
 }

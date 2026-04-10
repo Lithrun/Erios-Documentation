@@ -5,9 +5,7 @@ permalink: /docs/about/introduction
 toc: true
 ---
 ```lunaris
-Game.OnStart(function()
-    print('Hello World')
-end)
+print('Hello World')
 ```
 
 Welcome to the official documentation page of Erios. This page gives a broad overview of Erios its custom User Content and of this documentation, so that you know where to start on developing your first mod or where to look if you need information on a specific feature.

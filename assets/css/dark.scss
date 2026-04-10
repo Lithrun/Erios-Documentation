@@ -11,6 +11,13 @@
 
 @import "minimal-mistakes"; // main partials
 
+:root {
+  --alert-info-color: #dbeafe;
+  --alert-info-bg: #1e3a5f;
+  --alert-info-border: #60a5fa;
+  --operator-heading-code-bg: #494949;
+}
+
 @include erios-docs-layout-overrides;
 @include erios-syntax-overrides(
   #1f232c,

@@ -24,21 +24,24 @@ unless defined?(JekyllLunarisHighlighterLoaded)
         desc "Lunaris scripting language"
 
         identifier = /[_A-Za-z]\w*/
+        qualified_identifier = /#{identifier}(?:\.#{identifier})*/
 
-        declarations = %w(class enum mixin function)
+        declarations = %w(class enum exception extension trait)
         keywords = %w(
-          and break case const continue default do else elseif end false for goto if in
-          let local new not null of or private public repeat return sealed static switch
-          then true until var while with
+          attempt break case catch const continue default else elseif finally for goto if
+          import in is local new private protected public repeat return sealed static
+          switch throw try until while with
         )
         pseudo_keywords = %w(base self this)
-        constants = %w(nil true false null)
+        constants = %w(nil true false)
+        builtin_types = %w(any array bool boolean function number string table tuple userdata range thread)
 
         state :whitespace do
           rule %r/\s+/m, Text
           rule %r/\/\/.*?$/, Comment::Single
           rule %r/\/\*.*?\*\//m, Comment::Multiline
           rule %r/^#!.*?$/, Comment::Preproc
+          rule %r/^#(?:define|if|elif|else|endif|error)\b.*?$/, Comment::Preproc
           rule %r/^#line\b.*?$/, Comment::Preproc
         end
 
@@ -46,7 +49,6 @@ unless defined?(JekyllLunarisHighlighterLoaded)
           mixin :whitespace
 
           rule %r/@{1,2}#{identifier}/, Name::Decorator
-          rule %r/<const>/, Keyword::Declaration
 
           rule %r/\[\=*\[.*?\]\=*\]/m, Str
           rule %r/`/, Str::Backtick, :template_string
@@ -58,8 +60,9 @@ unless defined?(JekyllLunarisHighlighterLoaded)
           rule %r/\.\d+(?:[eE][+-]?\d+)?/, Num::Float
           rule %r/\d+(?:[eE][+-]?\d+)?/, Num::Integer
 
-          rule %r/\b(?:class|enum|mixin)\b/, Keyword::Declaration, :class_name
-          rule %r/\bfunction\b/, Keyword::Declaration, :function_name
+          rule %r/\b(?:class|enum|exception|trait)\b/, Keyword::Declaration, :class_name
+          rule %r/\bextension\b/, Keyword::Declaration, :type_name
+          rule %r/\bfunction\b(?=\s+#{identifier})/, Keyword::Declaration, :function_name
 
           rule %r/(>?\.\.<|>\.\.|\.\.<|\.\.)/, Operator
           rule %r/(\?\?=|\?!=|\?\?|\?!|\?\.|\?\[|=>|\+\+|--|\+=|-=|\*=|\/=|%=|\^=|\.\.=|==|!=|~=|<=|>=|\|\||&&|::|\.\.\.)/, Operator
@@ -67,6 +70,7 @@ unless defined?(JekyllLunarisHighlighterLoaded)
           rule %r/[,;()\[\]{}]/, Punctuation
 
           rule %r/\b(?:#{declarations.join("|")})\b/, Keyword::Declaration
+          rule %r/\b(?:#{builtin_types.join("|")})\b/, Keyword::Type
           rule %r/\b(?:#{keywords.join("|")})\b/, Keyword
           rule %r/\b(?:#{pseudo_keywords.join("|")})\b/, Name::Builtin::Pseudo
           rule %r/\b(?:#{constants.join("|")})\b/, Keyword::Constant
@@ -91,7 +95,13 @@ unless defined?(JekyllLunarisHighlighterLoaded)
 
         state :class_name do
           mixin :whitespace
-          rule identifier, Name::Class, :pop!
+          rule qualified_identifier, Name::Class, :pop!
+        end
+
+        state :type_name do
+          mixin :whitespace
+          rule %r/\b(?:#{builtin_types.join("|")})\b/, Keyword::Type, :pop!
+          rule qualified_identifier, Name::Class, :pop!
         end
 
         state :function_name do
