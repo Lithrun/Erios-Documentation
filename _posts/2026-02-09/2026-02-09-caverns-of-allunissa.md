@@ -9,8 +9,8 @@ header:
     overlay_filter: 0.5
     image_description: "Caverns of Allunissa"
 tags:
-- community_awards
-- community
+- blog
+- game
 ---
 
 ## Caverns of Allunissa

@@ -28,7 +28,7 @@ unless defined?(JekyllLunarisHighlighterLoaded)
 
         declarations = %w(class enum exception extension trait)
         keywords = %w(
-          attempt break case catch const continue default else elseif finally for goto if
+          async attempt await break case catch const continue default else elseif finally for goto if
           import in is local new private protected public repeat return sealed static
           switch throw try until while with
         )
