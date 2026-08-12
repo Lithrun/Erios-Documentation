@@ -25,13 +25,13 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout Compendium
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: Lithrun/Erios-Compendium
           ref: main
           token: ${{ secrets.PAT }}
       - name: setup python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: 3.9
       - name: List files in the repository
@@ -41,7 +41,7 @@ jobs:
         run: |
           python generate_progress.py
       - name: Upload progress.md as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: progress-report
           path: output/progress.md
@@ -52,9 +52,9 @@ jobs:
     needs: [generate]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Download progress-report artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: progress-report
           path: _pages
@@ -66,7 +66,7 @@ jobs:
           cache-version: 2 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -74,7 +74,7 @@ jobs:
           JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   # Deployment job
   deploy:
@@ -86,4 +86,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
