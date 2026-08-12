@@ -1,4 +1,9 @@
 @mixin erios-docs-layout-overrides {
+  #main.docs-main .sidebar p,
+  #main.docs-main .sidebar li {
+    font-size: 0.95rem;
+  }
+
   @media (min-width: 64em) {
     #main.docs-main {
       max-width: none;
