@@ -67,6 +67,7 @@ plugins:
   - jekyll-glossary_tooltip
   - jekyll-postfiles
   - jekyll-lunaris-highlighter
+  - jekyll-remote-theme
 
 exclude: [vendor]
 
