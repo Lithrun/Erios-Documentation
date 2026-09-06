@@ -9,6 +9,7 @@ search: false
 @import "erios/docs-layout";
 @import "erios/syntax";
 @import "erios/typography";
+@import "erios/progress";
 
 @import "minimal-mistakes"; // main partials
 
@@ -35,3 +36,8 @@ search: false
   #9333ea
 );
 @include erios-typography-overrides;
+@include erios-progress;
+
+.progress-report {
+  @include erios-progress-tokens-light;
+}

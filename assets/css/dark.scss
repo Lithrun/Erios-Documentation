@@ -8,6 +8,7 @@
 @import "erios/docs-layout";
 @import "erios/syntax";
 @import "erios/typography";
+@import "erios/progress";
 
 @import "minimal-mistakes"; // main partials
 
@@ -34,6 +35,11 @@
   #f472b6
 );
 @include erios-typography-overrides;
+@include erios-progress;
+
+.progress-report {
+  @include erios-progress-tokens-dark;
+}
 
 .alert {
     padding: 15px;

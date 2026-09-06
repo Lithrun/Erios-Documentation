@@ -1,0 +1,199 @@
+---
+layout: default
+---
+{% comment %}
+Layout for the generated progress report. `page.progress` is filled in by
+_plugins/progress_report.rb from the markdown the Erios-Compendium CI job drops
+into _pages/progress.md. If that parse fails the markdown renders as-is.
+{% endcomment %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% assign pr = page.progress %}
+
+<div id="main" role="main">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+        </header>
+      {% endunless %}
+
+      <section class="page__content e-content" itemprop="text">
+{% if pr %}
+{% assign s = pr.summary %}
+<div class="progress-report no-js" id="progress-report">
+
+  <section class="pr-readiness" aria-labelledby="pr-ready-label">
+    <div class="pr-ready">
+      <div class="pr-ready-head">
+        <p class="pr-label" id="pr-ready-label">Demo readiness</p>
+        {% if s.updated %}<p class="pr-stamp">Updated {{ s.updated }} · refreshes every Sunday</p>{% endif %}
+      </div>
+      <div class="pr-hero-fig">
+        <span class="pr-num">{{ s.pct }}%</span>
+        <span class="pr-sub"><b class="tnum">{{ s.completed }}</b> of <b class="tnum">{{ s.total }}</b> demo tasks completed</span>
+      </div>
+      <div class="pr-meter">
+        <div class="pr-bar" role="img" aria-label="{% for st in s.by_state %}{{ st.count }} {{ st.label | downcase }}{% unless forloop.last %}, {% endunless %}{% endfor %}">
+          {%- for st in s.by_state -%}
+            {%- if st.key != "Todo" and st.count > 0 -%}<span class="pr-seg pr-seg--{{ st.key }}" style="width:{{ st.width }}%"></span>{%- endif -%}
+          {%- endfor -%}
+        </div>
+        <div class="pr-legend">
+          {%- for st in s.by_state -%}
+            <span class="pr-legend--{{ st.key }}"><i></i>{{ st.label }} {{ st.count }}</span>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+    <div class="pr-tiles">
+      <div class="pr-tile">
+        <p class="pr-label">Hours logged</p>
+        <div class="pr-v">{{ s.hours_done }}<small>h</small></div>
+        <div class="pr-d">of {{ s.hours_total }} estimated</div>
+      </div>
+      <div class="pr-tile">
+        <p class="pr-label">Hours remaining</p>
+        <div class="pr-v">{{ s.hours_left_buffered }}<small>h</small></div>
+        <div class="pr-d">{{ s.hours_left }}h × {{ s.multiplier }} safety margin</div>
+      </div>
+      {% if s.weeks_min and s.weeks_max %}
+      <div class="pr-tile">
+        <p class="pr-label">Estimated finish</p>
+        <div class="pr-v">{{ s.weeks_min }}–{{ s.weeks_max }}<small>wk</small></div>
+        {% if s.week_hours_min %}<div class="pr-d">at {{ s.week_hours_min }}–{{ s.week_hours_max }} hours a week</div>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+    {% if pr.note_html %}<p class="pr-note">{{ pr.note_html }}</p>{% endif %}
+  </section>
+
+  <div class="pr-tabs" role="tablist" aria-label="Task groups">
+    <button role="tab" id="pr-tab-demo" aria-selected="true" aria-controls="pr-panel-demo">Demo <span class="pr-cnt">{{ s.total }}</span></button>
+    <button role="tab" id="pr-tab-backlog" aria-selected="false" aria-controls="pr-panel-backlog" tabindex="-1">Backlog <span class="pr-cnt">{{ pr.backlog.total }}</span></button>
+    <button role="tab" id="pr-tab-done" aria-selected="false" aria-controls="pr-panel-done" tabindex="-1">Completed <span class="pr-cnt">{{ s.completed }}</span></button>
+    {% if pr.activity %}<button role="tab" id="pr-tab-activity" aria-selected="false" aria-controls="pr-panel-activity" tabindex="-1">Recent activity</button>{% endif %}
+  </div>
+
+  {%- comment -%} ---------- Demo: hours by area ---------- {%- endcomment -%}
+  <section class="pr-panel" id="pr-panel-demo" role="tabpanel" aria-labelledby="pr-tab-demo">
+    <p class="pr-intro">Where the work for the demo still sits, by area. Areas with the most remaining hours come first; finished areas sink to the bottom.</p>
+    <div class="pr-chart">
+      <div class="pr-chart-head">
+        <h2>Where the remaining hours are</h2>
+        <p>Estimated hours per area, done versus remaining</p>
+      </div>
+      <div class="pr-bars">
+        {%- for a in pr.areas -%}
+          {%- if a.complete -%}{%- assign target = "pr-done-" | append: a.slug -%}{%- else -%}{%- assign target = "pr-bl-" | append: a.slug -%}{%- endif -%}
+          <button type="button" class="pr-cat{% if a.complete %} is-done{% endif %}" data-target="{{ target }}">{{ a.name | escape }}</button>
+          <div class="pr-track" tabindex="0" data-tip="{{ a.name | escape }} · {{ a.done }} of {{ a.n }} tasks · {{ a.h_done }}h done, {{ a.h_left }}h remaining">
+            {%- if a.h_done > 0 -%}<span class="pr-seg-done" style="width:{{ a.w_done }}%"></span>{%- endif -%}
+            {%- if a.h_left > 0 -%}<span class="pr-seg-left" style="width:{{ a.w_left }}%"></span>{%- endif -%}
+          </div>
+          {%- if a.complete -%}<div class="pr-val is-muted">done</div>{%- else -%}<div class="pr-val tnum"><b>{{ a.h_left }}h</b> left</div>{%- endif -%}
+        {%- endfor -%}
+        <div></div>
+        <div class="pr-axis">{% for t in pr.axis.ticks %}<span style="left:{{ t.left }}%">{{ t.value }}h</span>{% endfor %}</div>
+        <div></div>
+      </div>
+      <div class="pr-chart-foot">
+        <div class="pr-chart-legend"><span class="pr-key-done"><i></i>Hours done</span><span class="pr-key-left"><i></i>Hours remaining</span></div>
+        <p>Click an area for its task list.</p>
+      </div>
+      <details class="pr-table">
+        <summary>Show as table</summary>
+        <table>
+          <thead><tr><th>Area</th><th>Tasks done</th><th>Hours done</th><th>Hours remaining</th></tr></thead>
+          <tbody>
+            {%- for a in pr.areas -%}
+            <tr><td>{{ a.name | escape }}</td><td class="tnum">{{ a.done }} / {{ a.n }}</td><td class="tnum">{{ a.h_done }}</td><td class="tnum">{{ a.h_left }}</td></tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </details>
+    </div>
+  </section>
+
+  {%- comment -%} ---------- Backlog ---------- {%- endcomment -%}
+  <section class="pr-panel" id="pr-panel-backlog" role="tabpanel" aria-labelledby="pr-tab-backlog">
+    <p class="pr-intro">Every feature still to be built, grouped by area. The tag says which milestone it belongs to: the demo, the full release, or a free update after release. Hours are the current estimate where one exists.</p>
+    <div class="pr-sum">
+      <span><b class="tnum">{{ pr.backlog.total }}</b> open features</span>
+      <span><b class="tnum">{{ pr.backlog.counts.demo }}</b> for the demo</span>
+      <span><b class="tnum">{{ pr.backlog.counts.release }}</b> before release</span>
+      <span><b class="tnum">{{ pr.backlog.counts.future }}</b> after release</span>
+    </div>
+    <div class="pr-groups">
+      {%- for g in pr.backlog.groups -%}
+      <section class="pr-group" id="pr-bl-{{ g.slug }}">
+        <h3>{{ g.name | escape }}<small>{{ g.count }} open{% if g.hours > 0 %} · {{ g.hours }}h{% endif %}</small></h3>
+        <ul>
+          {%- for t in g.items -%}
+          <li>
+            <span class="pr-name">{{ t.short | escape }}{% if t.state and t.state != "Todo" %}<span class="pr-chip pr-chip--{{ t.state }}">{{ t.state_label }}</span>{% endif %}</span>
+            <span class="pr-phase pr-phase--{{ t.phase_key }}">{{ t.phase }}</span>
+            <span class="pr-h tnum">{% if t.hours %}{{ t.hours }}h{% endif %}</span>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </section>
+      {%- endfor -%}
+    </div>
+  </section>
+
+  {%- comment -%} ---------- Completed ---------- {%- endcomment -%}
+  <section class="pr-panel" id="pr-panel-done" role="tabpanel" aria-labelledby="pr-tab-done">
+    <p class="pr-intro">Everything already finished for the demo, by area. Hours are the original estimates.</p>
+    <div class="pr-groups pr-groups--done">
+      {%- for a in pr.completed -%}
+      <section class="pr-group" id="pr-done-{{ a.slug }}">
+        <h3>{{ a.name | escape }}<small>{{ a.done }} / {{ a.n }} done · {{ a.h_done }}h</small></h3>
+        <ul>
+          {%- for t in a.done_tasks -%}
+          <li><span class="pr-name">{{ t.short | escape }}</span><span class="pr-h tnum">{{ t.hours }}h</span></li>
+          {%- endfor -%}
+        </ul>
+      </section>
+      {%- endfor -%}
+    </div>
+  </section>
+
+  {%- comment -%} ---------- Recent activity ---------- {%- endcomment -%}
+  {% if pr.activity %}
+  <section class="pr-panel" id="pr-panel-activity" role="tabpanel" aria-labelledby="pr-tab-activity">
+    <div class="pr-activity">
+      <div class="pr-group pr-act--now">
+        <h3><i></i>In progress</h3>
+        <ol>{% for t in pr.activity.in_progress %}<li>{{ t.short | escape }}{% if t.area %} <small class="pr-area">{{ t.area | escape }}</small>{% endif %}</li>{% else %}<li class="pr-empty">Nothing in progress right now.</li>{% endfor %}</ol>
+      </div>
+      <div class="pr-group pr-act--did">
+        <h3><i></i>Recently completed</h3>
+        <ol>{% for t in pr.activity.recently_completed %}<li>{{ t.short | escape }}{% if t.area %} <small class="pr-area">{{ t.area | escape }}</small>{% endif %}{% if t.date %}<time>{{ t.date }}</time>{% endif %}</li>{% endfor %}</ol>
+      </div>
+      <div class="pr-group pr-act--new">
+        <h3><i></i>Recently added</h3>
+        <ol>{% for t in pr.activity.recently_added %}<li>{{ t.short | escape }}{% if t.area %} <small class="pr-area">{{ t.area | escape }}</small>{% endif %}{% if t.date %}<time>{{ t.date }}</time>{% endif %}</li>{% endfor %}</ol>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="pr-tip" id="pr-tip" aria-hidden="true"></div>
+</div>
+{% else %}
+        {{ content }}
+{% endif %}
+      </section>
+    </div>
+  </article>
+</div>
+
+{% if pr %}<script src="{{ '/assets/js/progress.js' | relative_url }}" defer></script>{% endif %}

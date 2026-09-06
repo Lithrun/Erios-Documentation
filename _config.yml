@@ -117,6 +117,12 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # Generated progress report (dropped into _pages by the CI job; see _plugins/progress_report.rb)
+  - scope:
+      path: "_pages/progress.md"
+    values:
+      layout: progress
+      classes: wide
   # _docs
   - scope:
       path: ""
