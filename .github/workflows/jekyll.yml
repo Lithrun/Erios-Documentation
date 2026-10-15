@@ -53,6 +53,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # Full history, so _plugins/git_last_modified.rb can date each doc by its last commit
       - name: Download progress-report artifact
         uses: actions/download-artifact@v8
         with:
