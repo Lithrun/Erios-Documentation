@@ -12,6 +12,8 @@ header:
       url: "https://forum.erios.io/signup"
     - label: "<i class='fas fa-newspaper'></i> Latest news"
       url: "/latest/"
+    - label: "<i class='fas fa-list-check'></i> Status"
+      url: "/progress/"
 excerpt: >
   Erios® is an upcoming action adventure RPG. Venture into the lands of Weldanar and uncover your own story. Stay up to date as development has started on a demo!<br />
 feature_row:

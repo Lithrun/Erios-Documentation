@@ -1,77 +1,78 @@
 // Progressive enhancement for the progress report (_layouts/progress.html):
-// tabs, chart tooltips, and click-through from a chart row to its task list.
-// Without JavaScript every panel simply renders in order.
+// the phase switcher and each phase's tabs, with the open one kept in the URL
+// (#release, #demo-done). Without JavaScript every panel simply renders in order.
 (function () {
   var root = document.getElementById('progress-report');
   if (!root) return;
   root.classList.remove('no-js');
 
-  // ---- tabs
-  var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
-  var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+  function tabsOf(list) {
+    return Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+  }
 
   function select(tab, focus) {
-    tabs.forEach(function (t, i) {
+    tabsOf(tab.closest('[role="tablist"]')).forEach(function (t) {
       var on = t === tab;
       t.setAttribute('aria-selected', on ? 'true' : 'false');
       t.tabIndex = on ? 0 : -1;
-      if (panels[i]) panels[i].hidden = !on;
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !on;
     });
     if (focus) tab.focus();
-    try { history.replaceState(null, '', '#' + tab.id.replace('pr-tab-', '')); } catch (e) { /* ignore */ }
   }
 
-  tabs.forEach(function (t, i) {
-    t.addEventListener('click', function () { select(t); });
-    t.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowRight') select(tabs[(i + 1) % tabs.length], true);
-      if (e.key === 'ArrowLeft') select(tabs[(i - 1 + tabs.length) % tabs.length], true);
+  function remember(tab) {
+    try { history.replaceState(null, '', '#' + tab.id.replace(/^pr-(phase|tab)-/, '')); } catch (e) { /* ignore */ }
+  }
+
+  // Opens every panel around an element, outermost first.
+  function reveal(el) {
+    var chain = [];
+    for (var p = el.closest('[role="tabpanel"]'); p; p = p.parentElement.closest('[role="tabpanel"]')) chain.unshift(p);
+    chain.forEach(function (panel) {
+      var tab = root.querySelector('[aria-controls="' + panel.id + '"]');
+      if (tab) select(tab);
+    });
+  }
+
+  Array.prototype.forEach.call(root.querySelectorAll('[role="tablist"]'), function (list) {
+    var tabs = tabsOf(list);
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(t); remember(t); });
+      t.addEventListener('keydown', function (e) {
+        var next = null;
+        if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+        if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+        if (next) { select(next, true); remember(next); }
+      });
+    });
+    var initial = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+    select(initial || tabs[0]);
+  });
+
+  // An open info box closes when clicking elsewhere or pressing Escape.
+  var infos = Array.prototype.slice.call(root.querySelectorAll('.pr-info'));
+  document.addEventListener('click', function (e) {
+    infos.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    infos.forEach(function (d) {
+      if (!d.open) return;
+      d.open = false;
+      d.querySelector('summary').focus();
     });
   });
 
-  var initial = null;
-  var hash = location.hash.replace('#', '');
+  // #release opens a phase, #demo-done a tab inside one, #demo-todo-core a group.
+  var hash = decodeURIComponent(location.hash.slice(1));
   if (hash) {
-    initial = document.getElementById('pr-tab-' + hash);
-    if (!initial) {
-      // A link straight to an area group (#pr-bl-core) should open its tab.
-      var target = document.getElementById(hash);
-      var panel = target && target.closest('.pr-panel');
-      if (panel) initial = document.getElementById(panel.getAttribute('aria-labelledby'));
+    var target = document.getElementById('pr-phase-' + hash) ||
+      document.getElementById('pr-tab-' + hash) ||
+      document.getElementById('pr-' + hash);
+    if (target) {
+      reveal(target);
+      if (target.getAttribute('role') === 'tab') select(target);
     }
   }
-  select(initial || tabs[0]);
-
-  // ---- chart: click an area label to jump to its task list
-  root.querySelectorAll('.pr-cat').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var target = document.getElementById(btn.getAttribute('data-target'));
-      if (!target) return;
-      var panel = target.closest('.pr-panel');
-      var tab = panel && document.getElementById(panel.getAttribute('aria-labelledby'));
-      if (tab) select(tab);
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-
-  // ---- chart: tooltip on hover / focus
-  var tip = document.getElementById('pr-tip');
-  function show(el) {
-    if (!tip) return;
-    tip.textContent = el.getAttribute('data-tip');
-    tip.classList.add('is-on');
-    var r = el.getBoundingClientRect();
-    var left = r.left + r.width / 2 - tip.offsetWidth / 2;
-    left = Math.max(8, Math.min(left, window.innerWidth - tip.offsetWidth - 8));
-    tip.style.left = left + 'px';
-    tip.style.top = (r.top - tip.offsetHeight - 8) + 'px';
-  }
-  function hide() { if (tip) tip.classList.remove('is-on'); }
-  root.querySelectorAll('.pr-track').forEach(function (el) {
-    el.addEventListener('mouseenter', function () { show(el); });
-    el.addEventListener('mouseleave', hide);
-    el.addEventListener('focus', function () { show(el); });
-    el.addEventListener('blur', hide);
-  });
-  window.addEventListener('scroll', hide, { passive: true });
 })();

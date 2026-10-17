@@ -35,11 +35,7 @@
   #f472b6
 );
 @include erios-typography-overrides;
-@include erios-progress;
-
-.progress-report {
-  @include erios-progress-tokens-dark;
-}
+@include erios-progress-overrides;
 
 .alert {
     padding: 15px;

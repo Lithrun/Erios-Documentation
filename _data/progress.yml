@@ -1,0 +1,53 @@
+# Phases on the progress page (_layouts/progress.html, filled in by
+# _plugins/progress_report.rb). Each phase takes its tasks from one section of
+# the report the Erios-Compendium job generates: "demo", "release" or "future".
+#
+# current:     the id of the phase being worked on; the page opens on it.
+# from / to:   the milestones at either end of the phase's bar. Leave `to` out
+#              for a phase that has no end.
+# started:     the date the phase began (YYYY-MM-DD), shown below `from`.
+# description: shown at the top of the phase. Markdown is allowed.
+# show_dates:  true to show the quarters the phase is expected to end in, below
+#              its estimated time (for example "2027 Q2 – 2028 Q4").
+
+current: demo
+
+# Shown when clicking on the info button to give an excuse why game can be released later
+estimate_info: >-
+  I can't work on Erios full-time unfortunately, and since I am a solo developer, progress depends on me.
+  These numbers are estimations based on my private Erios task board. The date can change if new tasks are added or removed.
+  Fear not tho, as Erios is coming! Perhaps slower than you and me would want it to be, but I do make progress every week!
+  
+
+phases:
+  - id: demo
+    title: Demo
+    section: demo
+    from: Alpha
+    to: Demo (Beta)
+    started: 2022-06-25 # the first day of the game design document
+    show_dates: true
+    description: >-
+      I am currently working towards a PUBLIC demo of Erios! 
+      This will be a **vertical slice** of the game, showcasing the core mechanics and features. 
+      The demo will be available for **free** on Steam! After the demo, it's time to start polishing up all mechanics, fixing bugs, and prepare for the release!
+
+  - id: release
+    title: Release
+    section: release
+    from: Demo (Beta)
+    to: Release
+    description: >-
+      After the demo has been released, most of Erios its mechanics and features will have been implemented already, as the demo is a **vertical slice** of the game.
+      The full release will further expand on the content, features will be polished to be release ready, and of course all gathered feedback from the demo will be taken into consideration. 
+      The demo only revealed a slice of Weldanar, and with the full release, you will be able to explore the entire region!
+
+  - id: updates
+    title: The Next Chapter
+    section: future
+    from: Release
+    description: >-
+      The release of Erios is only the beginning! 
+      After the release, the **Chapters of Erios** content updates will start! 
+      Each **Chapter of Erios** is a bundle of new content around a certain theme. 
+      It might contain a new region, characters, quests, new features and of course quality of life improvements. The community will be actively involved, as together we will explore new lands in Erios!

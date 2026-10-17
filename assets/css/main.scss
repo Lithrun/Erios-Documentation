@@ -36,8 +36,4 @@ search: false
   #9333ea
 );
 @include erios-typography-overrides;
-@include erios-progress;
-
-.progress-report {
-  @include erios-progress-tokens-light;
-}
+@include erios-progress-overrides;

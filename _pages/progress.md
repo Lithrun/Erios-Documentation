@@ -30,234 +30,280 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   /* style rules */
 }
+table {
+    display:table;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse:collapse
+}
+
+h3 {
+    margin: 0.5em;
+}
 </style>
+    
+> **Note:** I am currently working towards a PUBLIC demo of Erios!
+    This will be a **vertical slice** of the game, showcasing the core mechanics and features. This will be available for everyone to play and test out on Steam!
+    After the demo is released, I will continue to work on the game until the full release. The full release will include the processed feedback from the demo, more content, features, and polish.
+    *This page was last updated at: **17-10-2026 11:36**. Automatically updated every sunday~*
 
-# Status
-> The progress towards the demo
-<progress id="progressBar" max="100" value="25" title="% completed"></progress>
-<strong id="progressCompleted"></strong> out of <strong id="progressTotal"></strong> tasks completed (<strong id="progressPercentage"></strong>).
+For the DEMO I have completed **50** / **87** tasks!. 
+    It will take me roughly 543 hours of development time to complete them all!
+    Given that I can only work on Erios for 5 to 15 hours a week, I should be able to finish them in 36 to 109 weeks.
+    Since this is an estimate, I have already multiplied the number of hours by 1.4. Perhaps the time will also increase if I continue to add new tasks.
+    
+## Overview
 
-# Chapters
-> Currently Chapter 1: The Hunter is under development. This will be the first playable alpha build of Erios
+### In Progress
+- Core - House Interiors
+- Core - Job System
 
-During the alpha development phase of the game, Erios will be releasing so called "Chapter" updates. Each chapter will focus on a few major features, and once those are implemented, a playable build will be made public for everyone to try out. Whether out of curiousity, to help testing the game or to inspire yourself with new ideas.
+### Recently Completed
+- Mods - Dependencies (Completed on 2026-09-14)
+- Skill - Builder (Completed on 2026-09-06)
+- Skill - Farming (Completed on 2026-09-06)
+- Skill - Forestry (Completed on 2026-09-06)
+- Equipment - Shirt & Tabards (Completed on 2026-08-29)
 
-# Task List
-> Something missing? [Suggest it to be added into the game!]({% link _pages/join.md %}). Erios is a community as much as it is a world, so your feedback matters!
+### Recently Added
+- Mods - Undo & Redo steps in Level Editor (Created on 2026-09-05)
+- Core - Job System (Created on 2026-09-05)
+- Equipment - Shirt & Tabards (Created on 2026-08-27)
+- Entity - Body Shapes (Created on 2026-08-24)
+- Core - House Interiors (Created on 2026-08-20)
 
-Below you can find a list of planned features, and get a general overview of where the project currently is in terms of development. This list is subject to change. 
+## Demo
+Here's an overview of tasks that need to be completed before the demo is ready!
+### Accessibility
 
-Some items in the list may have a tag like `[C1]`, this means that this functionality was added / is going to be added in that chapter update
+| Task | State | Hours |
+| --- | --- | --- |
+| Accessibility - Color Blind Mode | Completed | 4 |
+| Accessibility - Compatibility Mode | Completed | 4 |
+| Accessibility - HUD positioning | Completed | 24 |
 
-## Fundamental
-These are the 4 major pillars of content in Erios. For the demo, the campaign will be limited to Hergen. For release, the scope will be the entire region of Weldanar.
+### Campaign
 
-- [ ] Campaign (The World of Erios)
-    - [x] 1. Save & Load System
-    - [ ] 2. Story design for Hergen
-    - [ ] 3. Creating the Level of Hergen
-    - [ ] 4. Implementing NPCs & Quests into Hergen
-    - [ ] 5. Adding side-content
-    - [ ] 6. Multiplayer Integration
-- [ ] Gamemodes (Alternative ways to play with the games features)
-    - [ ] 1. Technical Setup
-    - [ ] 2. Gamemode: Waves
-    - [ ] 3. Multiplayer Integration
-    - [ ] 4. Gamemode: Arena
-    - [ ] 5. Gamemode: Horse Racing
-- [ ] Dungeons & Raids (Group with other NPCs/Players to face difficult encounters and solve puzzles)
-    - [ ] 1. Technical Setup
-    - [ ] 2. Dungeon: Mines of Hergen
-    - [ ] 3. Multiplayer integration
-- [ ] Challenges (Repetitive competitive score-based challenges)
-    - [x] 1. Technical Setup
-    - [x] 2. Basic Trial Challenges (Complete as fast as possible)
-    - [ ] 3. Challenge Replay System
-    - [ ] 4. Additional challenge types
+| Task | State | Hours |
+| --- | --- | --- |
+| Campaign - Journal | Todo | 6 |
+| Campaign - Rules | Todo | 8 |
+| Campaign - Saving & Loading | Completed | 20 |
 
-## NPCs
-> Characters populate the world and keep it interesting. They may be your foe or ally, yet there is a lot you can do with them. They will also do things on their own, as Erios is the world that they live in.
+### Core
 
-- [x] State System
-- [ ] Navigation System
-    - [x] `[C1]` 1. Basic Terrain
-    - [ ] 2. Avoidance System
-    - [ ] 3. Advanced Terrain (Jumping over ledges, swimming)
-- [ ] Task System
-- [ ] Follower System
-- [ ] Quest System
-- [ ] Speech Sounds
-    - [x] 1. Characters make random sounds when speaking
-    - [ ] 2. Changing speed, pitch & tone
-- [ ] Equipment System
-    - [x] 1. Functionality
-    - [ ] 2. User Interface
-- [ ] Faction/Reputation System
-- [ ] Character Customization Interface (for the player)
-- [ ] Trading & Economy System
+| Task | State | Hours |
+| --- | --- | --- |
+| Achievements System | Completed | 30 |
+| Benchmarking System | Completed | 8 |
+| Combat System | OnHold | 30 |
+| Core - Architecture | Completed | 3 |
+| Core - House Interiors | InProgress | 10 |
+| Core - Job System | InProgress | 6 |
+| Core - Quest System | Completed | 40 |
+| Data Migration Upgrade | Completed | 4 |
+| Dynamic Encounter System | Completed | 25 |
+| Equipment & Inventory System | Completed | 20 |
+| Faction System | Completed | 12 |
+| Gamemode - Multiplayer | Completed | 8 |
+| Hero Main Menu | Completed | 8 |
+| Level Chunk System | Completed | 12 |
+| New Game Plus | Todo | 6 |
+| Platform - MacOS | Completed | 12 |
+| Randomizer | Todo | 12 |
+| Songs System | Completed | 20 |
+| Time System | Completed | 4 |
+| Title System | Todo | 6 |
+| Trading & Financial System | Todo | 16 |
+| Transportation System | Todo | 16 |
+| Water System | Todo | 8 |
+| Weather & Climate System | Todo | 15 |
 
-### Creatures
-> The world is large, and even in a region like Weldanar, the ecosystem is diverse
+### Customization
 
-- [x] `[C1]` Deer
-- [ ] Birds
-- [ ] Wolves
+| Task | State | Hours |
+| --- | --- | --- |
+| Equipment - Shirt & Tabards | Completed | 8 |
+| Transmog System | Todo | 10 |
 
-## World
-> The world within Erios is a living world on itself. Things happen, whether the player is there are not.
+### Design
 
-- [ ] Time System
-    - [x] 1. Functionality
-    - [ ] 2. Visualization (i.e. the time of day changing from day to night)
-- [ ] Weather System
-- [ ] Ecosystem
-    - [x] `[C1]` 1. Basic implementation
-    - [ ] 2. Evolution
-    - [ ] 3. Visual change
-- [ ] Dynamic Events
-- [ ] Interactables System
-- [ ] Water System
-    - [x] 1. Visualization
-    - [ ] 2. Physics (Floating, swimming)
-- [x] Loading Screen
-- [ ] Transportation
-    - [ ] Horse
-    - [ ] Wagon
-    - [ ] Ship
+| Task | State | Hours |
+| --- | --- | --- |
+| Hergen - Storyline | Todo | 12 |
 
-## Multiplayer
-> Erios can be played as a full singleplayer game, yet it can also be played as a full multiplayer game. So play with your friends!
+### Entity
 
-- [x] Lobby Server
-- [x] Chat System
-    - [x] Chat Commands
-- [ ] Player List
-- [ ] Reconnect System
-- [ ] Favorite server list
+| Task | State | Hours |
+| --- | --- | --- |
+| Dialogue - Scenes | Todo | 8 |
+| Dialogue System | Completed | 16 |
+| Entity - Actor Avoidance | Completed | 4 |
+| Entity - Bird | Todo | 12 |
+| Entity - Body Shapes | Completed | 8 |
+| Entity - Relations | Completed | 10 |
+| Entity - Traits System | Completed | 16 |
+| Entity - Wolf | Todo | 8 |
+| Scheduling System | Completed | 20 |
 
-## Items & Tools
-- [ ] Weapons
-    - [ ] Sword
-    - [ ] Bow
-    - [ ] Spear
-    - [ ] Unarmed
-    - [ ] Shield
-- [ ] Tools
-    - [ ] Torch
-    - [ ] Grappling Hook
+### Expedition
 
-## Skills
-> Erios features various skills that players can progress towards
+| Task | State | Hours |
+| --- | --- | --- |
+| Expedition - Mines of Hergen | Todo | 10 |
+| Expedition - Multiplayer | Todo | 5 |
+| Expeditions - Setup | Completed | 20 |
 
-- [ ] Archeology
-- [ ] Artist
-- [ ] Blacksmithing
-- [ ] Builder
-- [ ] Carpentry
-- [ ] Cooking
-- [ ] Explorer
-- [ ] Farming
-- [ ] Fishing
-- [ ] Forestry
-- [ ] Guard
-- [ ] Herbalism
-- [ ] `[C1]` {% glossary Skill_Hunting, display: Hunting %}
-- [ ] Jewel crafting
-- [ ] Leatherworking
-- [ ] Mining
-- [ ] Thieving
+### Gamemode
 
-## Accessibility
-> Erios is a world for everyone. So there are lots of settings to make the game more accessible and customizable
+| Task | State | Hours |
+| --- | --- | --- |
+| Gamemode - Arena | Todo | 12 |
+| Gamemode - Racing | Todo | 12 |
+| Gamemodes - Architecture + Wave | Completed | 24 |
 
-- [x] Audio Settings
-- [x] Graphic Settings
-- [x] System Settings 
-- [ ] Rebind Settings
-    - [x] 1. Changing Rebinds
-    - [x] 2. Saving & Loading
-    - [ ] 3. Advanced Rebind modifiers (Double press, hold) 
-- [ ] UI Settings
-    - [ ] Changing fonts
-    - [ ] Changing HUD positioning
-    - [x] `[C1]` Dynamic UI scaling
-    - [x] `[C1]` Change UI scale for better readability
-    - [x] `[C1]` Aspect Ratio
-- [ ] Localization
-    - [x] English
-    - [x] Dutch
-    - [ ] Japanese (WIP)
-- [ ] Operation Systems
-    - [x] Windows
-    - [ ] Linux
-    - [ ] Mac
+### Input
 
-## Collectables
-> Collect everything!
+| Task | State | Hours |
+| --- | --- | --- |
+| Input Events | Todo | 5 |
 
-- [ ] Completion % tracker
-- [ ] Achievements
-- [ ] Cards
-    - [x] 1. Design
-    - [ ] 2. Collecting cards throughout the world
-    - [ ] 3. Collection UI
+### Lunaris
 
-## Moddability
-> For players to be able to extend upon the world of Erios is an important feature
+| Task | State | Hours |
+| --- | --- | --- |
+| Lunaris Autogenerated Documentation | Completed | 8 |
 
-- [ ] Mod Loader
-    - [x] 1. Scan and list installed mods
-    - [ ] 2. Activate & Load Mods
-    - [ ] 3. Automatically load previously activated mods
-    - [ ] 4. Creating & managing mod packs
-- [x] `[C1]` Resource Packs
-    - [x] `[C1]` Custom Fonts
-    - [ ] Custom UI Themes
-- [ ] Custom Models
-- [ ] Custom Audio Files
-- [ ] Custom Levels
-- [ ] Custom Scripts
-- [ ] Custom Entities (Characters / Creatures)
+### Mapping
 
-## Replayability
+| Task | State | Hours |
+| --- | --- | --- |
+| Hergen - Cave of Allunissa | Completed | 12 |
+| Hergen - Level Design | OnHold | 16 |
 
-- [ ] New Game+
-- [ ] Randomizer
+### Modding
 
-## Tools
-> In-game tools are valuable for mod developers. Thus Erios will offer them
+| Task | State | Hours |
+| --- | --- | --- |
+| Mod Pack Customization | Todo | 4 |
+| Mods - Custom items & 3D Models | Todo | 8 |
+| Mods - Dependencies | Completed | 6 |
+| Mods - Resource Editor | Completed | 10 |
+| Mods - Undo & Redo steps in Level Editor | Todo | 6 |
 
-- [ ] Console Commands
-- [ ] Level Editor
-    - [x] Manip (Position, Rotation, Tool)
-    - [x] Local positioning
-    - [ ] Creating & Loading custom prefabs
-- [ ] Character Editor
-- [ ] Quest Editor
+### Multiplayer
 
-## Technology
-> Interesting technologies which makes Erios more unique
+| Task | State | Hours |
+| --- | --- | --- |
+| Online - Better Lobby Menu | Todo | 3 |
+| Online - Player List | Completed | 4 |
+| Online - Ranged Chat | Completed | 1 |
+| Online - Reconnect System | Completed | 20 |
 
-- [x] Dynamic Recoloring (Recolor any object at runtime)
-- [x] Low Polifier Tool (Convert any object into Erios its low poly art style)
-- [x] LUA Documentation Generator (LUA Binding + Website)
+### Organization
 
-## Post-Release
-> A list of confirmed ideas, but these will only be implemented post-release
+| Task | State | Hours |
+| --- | --- | --- |
+| Structure - Move Model files | Completed | 6 |
 
-**Fundamental**
-- Challenge Mode Leaderboards
+### Skill
 
-**Accessibility**
-- Controller Support
+| Task | State | Hours |
+| --- | --- | --- |
+| Skill - Alchemy | Completed | 12 |
+| Skill - Archeology | Completed | 12 |
+| Skill - Artist | Completed | 12 |
+| Skill - Blacksmithing | Todo | 12 |
+| Skill - Builder | Completed | 12 |
+| Skill - Carpentry | Todo | 12 |
+| Skill - Explorer | Todo | 12 |
+| Skill - Farming | Completed | 12 |
+| Skill - Fishing | Todo | 12 |
+| Skill - Forestry | Completed | 12 |
+| Skill - Herbalism | Todo | 12 |
+| Skill - Jewelcrafting | Todo | 12 |
+| Skill - Justice | Todo | 12 |
+| Skill - Leatherworking | Todo | 12 |
+| Skill - Mining | Completed | 12 |
+| Skill - Thieving | Todo | 12 |
 
-<script>
-  var completed = document.querySelectorAll("input[type='checkbox']:checked").length;
-  var total = document.querySelectorAll("input[type='checkbox']").length;
-  document.getElementById("progressCompleted").innerHTML = completed
-  document.getElementById("progressTotal").innerHTML = total
-  document.getElementById("progressPercentage").innerHTML = Math.round((completed / total) * 10000) / 100 + "%"
-  var progress = document.getElementById("progressBar")
-  progress.max = total
-  progress.value = completed
-</script>
+### Sound
+
+| Task | State | Hours |
+| --- | --- | --- |
+| NPC Voice Audio | Todo | 10 |
+
+### Testing
+
+| Task | State | Hours |
+| --- | --- | --- |
+| Testing - Integration Test Project | Completed | 4 |
+
+### UI
+
+| Task | State | Hours |
+| --- | --- | --- |
+| Dynamic UI - Settings Menu | Completed | 10 |
+| UI - Notifications | Completed | 0 |
+
+### Undefined
+
+| Task | State | Hours |
+| --- | --- | --- |
+| Dedicated Server | Completed | 20 |
+| Mods - Terrain Editor | Completed | 15 |
+
+### Workflow
+
+| Task | State | Hours |
+| --- | --- | --- |
+| Automated Progress Report Generation | Completed | 8 |
+| Workflow | Completed | 3 |
+| Workflow - Automate FBX conversion | Completed | 5 |
+
+## Release
+These tasks will NOT be included in the demo, but will be available before the release of Erios!
+### Accessibility
+
+| Task | Hours |
+| --- | --- |
+| Input - Double Press | 2 |
+| Input - Multi Keys | 4 |
+
+### Gamemode
+
+| Task | Hours |
+| --- | --- |
+| Gamemode - Enhancements for Release | 12 |
+
+### Scenario
+
+| Task | Hours |
+| --- | --- |
+| Scenario - Replay System | 12 |
+
+## Future
+These tasks will be done in post-release as free content updates!
+### Accessibility
+
+| Task |
+| --- |
+| Accessibility - Blind Mode |
+
+### Challenge
+
+| Task |
+| --- |
+| Challenge - Leaderboard |
+
+### Input
+
+| Task |
+| --- |
+| Input - Controller Support |
+
+### Lunaris
+
+| Task |
+| --- |
+| Lunaris - Attributes |
